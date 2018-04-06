@@ -149,13 +149,14 @@ find_range() {
 produce_rules() {
 	#$1 - attr
 	#$2 - (value1,value2)
-	#$3 - domain
-	#$4 - (from,change,to)
-	#$5 - probability
-	#echo 'attr='a';value=1;domain=[1,2,3,4]; from=-300;to=-280;probability=0.8'
+	#$3 - domain1
+	#$4 - domain2
+	#$5 - (from,change,to)
+	#$6 - probability
+	#echo 'attr='a';value=1;domain=[1,2,3,4];from=-300;to=-280;probability=0.8'
 	
-	echo "attr=$1;value="$(get_item $2 , 1 "()")";domain=$3;from="$(get_item $4 , 1 "()")";to="$(get_item $4 , 2 "()")";probability=$5"
-	echo "attr=$1;value="$(get_item $2 , 2 "()")";domain=$3;from="$(get_item $4 , 2 "()")";to="$(get_item $4 , 3 "()")";probability=$5"
+	echo "attr=$1;value="$(get_item $2 "," 1 "()")";domain=$3;from="$(get_item $5 "," 1 "()")";to="$(get_item $5 "," 2 "()")";probability="$(get_item $6 "," 1 "()")
+	echo "attr=$1;value="$(get_item $2 "," 2 "()")";domain=$4;from="$(get_item $5 "," 2 "()")";to="$(get_item $5 "," 3 "()")";probability="$(get_item $6 "," 2 "()")
 }
 
 ############################################
@@ -248,11 +249,14 @@ do
 	IFS=','; VALUES=($TEMP); unset IFS;
 	TEMP=${VALUES[${#VALUES[*]}-1]}
 	IFS='->'; VAL_CHANGE=($TEMP); unset IFS;
+	TEMP=$(echo $DOMAIN | sed -e 's/[()]//g')
+	IFS='->'; DOM_CHANGE=($TEMP); unset IFS;
+	TEMP=$(echo $PROBABILITY | sed -e 's/[()]//g')
+	IFS='->'; PROB_CHANGE=($TEMP); unset IFS;
 	
 	VAL_CHANGE_FROM=${VAL_CHANGE[0]}
 	VAL_CHANGE_TO=${VAL_CHANGE[2]}
-
-	
+	echo $VAL_CHANGE_FROM $VAL_CHANGE_TO
 	ATTR_NAME=()
 	VAL_CH_FROM=()
 	VAL_CH_TO=()
@@ -280,12 +284,12 @@ do
 	then
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" $DOMAIN $i $PROBABILITY
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})"
 		done
 	else
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" $DOMAIN $i $PROBABILITY >> $OUTPUT_FILE
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" >> $OUTPUT_FILE
 		done
 	fi		
 done
