@@ -56,8 +56,12 @@ class RulesMiner(object):
 
         return self.rules
 
-    def print_rules(self):
-        for rule in self.rules:
+    def print_rules(self, sort=True):
+        if sort:
+            rules = sorted(self.rules, key= lambda rule: rule[2], reverse=True)
+        else:
+            rules = self.rules
+        for rule in rules:
             lhs = rule[0]
             rhs = rule[1]
 

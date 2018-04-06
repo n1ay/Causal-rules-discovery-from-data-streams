@@ -1,0 +1,6 @@
+attr = 'attr1';value='b';domain = [1,2,3,4]; from=-200; to=-150; probability = 0.8
+attr = 'attr1';value='d';domain = [1,2,3,4]; from=-100; to=0; probability = 0.7
+attr = 'attr1';value='c';domain = [1,2,3,4]; from=-150; to=-100; probability = 0.7
+attr = 'attr2';value='f';domain = [5,6,7,8]; from=-190; to=-140; probability = 0.8
+attr = 'attr2';value='g';domain = [5,6,7,8]; from=-135; to=-90; probability = 0.7
+attr = 'attr2';value='h';domain = [5,6,7,8]; from=-90; to=0; probability = 0.7

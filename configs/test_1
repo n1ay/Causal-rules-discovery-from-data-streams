@@ -1,0 +1,9 @@
+attr = 'attr1';value=2;domain = [1,2,3,4]; from=-200; to=-150; probability = 0.8
+attr = 'attr1';value=3;domain = [1,2,3,4]; from=-150; to=-100; probability = 0.7
+attr = 'attr1';value=4;domain = [1,2,3,4]; from=-100; to=0; probability = 0.7
+attr = 'attr1';value=3;domain = [1,2,3,4]; probability = 0.8
+attr = 'attr2';value='b';domain = ['a','b','c','d']; from=-160; to=-150; probability = 0.7
+attr = 'attr2';value='c';domain = ['a','b','c','d']; from=-120; to=-0; probability = 0.6
+attr = 'attr2';value='d';domain = ['a','b','c','d']; probability = 0.95
+attr = 'attr3';value=2;domain = [1,2,'c','d']; from=-190; to=-120; probability = 0.7
+attr = 'attr3';value='c';domain = [1,2,'c','d']; from=-120; to=-40; probability = 0.6

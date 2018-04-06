@@ -48,8 +48,8 @@ data = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 print("Encode", encode(data))
 
 
-df = pd.read_csv('sequences/sequence_2017_11_24-20.16.00.csv')
-signal = np.array(df['attr_1'])
+df = pd.read_csv('sequences/sequence_2018_03_25-17.02.09.csv')
+signal = np.array(df['attr1'])
 
 # df = pd.read_csv('sequences/sequence_2017_11_05-18.43.29.csv')
 # signal = np.array(df['attr_1'])
@@ -72,6 +72,7 @@ signal = np.array(df['attr_1'])
 
 win_size = int(len(signal)*(5/250))
 print("win size:", win_size)
+
 # Create detector
 #detector = MeanDetector(threshold=0.85)
 detector = ZScoreDetector(window_size = win_size, threshold=2.5)

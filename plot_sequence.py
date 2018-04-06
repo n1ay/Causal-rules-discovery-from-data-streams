@@ -16,15 +16,7 @@ df = pd.read_csv(seqName)
 
 seqLen = (len(df.index))
 
-step = 10
-if seqLen <= 50:
-    step = 1
-elif seqLen <= 500:
-    step = 10
-elif seqLen <= 5000:
-    step = 100
-elif seqLen <= 50000:
-    step = 1000
+step = seqLen/5
 
 j = 0
 colors = {}
@@ -57,7 +49,12 @@ if args.attribute:
 
 else:
     k = len(df.columns)
-    f, axarr = plt.subplots(k, figsize=(15,7))
+    if k > 1:
+        f, axarr = plt.subplots(k, figsize=(15,7))
+    else:
+        f, axar = plt.subplots()
+        axarr = []
+        axarr.append(axar)
     for column in df:
         seq = np.array(df[column])
         N = 1
