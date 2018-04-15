@@ -57,7 +57,7 @@ get_item() {
 	fi
 }
 
-intercepts() {
+intersects() {
 	if [ "$1" == "null" ] || [ "$2" == "null" ]
 	then
 		echo "null"
@@ -65,7 +65,7 @@ intercepts() {
 	fi
 	case $# in
 		1)
-			echo "null"
+			echo $1
 			return
 		;;
 		2)
@@ -85,7 +85,7 @@ intercepts() {
 			fi
 		;;
 		*)
-			echo $(intercepts $(intercepts $1 $2) ${@:3})
+			echo $(intersects $(intersects $1 $2) ${@:3})
 		;;
 	esac
 }
@@ -111,7 +111,7 @@ find_range() {
 			RANGES[$i]=$(get_item ${@:$i:1} ":" ${COUNTERS[$i]})
 		done
 		
-		RES=$(intercepts ${RANGES[*]})
+		RES=$(intersects ${RANGES[*]})
 		if [ "$RES" != "null" ]
 		then
 			RET+=($RES)
@@ -153,10 +153,18 @@ produce_rules() {
 	#$4 - domain2
 	#$5 - (from,change,to)
 	#$6 - probability
+	#$7 - parts to apply
 	#echo 'attr='a';value=1;domain=[1,2,3,4];from=-300;to=-280;probability=0.8'
 	
-	echo "attr=$1;value="$(get_item $2 "," 1 "()")";domain=$3;from="$(get_item $5 "," 1 "()")";to="$(get_item $5 "," 2 "()")";probability="$(get_item $6 "," 1 "()")
-	echo "attr=$1;value="$(get_item $2 "," 2 "()")";domain=$4;from="$(get_item $5 "," 2 "()")";to="$(get_item $5 "," 3 "()")";probability="$(get_item $6 "," 2 "()")
+	if [ "$(get_item $7 "," 1 "()")" == "1" ] || [ "$(get_item $7 "," 2 "()")" == "1" ]
+	then
+		echo "attr=$1;value="$(get_item $2 "," 1 "()")";domain=$3;from="$(get_item $5 "," 1 "()")";to="$(get_item $5 "," 2 "()")";probability="$(get_item $6 "," 1 "()")
+	fi
+	
+	if [ "$(get_item $7 "," 1 "()")" == "2" ] || [ "$(get_item $7 "," 2 "()")" == "2" ]
+	then
+		echo "attr=$1;value="$(get_item $2 "," 2 "()")";domain=$4;from="$(get_item $5 "," 2 "()")";to="$(get_item $5 "," 3 "()")";probability="$(get_item $6 "," 2 "()")
+	fi
 }
 
 ############################################
@@ -234,6 +242,10 @@ do
 		PROBABILITY="${i#*=}"
 		shift # past argument=value
 		;;
+		parts=*)
+		PARTS="${i#*=}"
+		shift # past argument=value
+		;;
 		domain=*)
 		DOMAIN="${i#*=}"
 		shift # past argument=value
@@ -253,10 +265,11 @@ do
 	IFS='->'; DOM_CHANGE=($TEMP); unset IFS;
 	TEMP=$(echo $PROBABILITY | sed -e 's/[()]//g')
 	IFS='->'; PROB_CHANGE=($TEMP); unset IFS;
+	TEMP=$(echo $PARTS | sed -e 's/[()]//g')
 	
 	VAL_CHANGE_FROM=${VAL_CHANGE[0]}
 	VAL_CHANGE_TO=${VAL_CHANGE[2]}
-	echo $VAL_CHANGE_FROM $VAL_CHANGE_TO
+
 	ATTR_NAME=()
 	VAL_CH_FROM=()
 	VAL_CH_TO=()
@@ -279,17 +292,26 @@ do
 		LINES+=($(find_line ${ATTR_NAME[$i]} ${VAL_CH_FROM[$i]} ${VAL_CH_TO[$i]}))
 	done
 	
-	cat $INPUT_FILE
+	if [ "$APPEND" == "true" ]
+	then
+		APPEND=false
+		if [ -z "$OUTPUT_FILE" ]
+		then
+			cat $INPUT_FILE
+		else
+			cat $INPUT_FILE >> $OUTPUT_FILE
+		fi
+	fi
 	if [ -z "$OUTPUT_FILE" ]
 	then
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})"
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS
 		done
 	else
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" >> $OUTPUT_FILE
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS >> $OUTPUT_FILE
 		done
 	fi		
 done

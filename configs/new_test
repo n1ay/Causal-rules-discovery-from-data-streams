@@ -1,6 +1,6 @@
-attr='a';value=1;domain=[1,2,3,4]; from=-300;to=-280;probability=0.8
-attr='a';value=2;domain=[1,2,3,4]; from=-280;to=-250;probability=0.8
-attr='a';value=1;domain=[1,2,3,4]; from=-200;to=-150;probability=0.8
-attr='a';value=2;domain=[1,2,3,4]; from=-150;to=0;probability=0.8
-attr='b';value=2;domain=[1,2,3,4]; from=-200;to=-150;probability=0.8
-attr='b';value=3;domain=[1,2,3,4]; from=-150;to=0;probability=0.8
+attr='a';value=1;domain=[1,2,3,4];from=-300;to=-280;probability=0.8
+attr='a';value=2;domain=[1,2,3,4];from=-280;to=-250;probability=0.8
+attr='a';value=1;domain=[1,2,3,4];from=-200;to=-150;probability=0.8
+attr='a';value=2;domain=[1,2,3,4];from=-150;to=0;probability=0.8
+attr='b';value=2;domain=[1,2,3,4];from=-200;to=-150;probability=0.8
+attr='b';value=3;domain=[1,2,3,4];from=-150;to=0;probability=0.8

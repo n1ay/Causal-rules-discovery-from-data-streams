@@ -1,0 +1,4 @@
+attr='b';value=(a=5->4,1->6);domain=([1,2,3,4,5,6]->[1,2,3,4,5,6]);probability=(0.8->0.9);parts=(1,2)
+attr='b';value=(a=3->2,4->1);domain=([1,2,3,4,5,6]->[1,2,3,4,5,6]);probability=(0.85->0.8);parts=(1,2)
+attr='b';value=(a=2->3,1->4);domain=([1,2,3,4,5,6]->[1,2,3,4,5,6]);probability=(0.8->0.85);parts=(1,2)
+attr='b';value=(a=5->3,2->5);domain=([1,2,3,4,5,6]->[1,2,3,4,5,6]);probability=(0.8->0.9);parts=(1,2)

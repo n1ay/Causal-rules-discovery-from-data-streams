@@ -48,8 +48,8 @@ data = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 print("Encode", encode(data))
 
 
-df = pd.read_csv('sequences/sequence_2018_03_25-17.02.09.csv')
-signal = np.array(df['attr1'])
+df = pd.read_csv('sequences/sequence1_clean.csv')
+signal = np.array(df['a'])
 
 # df = pd.read_csv('sequences/sequence_2017_11_05-18.43.29.csv')
 # signal = np.array(df['attr_1'])

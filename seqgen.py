@@ -64,7 +64,8 @@ for config in grouped_config_list:
     if args.random:
         seq = [numpy.random.choice(domain) for k in range(0, last_state)]
     else:
-        seq = [init_value for k in range(0, last_state)]
+        #seq = [init_value for k in range(0, last_state)]
+        seq = [numpy.random.choice(domain) for k in range(0, last_state)]
 
     operator = 'eq'
     for z in range(0,len(config_values)):
