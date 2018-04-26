@@ -4,13 +4,14 @@ from collections import Counter
 cannot_determine_trend_value='?'
 
 class Trend:
-    def __init__(self, trend_list, values_list, _from, _to, prob_threshold, values=Counter()):
+    def __init__(self, trend_list, values_list, _from, _to, prob_threshold, values=Counter(), attribute_order=[]):
         self.trend_list=trend_list
         self._from=_from
         self._to=_to
         self.values_list=values_list
         self.counter=Counter()
         self.prob_threshold=prob_threshold
+        self.attribute_order = attribute_order
         if values!=Counter():
             self.values=values
         else:
@@ -20,9 +21,11 @@ class Trend:
         if len(self.counter.keys())>0:
             return '(Values: {0.values}, From: {0._from}, To: {0._to}, Counter: {0.counter})'.format(self)
         else:
-            return '(Values: {0.values}, From: {0._from}, To: {0._to})'.format(self)
+            return '(Values: {0.values}, From: {0._from}, To: {0._to}, Attribute order: {0.attribute_order})'.format(self)
 
     def calc_trend(self, prob_threshold):
+        if self.attribute_order==[]:
+            self.attribute_order.append(self.trend_list.attribute)
         values=Counter()
         for i in self.values_list:
             try:
@@ -43,7 +46,7 @@ class Trend:
         return values
 
     def __copy__(self):
-        return Trend(self.trend_list, self.values_list.copy(), self._from, self._to, self.prob_threshold, self.values.copy())
+        return Trend(self.trend_list, self.values_list.copy(), self._from, self._to, self.prob_threshold, self.values.copy(), self.attribute_order.copy())
 
     __repr__ = __str__
 

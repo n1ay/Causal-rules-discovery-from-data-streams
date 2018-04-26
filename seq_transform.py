@@ -24,7 +24,7 @@ for i in df.columns:
     tl.append(TrendList(i, np.array(df[i]), prob_threshold, window_size, merge_at_once=True))
 
 gs = GroupStream(tl)
-#print(gs)
+print(gs)
 
 rs = RulesStream(gs, attr)
 
