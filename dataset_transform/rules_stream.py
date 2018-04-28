@@ -15,6 +15,7 @@ class RulesStream:
         self.group_stream=group_stream
         self.attributes={}
         self.values=[[] for _ in group_stream.rules_stream[0].values.keys()]
+        self.order = []
         self.transform_stream(group_stream)
         self.output_format=output_format
 
@@ -23,7 +24,10 @@ class RulesStream:
         for i in group_trend1.values.keys():
             rules_dict[i]=Rule(group_trend1.values[i], group_trend2.values[i])
 
-        return rules_dict
+        order = []
+        for i in sorted(group_trend2.attribute_order, key=lambda tup: tup[1]):
+            order.append(i[0])
+        return rules_dict, order
 
     def add_rules(self, rules_dict):
         for i in rules_dict.keys():
@@ -35,8 +39,19 @@ class RulesStream:
             self.attributes[i]=idx
             idx+=1
         for i in range(len(group_stream.rules_stream)-1):
-            rules_dict=self.extract_rules(group_stream.rules_stream[i], group_stream.rules_stream[i+1])
+            rules_dict, order=self.extract_rules(group_stream.rules_stream[i], group_stream.rules_stream[i+1])
             self.add_rules(rules_dict)
+            self.order.append(order)
+
+    def format_order(self,order_list):
+        str = '('
+        for i in range(len(order_list)):
+            if i < len(order_list)-1:
+                str+='{0};'.format(order_list[i])
+            else:
+                str += '{0}'.format(order_list[i])
+        str += ')\n'
+        return str
 
     def __str__(self):
         if self.output_format==[]:
@@ -44,17 +59,14 @@ class RulesStream:
                 self.output_format.append(i)
         str=''
         for i in range(len(self.output_format)):
-            if i < len(self.output_format)-1:
+            if i < len(self.output_format):
                 str+='{0},'.format(self.output_format[i])
-            else:
-                str += '{0}\n'.format(self.output_format[i])
+        str+='(order)\n'
 
         for i in range(len(self.values[0])):
             for j in range(len(self.output_format)):
-                if j < len(self.output_format) - 1:
-                    str+='{0},'.format(self.values[self.attributes[self.output_format[j]]][i])
-                else:
-                    str += '{0}\n'.format(self.values[self.attributes[self.output_format[j]]][i])
+                str+='{0},'.format(self.values[self.attributes[self.output_format[j]]][i])
+            str+=self.format_order(self.order[i])
         return str
 
 

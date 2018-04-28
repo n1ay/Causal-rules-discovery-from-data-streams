@@ -52,24 +52,22 @@ class GroupStream:
             t1=intercept_trend_list[0]._to
             f2=intercept_trend_list[1]._from
             t2=intercept_trend_list[1]._to
+            ret, other = None, None
             if f1>=t2 or f2>=t1:
                 return None
             elif f1>=f2 and f1<t2:
                 ret=copy.copy(intercept_trend_list[0])
                 other=intercept_trend_list[1]
-                ret._to=min(ret._to, other._to)
-                ret.counter = Counter()
-                for i in other.values.keys():
-                    ret.values[i]=other.values[i]
-                return ret
             elif f2>f1 and f2<t1:
                 ret=copy.copy(intercept_trend_list[1])
                 other = intercept_trend_list[0]
-                ret._to=min(ret._to, other._to)
-                ret.counter = Counter()
-                for i in other.values.keys():
-                    ret.values[i]=other.values[i]
-                return ret
+
+            ret._to=min(ret._to, other._to)
+            ret.counter = Counter()
+            for i in other.values.keys():
+                ret.values[i]=other.values[i]
+            ret.attribute_order+=other.attribute_order
+            return ret
         else:
             ret2=self.intersect(intercept_trend_list[0:2])
             return self.intersect([ret2] + intercept_trend_list[2:])

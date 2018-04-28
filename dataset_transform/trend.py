@@ -11,11 +11,14 @@ class Trend:
         self.values_list=values_list
         self.counter=Counter()
         self.prob_threshold=prob_threshold
-        self.attribute_order = attribute_order
         if values!=Counter():
             self.values=values
         else:
             self.values=self.calc_trend(prob_threshold)
+        if attribute_order != []:
+            self.attribute_order=attribute_order
+        else:
+            self.attribute_order = [(trend_list.attribute, _from)]
 
     def __str__(self):
         if len(self.counter.keys())>0:
@@ -24,8 +27,6 @@ class Trend:
             return '(Values: {0.values}, From: {0._from}, To: {0._to}, Attribute order: {0.attribute_order})'.format(self)
 
     def calc_trend(self, prob_threshold):
-        if self.attribute_order==[]:
-            self.attribute_order.append(self.trend_list.attribute)
         values=Counter()
         for i in self.values_list:
             try:

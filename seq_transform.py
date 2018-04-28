@@ -22,9 +22,10 @@ attr = []
 for i in df.columns:
     attr.append(i)
     tl.append(TrendList(i, np.array(df[i]), prob_threshold, window_size, merge_at_once=True))
+#print(tl)
 
 gs = GroupStream(tl)
-print(gs)
+#print(gs)
 
 rs = RulesStream(gs, attr)
 
