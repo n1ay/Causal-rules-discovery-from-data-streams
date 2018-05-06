@@ -35,7 +35,7 @@ class Trend:
                 self.counter[i]=1
         max_key=(max(self.counter.items(), key=operator.itemgetter(1))[0])
 
-        if len(self.values_list < 20):
+        if int(len(self.values_list)) < 20:
             min_prob=max(0.6, prob_threshold)
         else:
             min_prob=prob_threshold

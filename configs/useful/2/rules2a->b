@@ -1,0 +1,4 @@
+attr='b';value=(a='A'->'B','C'->'D');domain=(['C','D','F','G','H']->['C','D','F','G','H']);probability=(0.8->0.9);parts=(1,2);after=5
+attr='b';value=(a='B'->'A','D'->'C');domain=(['C','D','F','G','H']->['C','D','F','G','H']);probability=(0.85->0.8);parts=(1,2);after=5
+attr='b';value=(a='F'->'D','H'->'F');domain=(['C','D','F','G','H']->['C','D','F','G','H']);probability=(0.8->0.85);parts=(1,2);after=5
+attr='b';value=(a='E'->'C','C'->'G');domain=(['C','D','F','G','H']->['C','D','F','G','H']);probability=(0.8->0.9);parts=(1,2);after=5

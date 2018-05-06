@@ -14,7 +14,7 @@ args = parser.parse_args()
 
 df = pd.read_csv(args.input)
 
-window_size=25
+window_size=50
 prob_threshold=0.65
 
 tl = []

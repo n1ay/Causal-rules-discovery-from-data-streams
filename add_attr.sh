@@ -154,16 +154,17 @@ produce_rules() {
 	#$5 - (from,change,to)
 	#$6 - probability
 	#$7 - parts to apply
+	#$8 - after
 	#echo 'attr='a';value=1;domain=[1,2,3,4];from=-300;to=-280;probability=0.8'
 	
 	if [ "$(get_item $7 "," 1 "()")" == "1" ] || [ "$(get_item $7 "," 2 "()")" == "1" ]
 	then
-		echo "attr=$1;value="$(get_item $2 "," 1 "()")";domain=$3;from="$(get_item $5 "," 1 "()")";to="$(get_item $5 "," 2 "()")";probability="$(get_item $6 "," 1 "()")
+		echo "attr=$1;value="$(get_item $2 "," 1 "()")";domain=$3;from="$[ $(get_item $5 "," 1 "()")+$8 ]";to="$[ $(get_item $5 "," 2 "()")+$8 ]";probability="$(get_item $6 "," 1 "()")
 	fi
 	
 	if [ "$(get_item $7 "," 1 "()")" == "2" ] || [ "$(get_item $7 "," 2 "()")" == "2" ]
 	then
-		echo "attr=$1;value="$(get_item $2 "," 2 "()")";domain=$4;from="$(get_item $5 "," 2 "()")";to="$(get_item $5 "," 3 "()")";probability="$(get_item $6 "," 2 "()")
+		echo "attr=$1;value="$(get_item $2 "," 2 "()")";domain=$4;from="$[ $(get_item $5 "," 2 "()")+$8 ]";to="$[ $(get_item $5 "," 3 "()")+$8 ]";probability="$(get_item $6 "," 2 "()")
 	fi
 }
 
@@ -223,7 +224,7 @@ then
 fi
 
 ## PARSING RULES ##
-
+AFTER=0
 for j in $(echo $RULES_FILE | xargs cat | tr -d ' \|\t')
 do
 	IFS=';'; LINE=($j); unset IFS;
@@ -232,6 +233,10 @@ do
 	case $i in
 		attr=*)
 		ATTR="${i#*=}"
+		shift # past argument=value
+		;;
+		after=*)
+		AFTER="${i#*=}"
 		shift # past argument=value
 		;;
 		value=*)
@@ -306,12 +311,12 @@ do
 	then
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS $AFTER
 		done
 	else
 		for i in $(find_range ${LINES[*]})
 		do
-			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS >> $OUTPUT_FILE
+			produce_rules $ATTR "($VAL_CHANGE_FROM,$VAL_CHANGE_TO)" ${DOM_CHANGE[0]} ${DOM_CHANGE[2]} $i "(${PROB_CHANGE[0]},${PROB_CHANGE[2]})" $PARTS $AFTER >> $OUTPUT_FILE
 		done
 	fi		
 done
