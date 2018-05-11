@@ -13,5 +13,17 @@ divi() {
 	echo $1 | awk -v var=$2 '{ print $0/var }'
 }
 
-echo $HEAD
-tail -n $(mult $REAL_LEN 1.75) $1 | head -n $REAL_LEN
+if [ "$2" == "-s" ]
+then
+	FNAME=`echo $1 | sed 's/\.csv//g'`
+	FNAME="${FNAME}_clean.csv"
+	echo "$FNAME"
+	echo "$HEAD" > "$FNAME"
+	tail -n $(mult $REAL_LEN 1.75) $1 | head -n $REAL_LEN >> "$FNAME"
+else
+	echo "$HEAD"
+	tail -n $(mult $REAL_LEN 1.75) $1 | head -n $REAL_LEN
+fi
+
+
+
