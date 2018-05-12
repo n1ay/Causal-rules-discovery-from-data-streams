@@ -1,7 +1,6 @@
 import operator
+from globals import *
 from collections import Counter
-
-cannot_determine_trend_value='?'
 
 class Trend:
     def __init__(self, trend_list, values_list, _from, _to, prob_threshold, values=Counter(), attribute_order=[]):
