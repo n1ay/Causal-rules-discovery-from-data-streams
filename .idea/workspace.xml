@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2720b666-2b08-4ed3-9e96-9d378c722df0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_transform/group_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_transform/group_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_transform/predict_trend.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_transform/predict_trend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_transform/trend.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_transform/group_trend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_transform/trend2.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_transform/trend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seq_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/seq_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seqgen.py" beforeDir="false" afterPath="$PROJECT_DIR$/seqgen.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,23 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trend.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="group_stream.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset_transform/group_stream.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+            <state relative-caret-position="527">
+              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -52,13 +45,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trend2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataset_transform/trend2.py">
+      <file leaf-file-name="trend.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="36">
+              <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group_trend.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset_transform/group_trend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="predict_trend.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset_transform/predict_trend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +84,8 @@
       <file leaf-file-name="seq_transform.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seq_transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="610">
+              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -94,12 +111,18 @@
     <findStrings>
       <find>axarr[j]</find>
       <find>init_val</find>
-      <find>Trend</find>
       <find>Range</find>
       <find>range</find>
       <find>value</find>
       <find>trend_lists</find>
       <find>len(sel</find>
+      <find>Trend</find>
+      <find>attribute_order</find>
+      <find>counter</find>
+      <find>values</find>
+      <find>trend_list</find>
+      <find>trend_list\[.\]\.</find>
+      <find>valu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,7 +136,6 @@
         <option value="$PROJECT_DIR$/rules_mining/test_rule_miner.py" />
         <option value="$PROJECT_DIR$/configs/test_1" />
         <option value="$PROJECT_DIR$/configs/test_2" />
-        <option value="$PROJECT_DIR$/seqgen.py" />
         <option value="$PROJECT_DIR$/test_change_detector.py" />
         <option value="$PROJECT_DIR$/sequences/testseq1.csv" />
         <option value="$PROJECT_DIR$/configs/t" />
@@ -125,12 +147,14 @@
         <option value="$PROJECT_DIR$/dataset_transform/seq_transfrom.py" />
         <option value="$PROJECT_DIR$/dataset_transform/rules_stream.py" />
         <option value="$PROJECT_DIR$/dataset_transform/globals.py" />
-        <option value="$PROJECT_DIR$/dataset_transform/trend.py" />
         <option value="$PROJECT_DIR$/seq_predict.py" />
-        <option value="$PROJECT_DIR$/dataset_transform/group_stream.py" />
-        <option value="$PROJECT_DIR$/dataset_transform/predict_trend.py" />
         <option value="$PROJECT_DIR$/dataset_transform/Trend2.py" />
         <option value="$PROJECT_DIR$/dataset_transform/trend2.py" />
+        <option value="$PROJECT_DIR$/seqgen.py" />
+        <option value="$PROJECT_DIR$/dataset_transform/trend.py" />
+        <option value="$PROJECT_DIR$/dataset_transform/predict_trend.py" />
+        <option value="$PROJECT_DIR$/dataset_transform/group_stream.py" />
+        <option value="$PROJECT_DIR$/dataset_transform/group_trend.py" />
         <option value="$PROJECT_DIR$/seq_transform.py" />
       </list>
     </option>
@@ -164,11 +188,6 @@
               <item name="SequenceGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="SequenceGenerator" type="462c0819:PsiDirectoryNode" />
               <item name="dataset_transform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SequenceGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SequenceGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="sequences" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,7 +348,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
+    <entry file="file://$PROJECT_DIR$/dataset_transform/group_trend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="61" column="22" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
@@ -346,7 +365,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
+    <entry file="file://$PROJECT_DIR$/dataset_transform/group_trend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
@@ -383,7 +402,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
+    <entry file="file://$PROJECT_DIR$/dataset_transform/group_trend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
@@ -546,31 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seqgen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset_transform/globals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/rules_stream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/predict_trend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -584,43 +582,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/group_stream.py">
+    <entry file="file://$PROJECT_DIR$/sequences/sequence2_short_clean.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seqgen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_transform/rules_stream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_transform/predict_trend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_transform/trend2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset_transform/trend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="36">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sequences/sequence2_short_clean.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/dataset_transform/group_trend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_transform/group_stream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seq_transform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="610">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

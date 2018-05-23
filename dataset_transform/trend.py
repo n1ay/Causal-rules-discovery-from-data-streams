@@ -3,71 +3,94 @@ from globals import *
 from collections import Counter
 
 class Trend:
-    def __init__(self, trend_list, values_list, _from, _to, prob_threshold, values=Counter(), attribute_order=[]):
-        self.trend_list=trend_list
-        self._from=_from
-        self._to=_to
-        self.values_list=values_list
-        self.counter=Counter()
-        self.prob_threshold=prob_threshold
-        if values!=Counter():
-            self.values=values
+    def __init__(self, trend_list, value, _from, _to):
+        self.trend_list = trend_list
+        self._from = _from
+        self._to = _to
+        self.value = value
+        self.length = _to-_from
+
+    def try_append(self, value):
+        if value==self.value:
+            self._to+=1
+            self.length+=1
+            return True
         else:
-            self.values=self.calc_trend(prob_threshold)
-        if attribute_order != []:
-            self.attribute_order=attribute_order
+            return False
+
+    def try_append_trend(self, trend):
+        if trend.value==self.value:
+            self._to+=trend.length
+            self.length+=trend.length
+            return True
         else:
-            self.attribute_order = [(trend_list.attribute, _from)]
+            return False
 
     def __str__(self):
-        if len(self.counter.keys())>0:
-            return '(Values: {0.values}, From: {0._from}, To: {0._to}, Counter: {0.counter})'.format(self)
-        else:
-            return '(Values: {0.values}, From: {0._from}, To: {0._to}, Attribute order: {0.attribute_order})'.format(self)
-
-    def calc_trend(self, prob_threshold):
-        values=Counter()
-        for i in self.values_list:
-            try:
-                self.counter[i]+=1
-            except KeyError:
-                self.counter[i]=1
-        max_key=(max(self.counter.items(), key=operator.itemgetter(1))[0])
-
-        if int(len(self.values_list)) < 20:
-            min_prob=max(0.6, prob_threshold)
-        else:
-            min_prob=prob_threshold
-
-        if self.counter[max_key] >= min_prob*len(self.values_list):
-            values[self.trend_list.attribute]=max_key
-        else:
-            values[self.trend_list.attribute]=cannot_determine_trend_value
-        return values
-
-    def __copy__(self):
-        return Trend(self.trend_list, self.values_list.copy(), self._from, self._to, self.prob_threshold, self.values.copy(), self.attribute_order.copy())
+        return '(Value: {0.value}, From: {0._from}, To: {0._to}, Length: {0.length})'.format(self)
 
     __repr__ = __str__
 
 class TrendList:
-    def __init__(self, attribute, data, prob_threshold, window_size, merge_at_once=False):
-        self.attribute=attribute
-        self.prob_threshold=prob_threshold
-        self.trend_list=self.create_list(data, window_size)
+    def __init__(self, attribute, data, merge_at_once=False, merge_threshold=2):
+        self.attribute = attribute
+        self.data = data
+        self.trend_list = self.create_list(data)
         if merge_at_once:
-            self.merge()
+            self.trend_list = self.merge(self.trend_list, merge_threshold)
 
-    def merge(self):
-        i=0
-        while(i+1<len(self.trend_list)):
-            if(self.trend_list[i].values[self.attribute]==self.trend_list[i + 1].values[self.attribute]):
-                self.trend_list[i]._to=self.trend_list[i + 1]._to
-                self.trend_list[i].counter=self.trend_list[i].counter+self.trend_list[i+1].counter
-                del self.trend_list[i + 1]
-
+    def create_list(self, data):
+        lst = []
+        j = -1
+        for i in data:
+            if j>=0:
+                if not(lst[j].try_append(i)):
+                    lst.append(Trend(self, i, lst[j]._to, lst[j]._to+1))
+                    j+=1
             else:
+                lst.append(Trend(self, i, 0, 1))
+                j+=1
+        return lst
+
+    #can be optimized: now it takes two loops to merge all, can be done with one
+    def merge(self, lst, merge_threshold):
+        mlst=lst.copy()
+        for i in range(2):
+            i=0
+            while i<len(mlst):
+                add_to = 0
+                if merge_threshold >= 1:
+                    if mlst[i].length <= merge_threshold:
+                        if i > 0:
+                            if i < len(mlst)-1:
+                                if mlst[i - 1].length > merge_threshold and mlst[i - 1].length >= mlst[i + 1].length:
+                                    add_to=-1
+                                elif mlst[i + 1].length > merge_threshold and mlst[i + 1].length > mlst[i - 1].length:
+                                    add_to=1
+                            else:
+                                if mlst[i - 1].length > merge_threshold:
+                                    add_to = -1
+                        elif i < len(mlst)-1:
+                            if mlst[i + 1].length > merge_threshold:
+                                add_to = 1
+
+                        if add_to==-1:
+                            mlst[i - 1].length+=1
+                            mlst[i - 1]._to+=1
+                            mlst.remove(mlst[i])
+                            i-=1
+                            while (i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+                                mlst.remove(mlst[i + 1])
+                        elif add_to==1:
+                            mlst[i + 1].length+=1
+                            mlst[i + 1]._from-=1
+                            mlst.remove(mlst[i])
+                            i-=1
+                            while (i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+                                mlst.remove(mlst[i + 1])
                 i+=1
+        return mlst
+
 
     def __str__(self):
         s="Attribute: "+self.attribute+"\n["
@@ -78,16 +101,5 @@ class TrendList:
                 s += str(i)
         s+="]"
         return s
-
-    def create_list(self, data, window_size):
-        i=0
-        new_list=[]
-        while(i<len(data)):
-            if i+window_size<=len(data):
-                new_list.append(Trend(self, data[i:i+window_size], i, i+window_size-1, self.prob_threshold))
-            else:
-                new_list.append(Trend(self, data[i:], i, len(data)-1, self.prob_threshold))
-            i+=window_size
-        return new_list
 
     __repr__ = __str__

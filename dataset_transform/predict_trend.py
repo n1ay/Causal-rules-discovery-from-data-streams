@@ -1,5 +1,6 @@
 from collections import Counter
 from trend import Trend, TrendList
+from group_trend import GroupTrend, GroupTrendList
 from typing import List
 import copy
 from globals import *

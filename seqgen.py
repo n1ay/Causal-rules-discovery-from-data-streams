@@ -14,6 +14,7 @@ parser.add_argument('-i','--input', help='Config input file name',required=True)
 parser.add_argument('-s','--save', action="store_true", help='Save generated sequence?', default=False, required=False)
 parser.add_argument('-p','--plot', action="store_true", help='Plot generated sequence?', default=False, required=False)
 parser.add_argument('-r','--random', action="store_true", help='Random initialization?', default=False, required=False)
+parser.add_argument('-fr','--fill_random', action="store_true", help='When value is not defined fill stream with random values instead of first value', default=False, required=False)
 args = parser.parse_args()
 
 with open(args.input) as f:
@@ -64,8 +65,10 @@ for config in grouped_config_list:
     if args.random:
         seq = [numpy.random.choice(domain) for k in range(0, last_state)]
     else:
-        #seq = [init_value for k in range(0, last_state)]
-        seq = [numpy.random.choice(domain) for k in range(0, last_state)]
+        if args.fill_random:
+            seq = [numpy.random.choice(domain) for k in range(0, last_state)]
+        else:
+            seq = [init_value for k in range(0, last_state)]
 
     operator = 'eq'
     for z in range(0,len(config_values)):

@@ -1,4 +1,5 @@
 from collections import Counter
+from group_trend import GroupTrend, GroupTrendList
 from trend import Trend, TrendList
 from predict_trend import PredictTrend
 from typing import List
@@ -6,7 +7,7 @@ import copy
 from globals import *
 
 class GroupStream:
-    def __init__(self, trend_lists:List[TrendList]):
+    def __init__(self, trend_lists:List[GroupTrendList]):
         self.trend_lists=trend_lists
         self.rules_stream=self.build_stream()
 
@@ -65,7 +66,6 @@ class GroupStream:
                 other = intercept_trend_list[0]
 
             ret._to=min(ret._to, other._to)
-            ret.counter = Counter()
             for i in other.values.keys():
                 ret.values[i]=other.values[i]
             ret.attribute_order+=other.attribute_order
