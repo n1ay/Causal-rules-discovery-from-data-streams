@@ -3,7 +3,7 @@ import pandas as pd
 import argparse
 import time
 import sys; sys.path.append('./dataset_transform/')
-from trend import Trend, TrendList
+from trend2 import Trend, TrendList
 from group_stream import GroupStream
 from rules_stream import RulesStream
 
@@ -14,21 +14,18 @@ args = parser.parse_args()
 
 df = pd.read_csv(args.input)
 
-window_size=50
-prob_threshold=0.65
-
 tl = []
 attr = []
 for i in df.columns:
     attr.append(i)
-    tl.append(TrendList(i, np.array(df[i]), prob_threshold, window_size, merge_at_once=True))
-#print(tl)
+    tl.append(TrendList(i, np.array(df[i]), merge_at_once=True, merge_threshold=2))
+print(tl[0])
 
+'''
 gs = GroupStream(tl)
 #print(gs)
 
 rs = RulesStream(gs, attr)
-
 
 if args.save:
     timestr = time.strftime("%Y_%m_%d-%H.%M.%S")
@@ -37,3 +34,5 @@ if args.save:
         f.write(str(rs))
 else:
     print(rs)
+
+'''
