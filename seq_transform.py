@@ -27,10 +27,10 @@ for i in df.columns:
 
 
 gs = GroupStream(gl)
-print(gs)
+#print(gs)
 
 
-#rs = RulesStream(gs, attr)
+rs = RulesStream(gs, attr)
 
 if args.save:
     timestr = time.strftime("%Y_%m_%d-%H.%M.%S")
@@ -38,5 +38,5 @@ if args.save:
     with open(filename, 'w') as f:
         f.write(str(rs))
 else:
-    #print(rs)
+    print(rs)
     pass

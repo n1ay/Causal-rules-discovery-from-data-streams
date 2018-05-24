@@ -1,9 +1,12 @@
 from group_stream import GroupStream
 
 class Rule:
-    def __init__(self, value_from, value_to):
+    def __init__(self, value_from, value_to, _from, change_moment, _to):
         self.value_from=value_from
         self.value_to=value_to
+        self._from=_from
+        self._to=_to
+        self.change_moment=change_moment
 
     def __str__(self):
         return '{0.value_from}->{0.value_to}'.format(self)
@@ -22,7 +25,7 @@ class RulesStream:
     def extract_rules(self, group_trend1, group_trend2):
         rules_dict={}
         for i in group_trend1.values.keys():
-            rules_dict[i]=Rule(group_trend1.values[i], group_trend2.values[i])
+            rules_dict[i]=Rule(group_trend1.values[i], group_trend2.values[i], group_trend1._from, group_trend1._to, group_trend2._to)
 
         order = []
         for i in sorted(group_trend2.attribute_order, key=lambda tup: tup[1]):

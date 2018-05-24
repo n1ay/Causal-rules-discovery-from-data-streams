@@ -52,45 +52,50 @@ class TrendList:
                 j+=1
         return lst
 
-    #can be optimized: now it takes two loops to merge all, can be done with one
+    #can be optimized: but its quite fast (faster than O(n*logn))
     def merge(self, lst, merge_threshold):
         mlst=lst.copy()
-        for i in range(2):
-            i=0
-            while i<len(mlst):
-                add_to = 0
-                if merge_threshold >= 1:
-                    if mlst[i].length <= merge_threshold:
-                        if i > 0:
-                            if i < len(mlst)-1:
-                                if mlst[i - 1].length > merge_threshold and mlst[i - 1].length >= mlst[i + 1].length:
-                                    add_to=-1
-                                elif mlst[i + 1].length > merge_threshold and mlst[i + 1].length > mlst[i - 1].length:
-                                    add_to=1
-                            else:
-                                if mlst[i - 1].length > merge_threshold:
-                                    add_to = -1
-                        elif i < len(mlst)-1:
-                            if mlst[i + 1].length > merge_threshold:
-                                add_to = 1
+        i=0
+        while i<len(mlst):
+            add_to = 0
+            if merge_threshold >= 1:
+                if mlst[i].length <= merge_threshold:
+                    if i > 0:
+                        if i < len(mlst)-1:
+                            if mlst[i - 1].length > merge_threshold and mlst[i - 1].length >= mlst[i + 1].length:
+                                add_to=-1
+                            elif mlst[i + 1].length > merge_threshold and mlst[i + 1].length > mlst[i - 1].length:
+                                add_to=1
+                        else:
+                            if mlst[i - 1].length > merge_threshold:
+                                add_to = -1
+                    elif i < len(mlst)-1:
+                        if mlst[i + 1].length > merge_threshold:
+                            add_to = 1
 
-                        if add_to==-1:
-                            mlst[i - 1].length+=mlst[i].length
-                            mlst[i - 1]._to+=mlst[i].length
-                            mlst.remove(mlst[i])
-                            i-=1
-                            while (i>= 0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
-                                mlst.remove(mlst[i + 1])
-                        elif add_to==1:
-                            mlst[i + 1].length+=mlst[i].length
-                            mlst[i + 1]._from-=mlst[i].length
-                            mlst.remove(mlst[i])
-                            i-=1
-                            while (i>=0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
-                                mlst.remove(mlst[i + 1])
-                i+=1
+                    if add_to==-1:
+                        mlst[i - 1].length+=mlst[i].length
+                        mlst[i - 1]._to+=mlst[i].length
+                        mlst.remove(mlst[i])
+                        i-=1
+                        self.merge_same_value(mlst, i)
+                        if i>1:
+                            i-=2
+                            self.merge_same_value(mlst, i)
+                    elif add_to==1:
+                        mlst[i + 1].length+=mlst[i].length
+                        mlst[i + 1]._from-=mlst[i].length
+                        mlst.remove(mlst[i])
+                        i-=1
+                        self.merge_same_value(mlst, i)
+                        if i>1:
+                            i-=2
+                            self.merge_same_value(mlst, i)
+            i+=1
         return mlst
-
+    def merge_same_value(self, mlst, i):
+        while (i >= 0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+            mlst.remove(mlst[i + 1])
 
     def __str__(self):
         s="Attribute: "+self.attribute+"\n["

@@ -2,11 +2,13 @@ import numpy as np
 import pandas as pd
 import argparse
 import time
-import sys; sys.path.append('./dataset_transform/')
+import sys; sys.path.append('./dataset_transform/'); sys.path.append('./dataset_predict/')
 from trend import Trend, TrendList
+from group_trend import GroupTrend, GroupTrendList
 from group_stream import GroupStream
 from sklearn.model_selection import KFold
-from predict_trend import PredictTrend, PredictTrendList
+from kfold_data import *
+from classifier import Classifier
 
 parser = argparse.ArgumentParser(description='Sequence Transform Tool.')
 parser.add_argument('-i','--input', help='Config input file name',required=True)
@@ -14,40 +16,12 @@ args = parser.parse_args()
 
 df = pd.read_csv(args.input)
 
-window_size=50
-prob_threshold=0.65
+#tll, gll are abbreviations for TrendList list and GroupTrendList list
+(X_train, X_test), \
+(X_tll_train, X_tll_test, X_attr) =\
+kfold_data(df, 10, merge_at_once=True, merge_threshold=2)
 
-kf = KFold(n_splits=10, shuffle=False)
-X = pd.DataFrame()
-for i in range(len(df.columns)-1):
-    X[(df.columns[i])]=df[df.columns[i]]
-y = df[df.columns[-1]]
-kf.get_n_splits(X,y)
+classifier = Classifier(X_train=X_train, X_test=X_test, X_tll_train=X_tll_train, X_tll_test=X_tll_test)
+classifier.fit()
 
-'''
-for train_index, test_index in kf.split(X,y):
-    tl = []
-    attr = []
-    for i in df.columns[:-1]:
-        attr.append(i)
-        tl.append(TrendList(i, np.array(X[i][train_index]), prob_threshold, window_size, merge_at_once=True))
-    print(tl)
-'''
-
-
-'''
-tl = []
-attr = []
-for i in df.columns:
-    attr.append(i)
-    tl.append(TrendList(i, np.array(df[i]), prob_threshold, window_size, merge_at_once=True))
-#print(tl)
-'''
-
-'''
-gs = GroupStream(tl)
-pr = PredictTrendList(gs)
-pr.join_all()
-pr.delete_indeterministic(df.columns[-1])
-print(pr)
-'''
+print(classifier.X_gsl_train[0])

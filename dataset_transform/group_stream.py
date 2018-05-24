@@ -1,7 +1,6 @@
 from collections import Counter
 from group_trend import GroupTrend, GroupTrendList
 from trend import Trend, TrendList
-from predict_trend import PredictTrend
 from typing import List
 import copy
 from globals import *
@@ -73,35 +72,6 @@ class GroupStream:
         else:
             ret2=self.intersect(intercept_trend_list[0:2])
             return self.intersect([ret2] + intercept_trend_list[2:])
-
-    def drop_undefined(self, on_copy=True):
-        if on_copy:
-            lst = self.rules_stream.copy()
-        else:
-            lst = self.rules_stream
-        filtered_list = []
-        add=True
-        for i in lst:
-            for j in i.values.keys():
-                if i.values[j]==cannot_determine_trend_value:
-                    add=False
-                    break
-            if add:
-                filtered_list.append(i)
-            add=True
-        return filtered_list
-
-    def get_predict_rules(self, on_copy=True, drop_undefined_first=True):
-        if on_copy:
-            lst = self.rules_stream.copy()
-        else:
-            lst = self.rules_stream
-        if drop_undefined_first:
-            lst=self.drop_undefined()
-        predict_rules_list = []
-        for i in lst:
-            predict_rules_list.append(PredictTrend(i))
-        return predict_rules_list
 
     def __str__(self):
         ret="Rules: \n"
