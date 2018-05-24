@@ -22,15 +22,15 @@ for i in df.columns:
     tl.append(TrendList(i, np.array(df[i]), merge_at_once=True, merge_threshold=2))
     gl.append(GroupTrendList(tl[j]))
     j+=1
-print(tl)
+#print(tl)
 #print(gl)
 
 
 gs = GroupStream(gl)
-#print(gs)
+print(gs)
 
 
-rs = RulesStream(gs, attr)
+#rs = RulesStream(gs, attr)
 
 if args.save:
     timestr = time.strftime("%Y_%m_%d-%H.%M.%S")

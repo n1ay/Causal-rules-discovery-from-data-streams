@@ -75,18 +75,18 @@ class TrendList:
                                 add_to = 1
 
                         if add_to==-1:
-                            mlst[i - 1].length+=1
-                            mlst[i - 1]._to+=1
+                            mlst[i - 1].length+=mlst[i].length
+                            mlst[i - 1]._to+=mlst[i].length
                             mlst.remove(mlst[i])
                             i-=1
-                            while (i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+                            while (i>= 0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
                                 mlst.remove(mlst[i + 1])
                         elif add_to==1:
-                            mlst[i + 1].length+=1
-                            mlst[i + 1]._from-=1
+                            mlst[i + 1].length+=mlst[i].length
+                            mlst[i + 1]._from-=mlst[i].length
                             mlst.remove(mlst[i])
                             i-=1
-                            while (i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+                            while (i>=0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
                                 mlst.remove(mlst[i + 1])
                 i+=1
         return mlst
