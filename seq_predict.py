@@ -19,9 +19,13 @@ df = pd.read_csv(args.input)
 #tll, gll are abbreviations for TrendList list and GroupTrendList list
 (X_train, X_test), \
 (X_tll_train, X_tll_test, X_attr) =\
-kfold_data(df, 10, merge_at_once=True, merge_threshold=2)
+kfold_data(df, 2, merge_at_once=True, merge_threshold=2)
 
-classifier = Classifier(X_train=X_train, X_test=X_test, X_tll_train=X_tll_train, X_tll_test=X_tll_test)
-classifier.fit()
+classifier = Classifier(X_train=X_train, X_test=X_test, X_tll_train=X_tll_train, X_tll_test=X_tll_test,
+                        lookup=1, fade_threshold=2)
 
-print(classifier.X_gsl_train[0])
+print(classifier.X_gsld_train[0])
+print(classifier.X_gsld_test[0])
+v=classifier.lookup_value(0, 0)
+print(v[1], '\n\n', classifier.X_gsld_test[0].rules_stream[0:2])
+print(classifier.predict_value(0))

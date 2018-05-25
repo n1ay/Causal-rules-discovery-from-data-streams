@@ -62,15 +62,15 @@ class TrendList:
                 if mlst[i].length <= merge_threshold:
                     if i > 0:
                         if i < len(mlst)-1:
-                            if mlst[i - 1].length > merge_threshold and mlst[i - 1].length >= mlst[i + 1].length:
+                            if mlst[i - 1].length > merge_threshold*2+2 and mlst[i - 1].length >= mlst[i + 1].length:
                                 add_to=-1
-                            elif mlst[i + 1].length > merge_threshold and mlst[i + 1].length > mlst[i - 1].length:
+                            elif mlst[i + 1].length > merge_threshold*2+2 and mlst[i + 1].length > mlst[i - 1].length:
                                 add_to=1
                         else:
-                            if mlst[i - 1].length > merge_threshold:
+                            if mlst[i - 1].length > merge_threshold*2+2:
                                 add_to = -1
                     elif i < len(mlst)-1:
-                        if mlst[i + 1].length > merge_threshold:
+                        if mlst[i + 1].length > merge_threshold*2+2:
                             add_to = 1
 
                     if add_to==-1:
@@ -93,6 +93,7 @@ class TrendList:
                             self.merge_same_value(mlst, i)
             i+=1
         return mlst
+
     def merge_same_value(self, mlst, i):
         while (i >= 0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
             mlst.remove(mlst[i + 1])

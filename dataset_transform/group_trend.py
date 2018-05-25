@@ -8,14 +8,20 @@ class GroupTrend:
         self.trend_list=trend_list
         self._from=_from
         self._to=_to
+        self.length=_to-_from
         self.values=values
         if attribute_order != []:
             self.attribute_order=attribute_order
         else:
             self.attribute_order = [(trend_list.attribute, _from)]
 
+    def merge(self, group_trend):
+        self._to+=group_trend.length
+        self.length+=group_trend.length
+        self.attribute_order+=group_trend.attribute_order
+
     def __str__(self):
-        return '(Values: {0.values}, From: {0._from}, To: {0._to}, Attribute order: {0.attribute_order})'.format(self)
+        return '(Values: {0.values}, From: {0._from}, To: {0._to}, Length: {0.length}, Attribute order: {0.attribute_order})'.format(self)
 
     def __copy__(self):
         return GroupTrend(self.trend_list, self.values.copy(), self._from, self._to, self.attribute_order.copy())
