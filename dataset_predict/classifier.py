@@ -60,15 +60,14 @@ class Classifier:
 
     def predict_value(self, test_idx):
         lst = []
+        if len(self.X_gsld_test[test_idx].rules_stream)==1:
+            return self.X_gsl_train[0].decompose(self.columns[-1], self.single_rule_lookup(test_idx, 0))
+
         for i in range(self.lookup, len(self.X_gsld_test[test_idx].rules_stream)):
             lst+=self.lookup_value(test_idx, i)
 
         return self.X_gsl_train[0].decompose(self.columns[-1], lst)
 
-    #TODO:
-    #Dodać odpowiednie łączenie, bo elementy obok siebie się powtarzają #TODO:DONE-chyba
-    #Dodać w momecie nie wykrycia zależności, żeby korzystało ze zwykłej reguły pojednyczej
-    #Jak to nie działa to wtedy random z dziedziny y
     def lookup_value(self, test_idx, idx):
         X = []
         X_len = 0
@@ -92,9 +91,17 @@ class Classifier:
                 if sim > best_similarity:
                     best_vals = vals
                     best_similarity = sim
-        if best_vals == []:
-            raise Exception('PredictException', 'Can\'t lookup prediction for values: {0}. No such values in training set'.format(X))
 
+        #can't find such stream fragment in training set
+        #use single rule then
+        if best_vals == []:
+            if idx == self.lookup:
+                vals = []
+                for j in range(idx+1):
+                    vals+=self.single_rule_lookup(test_idx, j)
+                return vals
+            else:
+                return self.single_rule_lookup(test_idx, idx)
         if idx > self.lookup:
             X_len=X[-1].length
 
@@ -124,13 +131,13 @@ class Classifier:
 
         diff = ret_len - length
         if diff > 0:
-            for j in range(diff+1):
+            for j in range(diff):
                 ret[j].length-=1
                 if j > 0:
                     ret[j]._from = ret[j - 1]._to
                 ret[j]._to = ret[j].length + ret[j]._from
         elif diff < 0:
-            for j in range(diff+1):
+            for j in range(-diff):
                 ret[j].length+=1
                 if j > 0:
                     ret[j]._from = ret[j - 1]._to
@@ -149,3 +156,32 @@ class Classifier:
             return val + self.similarity(lst_test[1:], lst[1:])
         elif len(lst_test)==2:
             return val
+
+    def single_rule_lookup(self, test_idx, idx):
+        ref_val = self.X_gsld_test[test_idx].rules_stream[idx]
+        best_vals = None
+        vals = None
+        best_similarity = 0
+        for i in range(len(self.X_gsld_train[test_idx].rules_stream)):
+            same = True
+            for k in self.columns[:-1]:
+                if ref_val.values[k] != self.X_gsld_train[test_idx].rules_stream[i].values[k]:
+                    same = False
+                    break
+            if same:
+                vals = copy.deepcopy(self.X_gsld_train[test_idx].rules_stream[i])
+                sim = self.similarity([ref_val], [vals])
+                if sim > best_similarity:
+                    best_vals = vals
+                    best_similarity = sim
+
+        if best_vals != None:
+            best_vals.length = ref_val.length
+            return self.exchange(test_idx, [best_vals], ref_val.length, self.lookup+1)
+
+        #even single rule can't be found
+        #use mode value then
+        else:
+            best_vals = copy.deepcopy(ref_val)
+            best_vals.values[self.columns[-1]] = self.y_values.most_common(1)[0][0]
+            return [best_vals]
