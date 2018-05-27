@@ -21,7 +21,17 @@ def get_metrics(true, pred):
     precision = TP/(TP+FP)
     F1=2*(TPR*precision)/(TPR+precision)
 
-    return (ACC, TPR, FPR, precision, TPR, F1)
+    return [ACC, TPR, FPR, precision, TPR, F1]
 
 def print_metrics(metrics):
     print("Accuracy: {0[0]}, TP Rate: {0[1]}, FP Rate: {0[2]}, Precision: {0[3]}, Recall: {0[4]}, F1-Score: {0[5]}\n".format(metrics))
+
+def get_metrics_mean(true, pred):
+    metrics = np.array([])
+    for i in range(len(true)):
+        metrics = np.concatenate((metrics, get_metrics(true[i], pred[i])), axis=0)
+
+    metrics = metrics.reshape(len(true), 6)
+
+    #return (ACC, TPR, FPR, precision, TPR, F1)
+    return np.mean(metrics, axis=0)

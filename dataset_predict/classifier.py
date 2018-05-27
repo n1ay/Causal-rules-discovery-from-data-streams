@@ -53,7 +53,10 @@ class Classifier:
 
     #full prediction of stream for X = X_test
     def predict(self):
-        pass
+        lst = []
+        for i in range(len(self.X_test)):
+            lst.append(self.predict_value(i))
+        return lst
 
     def predict_value(self, test_idx):
         lst = []
