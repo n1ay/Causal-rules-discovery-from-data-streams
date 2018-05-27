@@ -6,6 +6,7 @@ from trend import Trend, TrendList
 from group_trend import GroupTrend, GroupTrendList
 from group_stream import GroupStream
 import copy
+from collections import Counter
 
 class Classifier:
     def __init__(self, X_train, X_test, X_tll_train, X_tll_test, lookup=1, fade_threshold=2):
@@ -16,6 +17,7 @@ class Classifier:
         self.columns = X_train[0].columns
         self.lookup=lookup
         self.fade_threshold=fade_threshold
+        self.y_values=Counter()
         self._fit()
 
     def _fit(self):
@@ -43,6 +45,12 @@ class Classifier:
             self.X_gsld_test.append(copy.copy(self.X_gsl_test[i]))
             self.X_gsld_test[i].drop_attribute(self.columns[-1], inplace=True, merge=True)
 
+        for i in self.X_gsl_train[0].rules_stream:
+            self.y_values[i.values[self.columns[-1]]]+=i.length
+
+        for i in self.X_gsl_test[0].rules_stream:
+            self.y_values[i.values[self.columns[-1]]]+=i.length
+
     #full prediction of stream for X = X_test
     def predict(self):
         pass
@@ -50,18 +58,20 @@ class Classifier:
     def predict_value(self, test_idx):
         lst = []
         for i in range(len(self.X_gsld_test[test_idx].rules_stream)-self.lookup):
-            lst.append(self.lookup_value(test_idx, i))
+            lst+=self.lookup_value(test_idx, i)
 
-        return lst
+        return self.X_gsl_train[0].decompose(self.columns[-1], lst)
 
     #TODO:
-    #Dodać odpowiednie łączenie, bo elementy obok siebie się powtarzają
+    #Dodać odpowiednie łączenie, bo elementy obok siebie się powtarzają #TODO:DONE-chyba
     #Dodać w momecie nie wykrycia zależności, żeby korzystało ze zwykłej reguły pojednyczej
     #Jak to nie działa to wtedy random z dziedziny y
     def lookup_value(self, test_idx, idx):
         X = []
+        X_len = 0
         for j in range(self.lookup + 1):
             X.append(self.X_gsld_test[test_idx].rules_stream[idx+j])
+            X_len+=X[j].length
         best_vals = []
         best_similarity = 0
         for i in range(len(self.X_gsld_train[test_idx].rules_stream)-len(X)):
@@ -74,14 +84,55 @@ class Classifier:
                         break
             if same:
                 for j in range(len(X)):
-                    vals.append(self.X_gsld_train[test_idx].rules_stream[i+j])
+                    vals.append(copy.deepcopy(self.X_gsld_train[test_idx].rules_stream[i+j]))
                 sim=self.similarity(X, vals)
                 if sim > best_similarity:
                     best_vals = vals
                     best_similarity = sim
         if best_vals == []:
             raise Exception('PredictException', 'Can\'t lookup prediction for values: {0}. No such values in training set'.format(X))
-        return best_vals
+
+        if idx > 0:
+            X_len=X[-1].length
+        return self.exchange(test_idx, best_vals, X_len, idx)
+
+    def exchange(self, test_idx, lst, length, idx):
+        ret = []
+        ret_len = 0
+        add_idx=-1
+        if idx == 0:
+            add_idx=0
+
+        for i in lst[add_idx:]:
+            for j in self.X_gsl_train[test_idx].rules_stream:
+                if j._from >= i._from and j._to <= i._to:
+                    ret.append(copy.deepcopy(j))
+                    ret_len+=j.length
+
+        ratio=length/ret_len
+        ret_len=0
+        for j in range(len(ret)):
+            ret[j].length=round(ret[j].length*ratio)
+            if j>0:
+                ret[j]._from = ret[j-1]._to
+            ret[j]._to=ret[j].length+ret[j]._from
+            ret_len+=ret[j].length
+
+        diff = ret_len - length
+        if diff > 0:
+            for j in range(diff+1):
+                ret[j].length-=1
+                if j > 0:
+                    ret[j]._from = ret[j - 1]._to
+                ret[j]._to = ret[j].length + ret[j]._from
+        elif diff < 0:
+            for j in range(diff+1):
+                ret[j].length+=1
+                if j > 0:
+                    ret[j]._from = ret[j - 1]._to
+                ret[j]._to = ret[j].length + ret[j]._from
+
+        return ret
 
     def similarity(self, lst_test, lst):
         if len(lst_test)==1:

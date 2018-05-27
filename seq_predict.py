@@ -8,7 +8,15 @@ from group_trend import GroupTrend, GroupTrendList
 from group_stream import GroupStream
 from sklearn.model_selection import KFold
 from kfold_data import *
+from metrics import *
 from classifier import Classifier
+
+### DELET DIS ###################
+def print_list(lst):
+    for i in lst:
+        print(i, '\n')
+#################################
+
 
 parser = argparse.ArgumentParser(description='Sequence Transform Tool.')
 parser.add_argument('-i','--input', help='Config input file name',required=True)
@@ -24,8 +32,10 @@ kfold_data(df, 2, merge_at_once=True, merge_threshold=2)
 classifier = Classifier(X_train=X_train, X_test=X_test, X_tll_train=X_tll_train, X_tll_test=X_tll_test,
                         lookup=1, fade_threshold=2)
 
-print(classifier.X_gsld_train[0])
+print(classifier.X_gsl_train[0])
+print(classifier.X_gsl_test[0])
 print(classifier.X_gsld_test[0])
-v=classifier.lookup_value(0, 0)
-print(v[1], '\n\n', classifier.X_gsld_test[0].rules_stream[0:2])
-print(classifier.predict_value(0))
+
+v=classifier.predict_value(0)
+
+print_metrics(get_metrics(X_test[0][classifier.columns[-1]], v))
