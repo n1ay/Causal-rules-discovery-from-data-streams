@@ -32,10 +32,9 @@ kfold_data(df, 2, merge_at_once=True, merge_threshold=2)
 classifier = Classifier(X_train=X_train, X_test=X_test, X_tll_train=X_tll_train, X_tll_test=X_tll_test,
                         lookup=1, fade_threshold=2)
 
-print(classifier.X_gsl_train[0])
-print(classifier.X_gsl_test[0])
-print(classifier.X_gsld_test[0])
+#print(classifier.X_gsl_train[0])
+#print(classifier.X_gsl_test[0])
+#print(classifier.X_gsld_test[0])
 
 v=classifier.predict_value(0)
-
 print_metrics(get_metrics(X_test[0][classifier.columns[-1]], v))

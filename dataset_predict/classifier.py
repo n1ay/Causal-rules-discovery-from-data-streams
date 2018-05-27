@@ -57,7 +57,7 @@ class Classifier:
 
     def predict_value(self, test_idx):
         lst = []
-        for i in range(len(self.X_gsld_test[test_idx].rules_stream)-self.lookup):
+        for i in range(self.lookup, len(self.X_gsld_test[test_idx].rules_stream)):
             lst+=self.lookup_value(test_idx, i)
 
         return self.X_gsl_train[0].decompose(self.columns[-1], lst)
@@ -69,12 +69,12 @@ class Classifier:
     def lookup_value(self, test_idx, idx):
         X = []
         X_len = 0
-        for j in range(self.lookup + 1):
+        for j in range(-self.lookup, 1):
             X.append(self.X_gsld_test[test_idx].rules_stream[idx+j])
-            X_len+=X[j].length
+            X_len+=X[self.lookup+j].length
         best_vals = []
         best_similarity = 0
-        for i in range(len(self.X_gsld_train[test_idx].rules_stream)-len(X)):
+        for i in range(len(self.X_gsld_train[test_idx].rules_stream)-len(X)+1):
             vals = []
             same = True
             for j in range(len(X)):
@@ -92,15 +92,16 @@ class Classifier:
         if best_vals == []:
             raise Exception('PredictException', 'Can\'t lookup prediction for values: {0}. No such values in training set'.format(X))
 
-        if idx > 0:
+        if idx > self.lookup:
             X_len=X[-1].length
+
         return self.exchange(test_idx, best_vals, X_len, idx)
 
     def exchange(self, test_idx, lst, length, idx):
         ret = []
         ret_len = 0
         add_idx=-1
-        if idx == 0:
+        if idx <= self.lookup:
             add_idx=0
 
         for i in lst[add_idx:]:
