@@ -68,8 +68,16 @@ class Classifier:
     #full prediction of stream for X = X_test
     def predict(self):
         lst = []
-        for i in range(len(self.X_test)):
-            lst.append(self.predict_value(i))
+
+        max_workers = min(multiprocessing.cpu_count(), len(self.X_train))
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            processes = []
+            for i in range(len(self.X_train)):
+                processes.append(
+                    executor.submit(self.predict_value, i))
+
+            for i in range(len(processes)):
+                lst.append(processes[i].result())
         return lst
 
     def predict_value(self, test_idx):
