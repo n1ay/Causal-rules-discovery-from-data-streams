@@ -7,6 +7,8 @@ from group_trend import GroupTrend, GroupTrendList
 from group_stream import GroupStream
 import copy
 from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
+import multiprocessing
 
 class Classifier:
     def __init__(self, X_train, X_test, X_tll_train, X_tll_test, lookup=1, fade_threshold=2):
@@ -24,32 +26,44 @@ class Classifier:
         self.X_gll_train, self.X_gll_test = [], []
         self.X_gsl_train, self.X_gsl_test = [], []
         self.X_gsld_train, self.X_gsld_test = [], []
-        for i in range(len(self.X_train)):
-            X_gl_train, X_gl_test = [], []
-            for j in range(len(self.X_train[0].columns)):
-                X_gl_train.append(GroupTrendList(self.X_tll_train[i][j]))
-                X_gl_test.append(GroupTrendList(self.X_tll_test[i][j]))
 
-            self.X_gll_train.append(X_gl_train)
-            self.X_gll_test.append(X_gl_test)
+        max_workers = min(multiprocessing.cpu_count(), len(self.X_train))
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            processes = []
+            for i in range(len(self.X_train)):
+                processes.append(executor.submit(self._fit_worker, self.X_tll_train[i], self.X_tll_test[i], self.columns, self.fade_threshold))
 
-            X_gsl_train = GroupStream(self.X_gll_train[i])
-            X_gsl_test = GroupStream(self.X_gll_test[i])
-            X_gsl_train.fade_shorts(fade_threshold=self.fade_threshold, inplace=True)
-            X_gsl_test.fade_shorts(fade_threshold=self.fade_threshold, inplace=True)
-            self.X_gsl_train.append(X_gsl_train)
-            self.X_gsl_test.append(X_gsl_test)
-
-            self.X_gsld_train.append(copy.copy(self.X_gsl_train[i]))
-            self.X_gsld_train[i].drop_attribute(self.columns[-1], inplace=True, merge=True)
-            self.X_gsld_test.append(copy.copy(self.X_gsl_test[i]))
-            self.X_gsld_test[i].drop_attribute(self.columns[-1], inplace=True, merge=True)
+            for i in range(len(processes)):
+                self.X_gll_train.append(processes[i].result()[0])
+                self.X_gll_test.append(processes[i].result()[1])
+                self.X_gsl_train.append(processes[i].result()[2])
+                self.X_gsl_test.append(processes[i].result()[3])
+                self.X_gsld_train.append(processes[i].result()[4])
+                self.X_gsld_test.append(processes[i].result()[5])
 
         for i in self.X_gsl_train[0].rules_stream:
             self.y_values[i.values[self.columns[-1]]]+=i.length
 
         for i in self.X_gsl_test[0].rules_stream:
             self.y_values[i.values[self.columns[-1]]]+=i.length
+
+    def _fit_worker(self, tll_train, tll_test, columns, fade_threshold):
+        X_gl_train, X_gl_test = [], []
+        for j in range(len(columns)):
+            X_gl_train.append(GroupTrendList(tll_train[j]))
+            X_gl_test.append(GroupTrendList(tll_test[j]))
+
+        X_gsl_train = GroupStream(X_gl_train)
+        X_gsl_test = GroupStream(X_gl_test)
+        X_gsl_train.fade_shorts(fade_threshold=fade_threshold, inplace=True)
+        X_gsl_test.fade_shorts(fade_threshold=fade_threshold, inplace=True)
+
+        X_gsld_train = copy.copy(X_gsl_train)
+        X_gsld_train.drop_attribute(columns[-1], inplace=True, merge=True)
+        X_gsld_test = copy.copy(X_gsl_test)
+        X_gsld_test.drop_attribute(columns[-1], inplace=True, merge=True)
+
+        return (X_gl_train, X_gl_test, X_gsl_train, X_gsl_test, X_gsld_train, X_gsld_test)
 
     #full prediction of stream for X = X_test
     def predict(self):
