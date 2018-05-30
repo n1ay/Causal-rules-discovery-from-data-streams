@@ -11,18 +11,18 @@ from concurrent.futures import ProcessPoolExecutor
 import multiprocessing
 
 class Classifier:
-    def __init__(self, X_train, X_test, X_tll_train, X_tll_test, lookup=1, fade_threshold=2):
+    def __init__(self, X_train, X_test, lookup=1, merge_threshold=2, fade_threshold=2):
         self.X_train=X_train
         self.X_test=X_test
-        self.X_tll_train=X_tll_train
-        self.X_tll_test=X_tll_test
         self.columns = X_train[0].columns
         self.lookup=lookup
         self.fade_threshold=fade_threshold
+        self.merge_threshold=merge_threshold
         self.y_values=Counter()
         self._fit()
 
     def _fit(self):
+        self.X_tll_train, self.X_tll_test = [], []
         self.X_gll_train, self.X_gll_test = [], []
         self.X_gsl_train, self.X_gsl_test = [], []
         self.X_gsld_train, self.X_gsld_test = [], []
@@ -31,15 +31,17 @@ class Classifier:
         with ProcessPoolExecutor(max_workers=max_workers) as executor:
             processes = []
             for i in range(len(self.X_train)):
-                processes.append(executor.submit(self._fit_worker, self.X_tll_train[i], self.X_tll_test[i], self.columns, self.fade_threshold))
+                processes.append(executor.submit(self._fit_worker, self.X_train[i], self.X_test[i], self.columns, self.merge_threshold, self.fade_threshold))
 
             for i in range(len(processes)):
-                self.X_gll_train.append(processes[i].result()[0])
-                self.X_gll_test.append(processes[i].result()[1])
-                self.X_gsl_train.append(processes[i].result()[2])
-                self.X_gsl_test.append(processes[i].result()[3])
-                self.X_gsld_train.append(processes[i].result()[4])
-                self.X_gsld_test.append(processes[i].result()[5])
+                self.X_tll_train.append(processes[i].result()[0])
+                self.X_tll_test.append(processes[i].result()[1])
+                self.X_gll_train.append(processes[i].result()[2])
+                self.X_gll_test.append(processes[i].result()[3])
+                self.X_gsl_train.append(processes[i].result()[4])
+                self.X_gsl_test.append(processes[i].result()[5])
+                self.X_gsld_train.append(processes[i].result()[6])
+                self.X_gsld_test.append(processes[i].result()[7])
 
         for i in self.X_gsl_train[0].rules_stream:
             self.y_values[i.values[self.columns[-1]]]+=i.length
@@ -47,11 +49,18 @@ class Classifier:
         for i in self.X_gsl_test[0].rules_stream:
             self.y_values[i.values[self.columns[-1]]]+=i.length
 
-    def _fit_worker(self, tll_train, tll_test, columns, fade_threshold):
+    def _fit_worker(self, X_train, X_test, columns, merge_threshold, fade_threshold):
+        X_tl_train, X_tl_test = [], []
         X_gl_train, X_gl_test = [], []
-        for j in range(len(columns)):
-            X_gl_train.append(GroupTrendList(tll_train[j]))
-            X_gl_test.append(GroupTrendList(tll_test[j]))
+        for i in self.columns:
+            X_tl_train.append(TrendList(i, np.array(X_train[i]), merge_at_once=True,
+                                      merge_threshold=merge_threshold))
+            X_tl_test.append(TrendList(i, np.array(X_test[i]), merge_at_once=True,
+                                       merge_threshold=merge_threshold))
+
+        for i in range(len(self.columns)):
+            X_gl_train.append(GroupTrendList(X_tl_train[i]))
+            X_gl_test.append(GroupTrendList(X_tl_test[i]))
 
         X_gsl_train = GroupStream(X_gl_train)
         X_gsl_test = GroupStream(X_gl_test)
@@ -63,7 +72,7 @@ class Classifier:
         X_gsld_test = copy.copy(X_gsl_test)
         X_gsld_test.drop_attribute(columns[-1], inplace=True, merge=True)
 
-        return (X_gl_train, X_gl_test, X_gsl_train, X_gsl_test, X_gsld_train, X_gsld_test)
+        return (X_tl_train, X_tl_test, X_gl_train, X_gl_test, X_gsl_train, X_gsl_test, X_gsld_train, X_gsld_test)
 
     #full prediction of stream for X = X_test
     def predict(self):
