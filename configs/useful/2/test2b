@@ -35,4 +35,3 @@ attr='b';value='D';domain=['C','D','F','G','H'];from=-195;to=-145;probability=0.
 attr='b';value='C';domain=['C','D','F','G','H'];from=-145;to=-95;probability=0.9
 attr='b';value='D';domain=['C','D','F','G','H'];from=-95;to=-45;probability=0.9
 attr='b';value='C';domain=['C','D','F','G','H'];from=-45;to=0;probability=0.9
-

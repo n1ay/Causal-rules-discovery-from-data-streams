@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2720b666-2b08-4ed3-9e96-9d378c722df0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dataset_predict/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_predict/classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/useful/2/rules2a,b-&gt;c" beforeDir="false" afterPath="$PROJECT_DIR$/configs/useful/2/rules2a,b-&gt;c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/useful/2/test2abc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/useful/2/test2abc_short" beforeDir="false" afterPath="$PROJECT_DIR$/configs/useful/2/test2abc_short" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/useful/2/test2b" beforeDir="false" afterPath="$PROJECT_DIR$/configs/useful/2/test2b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/useful/2/test2c" beforeDir="false" afterPath="$PROJECT_DIR$/configs/useful/2/test2c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seq_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/seq_predict.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +47,8 @@
       <file leaf-file-name="seq_predict.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seq_predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="484">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -684,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seq_predict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="484">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

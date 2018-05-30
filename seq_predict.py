@@ -31,7 +31,7 @@ classifier.fit_kfolded(X_train, X_test)
 prediction_kfolded=classifier.predict_kfolded()
 print_metrics(get_metrics_full(y_test, prediction_kfolded, mean=True))
 
-
+'''
 #preparing data for single stream prediction
 #just data split in half
 df1 = df[0:int(len(df)/2)]
@@ -42,3 +42,4 @@ df2 = df2[df2.columns[:-1]]
 classifier.fit(df1)
 prediction = classifier.predict(df2)
 print_metrics(get_metrics(df1[df1.columns[-1]], prediction))
+'''
