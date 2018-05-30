@@ -10,10 +10,10 @@ def kfold_data(df, folds:int=10, merge_at_once:bool=True, merge_threshold:int=2)
     kf = KFold(n_splits=folds, shuffle=False)
     kf.get_n_splits(df)
 
-    X_train, X_test, y_train, y_test = [], [], [], []
-    X_tll_train, X_tll_test, X_attr = [], [], df.columns[:-1]
+    X_train, X_test = [], []
+    X_tll_train, X_tll_test = [], []
     for train_index, test_index in kf.split(df):
-        tl_train, gl_train, tl_test, gl_test = [], [], [], []
+        tl_train, tl_test = [], []
         j = 0
         for i in df.columns:
             tl_train.append(TrendList(i, np.array(df[i][train_index]), merge_at_once=merge_at_once, merge_threshold=merge_threshold))
@@ -27,4 +27,4 @@ def kfold_data(df, folds:int=10, merge_at_once:bool=True, merge_threshold:int=2)
         X_tll_test.append(tl_test)
 
     return (X_train, X_test), \
-           (X_tll_train, X_tll_test, X_attr), \
+           (X_tll_train, X_tll_test)
