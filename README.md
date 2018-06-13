@@ -63,12 +63,12 @@ attr='c';value=1;domain=[1,2,3,4];from=-200;to=-150;probability=0.8
 attr='c';value=3;domain=[2,3,4];from=-150;to=0;probability=0.9
 ```
 About rules file:
-`attr='c';` add an attribute named `c`
-`value=(a=1->2,b=2->3,1->3);` when `a` changes value from 1 to 2 and `b` changes value from 2 to 3 then `c` attribute changes value from 1 to 3
-`domain=([1,2,3,4]->[2,3,4]);` and its domain change from `[1,2,3,4]` to `[2,3,4]`
-`probability=(0.8->0.9);` and probability of set value changes from `0.8` to `0.9`
-`parts=(1,2);` add both parts of the rule. Look up there are two parts in the output, if you want only one of them just use `parts=(1);` or `parts=(2);`
-`after=0` add this rule shifted by `0` in comparision with `a` and `b` attributes. If you want to shift rule backward just use negative value.
+  * `attr='c';` add an attribute named `c`
+  * `value=(a=1->2,b=2->3,1->3);` when `a` changes value from 1 to 2 and `b` changes value from 2 to 3 then `c` attribute changes value from 1 to 3
+  * `domain=([1,2,3,4]->[2,3,4]);` and its domain change from `[1,2,3,4]` to `[2,3,4]`
+  * `probability=(0.8->0.9);` and probability of set value changes from `0.8` to `0.9`
+  * `parts=(1,2);` add both parts of the rule. Look up there are two parts in the output, if you want only one of them just use `parts=(1);` or `parts=(2);`
+  * `after=0` add this rule shifted by `0` in comparision with `a` and `b` attributes. If you want to shift rule backward just use negative value.
 
 ## Shifting the stream ##
 `shift.sh configs/new_test -600`
