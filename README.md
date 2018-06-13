@@ -30,18 +30,24 @@ To perform prediction or testing just run the script:
 ## Using sequence generator
 Example:
 `python seqgen.py -i configs/config_file -s`
+
 `-i` input file
+
 `-s` save generated sequence in sequences/ directory
+
 `-h` help
 
 ## Plotting sequences
 `python plot_sequence.py -i sequences/sequence.csv -s 0`
+
 `-s` start X axis from 0
 
 ## Adding rules to the stream
 `add_attr.sh -i configs/new_test -r configs/rules`
 `-i` input file
+
 `-r` rules file
+
 `-h` help
 
 For a file new_test as below:
@@ -87,10 +93,14 @@ attr='b';value=3;domain=[1,2,3,4];from=-750;to=-600;probability=0.8
 ## Cleaning sequences ##
 Sequence generator produces sequence with noise at the very beginning and the very end of the sequence. This script cuts this noise off.
 `./clean_seq sequences/sequence.csv -s`
+
 `sequences/sequence.csv` input sequence file
+
 `-s` save sequence in sequences directory. File name is the same with _clean.csv at the end.
 
 ## Mining rules ##
 `python3.5 seq_transform.py -i sequences/sequence.csv -s`
+
 `-i` input
+
 `-s` save rules in sequence directory
