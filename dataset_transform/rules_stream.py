@@ -22,13 +22,13 @@ class RulesStream:
         self.transform_stream(group_stream)
         self.output_format=output_format
 
-    def extract_rules(self, group_trend1, group_trend2):
+    def extract_rules(self, group_cluster1, group_cluster2):
         rules_dict={}
-        for i in group_trend1.values.keys():
-            rules_dict[i]=Rule(group_trend1.values[i], group_trend2.values[i], group_trend1._from, group_trend1._to, group_trend2._to)
+        for i in group_cluster1.values.keys():
+            rules_dict[i]=Rule(group_cluster1.values[i], group_cluster2.values[i], group_cluster1._from, group_cluster1._to, group_cluster2._to)
 
         order = []
-        for i in sorted(group_trend2.attribute_order, key=lambda tup: tup[1]):
+        for i in sorted(group_cluster2.attribute_order, key=lambda tup: tup[1]):
             order.append(i[0])
         return rules_dict, order
 

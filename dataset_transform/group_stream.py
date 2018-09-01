@@ -1,14 +1,14 @@
 from collections import Counter
-from group_trend import GroupTrend, GroupTrendList
-from trend import Trend, TrendList
+from group_cluster import GroupCluster, GroupClusterList
+from cluster import Cluster, ClusterList
 import pandas as pd
 from typing import List
 import copy
 from globals import *
 
 class GroupStream:
-    def __init__(self, trend_lists:List[GroupTrendList], rules_stream=[]):
-        self.trend_lists = trend_lists
+    def __init__(self, cluster_lists:List[GroupClusterList], rules_stream=[]):
+        self.cluster_lists = cluster_lists
         if rules_stream == []:
             self.rules_stream=self.build_stream()
         else:
@@ -19,20 +19,20 @@ class GroupStream:
         lengths=Counter()
 
         stream=[]
-        for i in range(len(self.trend_lists)):
-            lengths[i]=len(self.trend_lists[i].trend_list)
+        for i in range(len(self.cluster_lists)):
+            lengths[i]=len(self.cluster_lists[i].cluster_list)
             counter[i]=0
 
         while True:
             end=True
             intercept_check_list=[]
-            for i in range(len(self.trend_lists)):
-                intercept_check_list.append(self.trend_lists[i].trend_list[counter[i]])
+            for i in range(len(self.cluster_lists)):
+                intercept_check_list.append(self.cluster_lists[i].cluster_list[counter[i]])
             ret=self.intersect(intercept_check_list)
             if ret!=None:
                 stream.append(ret)
 
-            for i in range(len(self.trend_lists)):
+            for i in range(len(self.cluster_lists)):
                 if counter[i]!=lengths[i]-1:
                     end=False
                     break
@@ -41,32 +41,32 @@ class GroupStream:
                 break
 
             counter[0]+=1
-            for i in range(len(self.trend_lists)-1):
+            for i in range(len(self.cluster_lists)-1):
                 if counter[i]>lengths[i]-1:
                     counter[i]=0
                     counter[i+1]+=1
 
         return stream
 
-    def intersect(self, intercept_trend_list):
-        if intercept_trend_list[0]==None or (len(intercept_trend_list) > 1 and intercept_trend_list[1] == None):
+    def intersect(self, intercept_cluster_list):
+        if intercept_cluster_list[0]==None or (len(intercept_cluster_list) > 1 and intercept_cluster_list[1] == None):
             return None
-        elif len(intercept_trend_list)==1:
-            return intercept_trend_list[0]
-        elif len(intercept_trend_list)==2:
-            f1=intercept_trend_list[0]._from
-            t1=intercept_trend_list[0]._to
-            f2=intercept_trend_list[1]._from
-            t2=intercept_trend_list[1]._to
+        elif len(intercept_cluster_list)==1:
+            return intercept_cluster_list[0]
+        elif len(intercept_cluster_list)==2:
+            f1=intercept_cluster_list[0]._from
+            t1=intercept_cluster_list[0]._to
+            f2=intercept_cluster_list[1]._from
+            t2=intercept_cluster_list[1]._to
             ret, other = None, None
             if f1>=t2 or f2>=t1:
                 return None
             elif f1>=f2 and f1<t2:
-                ret=copy.copy(intercept_trend_list[0])
-                other=intercept_trend_list[1]
+                ret=copy.copy(intercept_cluster_list[0])
+                other=intercept_cluster_list[1]
             elif f2>f1 and f2<t1:
-                ret=copy.copy(intercept_trend_list[1])
-                other = intercept_trend_list[0]
+                ret=copy.copy(intercept_cluster_list[1])
+                other = intercept_cluster_list[0]
 
             ret._to=min(ret._to, other._to)
             ret.length=ret._to-ret._from
@@ -75,11 +75,11 @@ class GroupStream:
             ret.attribute_order+=other.attribute_order
             return ret
         else:
-            ret2=self.intersect(intercept_trend_list[0:2])
-            return self.intersect([ret2] + intercept_trend_list[2:])
+            ret2=self.intersect(intercept_cluster_list[0:2])
+            return self.intersect([ret2] + intercept_cluster_list[2:])
 
     def __copy__(self):
-        return GroupStream(trend_lists=self.trend_lists.copy(), rules_stream=copy.deepcopy(self.rules_stream))
+        return GroupStream(cluster_lists=self.cluster_lists.copy(), rules_stream=copy.deepcopy(self.rules_stream))
 
     def __str__(self):
         ret="Rules: \n"

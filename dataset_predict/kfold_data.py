@@ -1,7 +1,3 @@
-import numpy as np
-import pandas as pd
-from trend import Trend, TrendList
-from group_trend import GroupTrend, GroupTrendList
 from sklearn.model_selection import KFold
 
 def kfold_data(df, folds:int=10):

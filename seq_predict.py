@@ -3,8 +3,8 @@ import pandas as pd
 import argparse
 import time
 import sys; sys.path.append('./dataset_transform/'); sys.path.append('./dataset_predict/')
-from trend import Trend, TrendList
-from group_trend import GroupTrend, GroupTrendList
+from cluster import Cluster, ClusterList
+from group_cluster import GroupCluster, GroupClusterList
 from group_stream import GroupStream
 from sklearn.model_selection import KFold
 from kfold_data import *
@@ -12,8 +12,8 @@ from metrics import *
 from classifier import Classifier
 
 
-parser = argparse.ArgumentParser(description='Sequence Transform Tool.')
-parser.add_argument('-i','--input', help='Config input file name',required=True)
+parser = argparse.ArgumentParser(description='Sequence Predict Tool.')
+parser.add_argument('-i','--input', help='Input file name with csv sequence',required=True)
 args = parser.parse_args()
 
 #dataset

@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import argparse
 import time
-from trend import Trend, TrendList
-from group_trend import GroupTrend, GroupTrendList
+from cluster import Cluster, ClusterList
+from group_cluster import GroupCluster, GroupClusterList
 from group_stream import GroupStream
 import copy
 from collections import Counter
@@ -53,14 +53,14 @@ class Classifier:
         X_tl_train, X_tl_test = [], []
         X_gl_train, X_gl_test = [], []
         for i in columns:
-            X_tl_train.append(TrendList(i, np.array(X_train[i]), merge_at_once=True,
+            X_tl_train.append(ClusterList(i, np.array(X_train[i]), merge_at_once=True,
                                       merge_threshold=merge_threshold))
-            X_tl_test.append(TrendList(i, np.array(X_test[i]), merge_at_once=True,
+            X_tl_test.append(ClusterList(i, np.array(X_test[i]), merge_at_once=True,
                                        merge_threshold=merge_threshold))
 
         for i in range(len(columns)):
-            X_gl_train.append(GroupTrendList(X_tl_train[i]))
-            X_gl_test.append(GroupTrendList(X_tl_test[i]))
+            X_gl_train.append(GroupClusterList(X_tl_train[i]))
+            X_gl_test.append(GroupClusterList(X_tl_test[i]))
 
         X_gsl_train = GroupStream(X_gl_train)
         X_gsl_test = GroupStream(X_gl_test)
@@ -89,11 +89,11 @@ class Classifier:
         if test_set:
             columns = self.columns[:-1]
         for i in columns:
-            X_tl.append(TrendList(i, np.array(X[i]), merge_at_once=True,
+            X_tl.append(ClusterList(i, np.array(X[i]), merge_at_once=True,
                                         merge_threshold=self.merge_threshold))
 
         for i in range(len(columns)):
-            X_gl.append(GroupTrendList(X_tl[i]))
+            X_gl.append(GroupClusterList(X_tl[i]))
 
         X_gsl = GroupStream(X_gl)
         X_gsl.fade_shorts(fade_threshold=self.fade_threshold, inplace=True)

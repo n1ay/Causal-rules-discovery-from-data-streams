@@ -2,9 +2,9 @@ import operator
 from globals import *
 from collections import Counter
 
-class Trend:
-    def __init__(self, trend_list, value, _from, _to):
-        self.trend_list = trend_list
+class Cluster:
+    def __init__(self, cluster_list, value, _from, _to):
+        self.cluster_list = cluster_list
         self._from = _from
         self._to = _to
         self.value = value
@@ -18,10 +18,10 @@ class Trend:
         else:
             return False
 
-    def try_append_trend(self, trend):
-        if trend.value==self.value:
-            self._to+=trend.length
-            self.length+=trend.length
+    def try_append_cluster(self, cluster):
+        if cluster.value==self.value:
+            self._to+=cluster.length
+            self.length+=cluster.length
             return True
         else:
             return False
@@ -31,13 +31,13 @@ class Trend:
 
     __repr__ = __str__
 
-class TrendList:
+class ClusterList:
     def __init__(self, attribute, data, merge_at_once=False, merge_threshold=2):
         self.attribute = attribute
         self.data = data
-        self.trend_list = self.create_list(data)
+        self.cluster_list = self.create_list(data)
         if merge_at_once:
-            self.trend_list = self.merge(self.trend_list, merge_threshold)
+            self.cluster_list = self.merge(self.cluster_list, merge_threshold)
 
     def create_list(self, data):
         lst = []
@@ -45,10 +45,10 @@ class TrendList:
         for i in data:
             if j>=0:
                 if not(lst[j].try_append(i)):
-                    lst.append(Trend(self, i, lst[j]._to, lst[j]._to+1))
+                    lst.append(Cluster(self, i, lst[j]._to, lst[j]._to+1))
                     j+=1
             else:
-                lst.append(Trend(self, i, 0, 1))
+                lst.append(Cluster(self, i, 0, 1))
                 j+=1
         return lst
 
@@ -95,13 +95,13 @@ class TrendList:
         return mlst
 
     def merge_same_value(self, mlst, i):
-        while (i >= 0 and i < len(mlst) - 1 and mlst[i].try_append_trend(mlst[i + 1])):
+        while (i >= 0 and i < len(mlst) - 1 and mlst[i].try_append_cluster(mlst[i + 1])):
             mlst.remove(mlst[i + 1])
 
     def __str__(self):
         s="Attribute: "+self.attribute+"\n["
-        for i in self.trend_list:
-            if i!=self.trend_list[-1]:
+        for i in self.cluster_list:
+            if i!=self.cluster_list[-1]:
                 s+=str(i)+",\n"
             else:
                 s += str(i)
