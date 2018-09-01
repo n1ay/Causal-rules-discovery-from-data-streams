@@ -1,4 +1,4 @@
-from group_stream import GroupStream
+from dataset_transform.group_stream import GroupStream
 
 class Rule:
     def __init__(self, value_from, value_to, _from, change_moment, _to):

@@ -1,10 +1,10 @@
 from collections import Counter
-from group_cluster import GroupCluster, GroupClusterList
-from cluster import Cluster, ClusterList
+from dataset_transform.group_cluster import GroupCluster, GroupClusterList
+from dataset_transform.cluster import Cluster, ClusterList
 import pandas as pd
 from typing import List
 import copy
-from globals import *
+from dataset_transform.globals import *
 
 class GroupStream:
     def __init__(self, cluster_lists:List[GroupClusterList], rules_stream=[]):
@@ -48,6 +48,7 @@ class GroupStream:
 
         return stream
 
+    #this can be optimized a lot
     def intersect(self, intercept_cluster_list):
         if intercept_cluster_list[0]==None or (len(intercept_cluster_list) > 1 and intercept_cluster_list[1] == None):
             return None
@@ -131,37 +132,46 @@ class GroupStream:
         df = pd.DataFrame({attribute:ret})
         return df
 
+    def find_fade_candidate(self, lst, index, fade_to_threshold) -> int:
+        prev_length = -1
+        next_length = -1
+        if index > 0:
+            if lst[index-1].length > fade_to_threshold:
+                prev_length = lst[index-1].length
+        if index < len(lst)-1:
+            if lst[index+1].length > fade_to_threshold:
+                next_length = lst[index+1].length
+
+        if prev_length >= next_length and prev_length != -1:
+            return -1
+        elif prev_length < next_length and next_length != -1:
+            return +1
+        else:
+            return 0
+
     def fade_shorts(self, fade_threshold=2, inplace=False):
+
         flst = copy.deepcopy(self.rules_stream)
+        if fade_threshold < 1:
+            return flst
+
+        fade_to_threshold = fade_threshold * 2 + 2
         i = 0
         while i < len(flst):
-            add_to = 0
-            if fade_threshold >= 1:
-                if flst[i].length <= fade_threshold:
-                    if i > 0:
-                        if i < len(flst) - 1:
-                            if flst[i - 1].length > fade_threshold*2+2 and flst[i - 1].length >= flst[i + 1].length:
-                                add_to = -1
-                            elif flst[i + 1].length > fade_threshold*2+2 and flst[i + 1].length > flst[i - 1].length:
-                                add_to = 1
-                        else:
-                            if flst[i - 1].length > fade_threshold*2+2:
-                                add_to = -1
-                    elif i < len(flst) - 1:
-                        if flst[i + 1].length > fade_threshold*2+2:
-                            add_to = 1
+            if flst[i].length <= fade_threshold:
+                add_to = self.find_fade_candidate(flst, i, fade_to_threshold)
 
-                    if add_to == -1:
-                        flst[i - 1].length += flst[i].length
-                        flst[i - 1]._to += flst[i].length
-                        flst.remove(flst[i])
-                        i -= 1
+                if add_to == -1:
+                    flst[i - 1].length += flst[i].length
+                    flst[i - 1]._to += flst[i].length
+                    flst.remove(flst[i])
+                    i -= 1
 
-                    elif add_to == 1:
-                        flst[i + 1].length += flst[i].length
-                        flst[i + 1]._from -= flst[i].length
-                        flst.remove(flst[i])
-                        i -= 1
+                elif add_to == 1:
+                    flst[i + 1].length += flst[i].length
+                    flst[i + 1]._from -= flst[i].length
+                    flst.remove(flst[i])
+                    i -= 1
             i += 1
         if inplace:
             self.rules_stream=flst

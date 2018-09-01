@@ -1,6 +1,6 @@
 import operator
-from globals import *
-from cluster import Cluster, ClusterList
+from dataset_transform.globals import *
+from dataset_transform.cluster import Cluster, ClusterList
 from collections import Counter
 
 class GroupCluster:
