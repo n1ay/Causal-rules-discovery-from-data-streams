@@ -3,10 +3,10 @@ import pandas as pd
 import argparse
 import time
 import sys; sys.path.append('./dataset_transform/')
-from trend import Trend, TrendList
-from group_trend import GroupTrend, GroupTrendList
-from group_stream import GroupStream
-from rules_stream import RulesStream
+from dataset_transform.cluster import Cluster, ClusterList
+from dataset_transform.group_cluster import GroupCluster, GroupClusterList
+from dataset_transform.group_stream import GroupStream
+from dataset_transform.rules_stream import RulesStream
 
 parser = argparse.ArgumentParser(description='Sequence Transform Tool.')
 parser.add_argument('-i','--input', help='Config input file name',required=True)
@@ -19,8 +19,8 @@ tl, gl, attr = [], [], []
 j=0
 for i in df.columns:
     attr.append(i)
-    tl.append(TrendList(i, np.array(df[i]), merge_at_once=True, merge_threshold=2))
-    gl.append(GroupTrendList(tl[j]))
+    tl.append(ClusterList(i, np.array(df[i]), merge_at_once=True, merge_threshold=2))
+    gl.append(GroupClusterList(tl[j]))
     j+=1
 #print(tl)
 #print(gl)
