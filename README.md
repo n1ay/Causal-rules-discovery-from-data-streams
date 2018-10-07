@@ -74,13 +74,6 @@ attr='b';value=2;domain=[1,2,3,4];from=-800;to=-750;probability=0.8
 attr='b';value=3;domain=[1,2,3,4];from=-750;to=-600;probability=0.8
 ```
 
-## Cleaning sequences ##
-Sequence generator produces sequence with noise at the very beginning and the very end of the sequence. This script cuts this noise off.
-`./clean_seq.sh sequences/sequence.csv -s`
-
-- `sequences/sequence.csv` input sequence file
-- `-s` save sequence in sequences directory. File name is the same with _clean.csv at the end.
-
 ## Mining rules ##
 `python3.5 seq_transform.py -i sequences/sequence.csv -s`
 

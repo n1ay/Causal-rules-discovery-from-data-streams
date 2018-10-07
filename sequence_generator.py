@@ -1,8 +1,7 @@
+import os
 import numpy
-import math
 import csv
 import time
-import matplotlib.pyplot as plt
 
 def generateSequence(sequence, domain, value, operator, probability, fr, to):
     if operator == 'eq':
@@ -43,9 +42,12 @@ def plotSequence(axarr, seq, domain, attrName, curr_state):
 
 def saveToCsv(listOfConfigs, sequences):
     timestr = time.strftime("%Y_%m_%d-%H.%M.%S")
-    with open('sequences/sequence_'+timestr+'.csv','w') as csv_file:
+    filename = 'sequences/sequence_'+timestr+'.csv'
+    with open(filename,'w') as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
         #print(listOfConfigs)
         writer.writerow([config['attr_name'] for config in listOfConfigs])
         for i in range(len(sequences[0])):
             writer.writerow([seq[i] for seq in sequences])
+
+    os.system("./clean_seq.sh {0} -so".format(filename))
