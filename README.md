@@ -3,13 +3,13 @@
 ## Using predictor ##
 If you want to test predictor accuracy with K-folding dataset use:
 
-`python3.5 seq_predict_test.py -i sequences/sequence2_0_noise_clean.csv`
+`python3.5 seq_predict_test.py -i sequences/sequence1_0_noise_clean.csv`
 
 - `-i` input file
 
 Or, if you want to use it for prediction use:
 
-`python3.5 seq_predict.py -if sequences/sequence2_0_noise_clean_f.csv -ip sequences/sequence2_0_noise_clean_p.csv`
+`python3.5 seq_predict.py -if sequences/sequence1_0_noise_clean_f.csv -ip sequences/sequence1_0_noise_clean_p.csv`
 
 - `-if` input file to fit classifier
 - `-ip` input file to predict last column
