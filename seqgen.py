@@ -10,11 +10,13 @@ past_states = 1.5
 future_states = 1.5
 
 parser = argparse.ArgumentParser(description='Sequence Generator.')
-parser.add_argument('-i','--input', help='Config input file name',required=True)
-parser.add_argument('-s','--save', action="store_true", help='Save generated sequence?', default=False, required=False)
-parser.add_argument('-p','--plot', action="store_true", help='Plot generated sequence?', default=False, required=False)
-parser.add_argument('-r','--random', action="store_true", help='Random initialization?', default=False, required=False)
-parser.add_argument('-fr','--fill_random', action="store_true", help='When value is not defined fill stream with random values instead of first value', default=False, required=False)
+parser.add_argument('-i', '--input', help='Config input file name', required=True)
+parser.add_argument('-s', '--save', action="store_true", help='Save generated sequence?', default=False, required=False)
+parser.add_argument('-p', '--plot', action="store_true", help='Plot generated sequence?', default=False, required=False)
+parser.add_argument('-r', '--random', action="store_true", help='Random initialization?', default=False, required=False)
+parser.add_argument('-fr', '--fill_random', action="store_true",
+                    help='When value is not defined fill stream with random values instead of first value',
+                    default=False, required=False)
 args = parser.parse_args()
 
 with open(args.input) as f:
@@ -31,7 +33,7 @@ for line in lines:
 
 grouped_config_list = []
 for config in config_list:
-    key = config['attr'].replace("'","")
+    key = config['attr'].replace("'", "")
     if not any(key in d['attr_name'] for d in grouped_config_list):
         attr_dict = {}
         values_list = []
@@ -51,8 +53,9 @@ for config in config_list:
 #                 print "\t", v
 #     print
 
-curr_state = int(max([abs(int(float(config_list[i]['from']))) for i in range(len(config_list)) if 'from' in config_list[i]])*past_states)
-last_state = int(curr_state*future_states)
+curr_state = int(max([abs(int(float(config_list[i]['from']))) for i in range(len(config_list)) if
+                      'from' in config_list[i]]) * past_states)
+last_state = int(curr_state * future_states)
 seqs = []
 k = len(grouped_config_list)
 f, axarr = plt.subplots(k)
@@ -71,7 +74,7 @@ for config in grouped_config_list:
             seq = [init_value for k in range(0, last_state)]
 
     operator = 'eq'
-    for z in range(0,len(config_values)):
+    for z in range(0, len(config_values)):
         value = ast.literal_eval(config_values[z]['value'])
         probability = float(config_values[z]['probability'])
         fr = curr_state - curr_state
@@ -83,9 +86,9 @@ for config in grouped_config_list:
             else:
                 to = 0
 
-        seq = sg.generateSequence(seq, domain, value, operator, probability, curr_state-fr, curr_state-to)
+        seq = sg.generateSequence(seq, domain, value, operator, probability, curr_state - fr, curr_state - to)
 
-        if(args.plot):
+        if (args.plot):
             sg.plotSequence(axarr[j], seq, domain, config['attr_name'], curr_state)
     j += 1
     seqs.append(seq)

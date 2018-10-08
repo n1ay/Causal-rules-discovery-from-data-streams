@@ -73,16 +73,15 @@ class ClusterList:
                 j += 1
         return lst
 
-
     def find_merge_candidate(self, lst, index) -> int:
         prev_length = -1
         next_length = -1
         if index > 0:
-            if lst[index-1].length > self.threshold_to_append:
-                prev_length = lst[index-1].length
-        if index < len(lst)-1:
-            if lst[index+1].length > self.threshold_to_append:
-                next_length = lst[index+1].length
+            if lst[index - 1].length > self.threshold_to_append:
+                prev_length = lst[index - 1].length
+        if index < len(lst) - 1:
+            if lst[index + 1].length > self.threshold_to_append:
+                next_length = lst[index + 1].length
 
         if prev_length >= next_length and prev_length != -1:
             return -1

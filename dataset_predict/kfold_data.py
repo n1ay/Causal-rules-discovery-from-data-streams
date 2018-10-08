@@ -1,8 +1,8 @@
 from sklearn.model_selection import KFold
 
-def kfold_data(df, folds:int=10):
 
-    #no shuffle is a must - shuffling timeseries without timestamps is not what we want
+def kfold_data(df, folds: int = 10):
+    # no shuffle is a must - shuffling timeseries without timestamps is not what we want
     kf = KFold(n_splits=folds, shuffle=False)
     kf.get_n_splits(df)
 

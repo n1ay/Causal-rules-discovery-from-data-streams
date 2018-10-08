@@ -5,6 +5,7 @@ from dataset_predict.kfold_data import *
 from dataset_predict.metrics import *
 from dataset_predict.classifier import Classifier
 
+
 class SeqPredictTest(unittest.TestCase):
 
     def test_accuracy1(self):
@@ -25,6 +26,7 @@ class SeqPredictTest(unittest.TestCase):
         expected = [0.772, 0.83580519, 0.772, 0.78547064]
         for i in range(4):
             self.assertAlmostEqual(metrics[i], expected[i], delta=0.0001)
+
 
 if __name__ == '__main__':
     unittest.main()

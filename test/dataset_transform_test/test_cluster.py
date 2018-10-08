@@ -56,5 +56,6 @@ class ClusterTest(unittest.TestCase):
         self.assertEqual(clusterList.cluster_list[1].value, 1)
         self.assertEqual(clusterList.cluster_list[1].length, 19)
 
+
 if __name__ == '__main__':
     unittest.main()
