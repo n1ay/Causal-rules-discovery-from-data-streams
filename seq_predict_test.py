@@ -2,9 +2,9 @@ import numpy as np
 import pandas as pd
 import argparse
 import time
-import sys;
+import sys
 
-sys.path.append('./dataset_transform/');
+sys.path.append('./dataset_transform/')
 sys.path.append('./dataset_predict/')
 from dataset_transform.cluster import Cluster, ClusterList
 from dataset_transform.group_cluster import GroupCluster, GroupClusterList
