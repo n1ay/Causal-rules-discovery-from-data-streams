@@ -1,6 +1,10 @@
 import unittest
+import sys
+import numpy as np
 
-from utils.utils import transfrom_list_into_categorical_vector_list as tlc, transfrom_categorical_vector_list_into_list as tcv
+sys.path.append('../utils')
+
+from utils import transform_list_into_categorical_vector_list as tlc, transform_categorical_vector_list_into_list as tcv, reshape_data_to_lstm
 
 
 class UtilsTest(unittest.TestCase):
@@ -39,3 +43,196 @@ class UtilsTest(unittest.TestCase):
         transformed_list = tcv(before_list)
 
         self.assertListEqual(after_list, transformed_list)
+
+    def test_reshape_data_to_lstm(self):
+        before_array = np.asarray([
+            [0, 1],
+            [0, 4],
+            [0, 4],
+            [0, 4],
+            [0, 7],
+            [0, 7],
+            [0, 7],
+            [0, 5],
+            [0, 5],
+            [2, 5],
+            [2, 5],
+            [2, 5],
+            [2, 5],
+            [2, 5],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+        ])
+
+        after_array = np.asarray([
+            [
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+            ],
+            [
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 4],
+            ],
+            [
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 4],
+                [0, 4],
+            ],
+            [
+                [0, 1],
+                [0, 1],
+                [0, 1],
+                [0, 4],
+                [0, 4],
+                [0, 4],
+            ],
+            [
+                [0, 1],
+                [0, 1],
+                [0, 4],
+                [0, 4],
+                [0, 4],
+                [0, 7],
+            ],
+            [
+                [0, 1],
+                [0, 4],
+                [0, 4],
+                [0, 4],
+                [0, 7],
+                [0, 7],
+            ],
+            [
+                [0, 4],
+                [0, 4],
+                [0, 4],
+                [0, 7],
+                [0, 7],
+                [0, 7],
+            ],
+            [
+                [0, 4],
+                [0, 4],
+                [0, 7],
+                [0, 7],
+                [0, 7],
+                [0, 5],
+            ],
+            [
+                [0, 4],
+                [0, 7],
+                [0, 7],
+                [0, 7],
+                [0, 5],
+                [0, 5],
+            ],
+            [
+                [0, 7],
+                [0, 7],
+                [0, 7],
+                [0, 5],
+                [0, 5],
+                [2, 5],
+            ],
+            [
+                [0, 7],
+                [0, 7],
+                [0, 5],
+                [0, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
+                [0, 7],
+                [0, 5],
+                [0, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
+                [0, 5],
+                [0, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
+                [0, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [3, 6],
+            ],
+            [
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [2, 5],
+                [2, 5],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [2, 5],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+        ])
+
+        transformed_array = reshape_data_to_lstm(before_array, 6)
+        self.assertListEqual(after_array.tolist(), transformed_array.tolist())
+
+if __name__ == '__main__':
+    unittest.main()

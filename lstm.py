@@ -10,8 +10,8 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dense
 from sklearn.model_selection import KFold
 import dataset_predict.metrics
-from utils.utils import transfrom_list_into_categorical_vector_list as tlc,\
-    transfrom_categorical_vector_list_into_list as tcv
+from utils.utils import transform_list_into_categorical_vector_list as tlc,\
+    transform_categorical_vector_list_into_list as tcv
 
 epochs = 10
 batch_size = 10
