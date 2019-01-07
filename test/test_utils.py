@@ -1,10 +1,6 @@
 import unittest
-import sys
 import numpy as np
-
-sys.path.append('../utils')
-
-from utils import transform_list_into_categorical_vector_list as tlc, transform_categorical_vector_list_into_list as tcv, reshape_data_to_lstm
+from utils.utils import transform_list_into_categorical_vector_list as tlc, transform_categorical_vector_list_into_list as tcv, reshape_data_to_lstm
 
 
 class UtilsTest(unittest.TestCase):
@@ -76,24 +72,12 @@ class UtilsTest(unittest.TestCase):
                 [0, 1],
                 [0, 1],
                 [0, 1],
-            ],
-            [
-                [0, 1],
-                [0, 1],
-                [0, 1],
-                [0, 1],
-                [0, 1],
-                [0, 4],
-            ],
-            [
-                [0, 1],
-                [0, 1],
-                [0, 1],
-                [0, 1],
                 [0, 4],
                 [0, 4],
             ],
             [
+                [0, 1],
+                [0, 1],
                 [0, 1],
                 [0, 1],
                 [0, 1],
@@ -102,6 +86,8 @@ class UtilsTest(unittest.TestCase):
                 [0, 4],
             ],
             [
+                [0, 1],
+                [0, 1],
                 [0, 1],
                 [0, 1],
                 [0, 4],
@@ -111,6 +97,8 @@ class UtilsTest(unittest.TestCase):
             ],
             [
                 [0, 1],
+                [0, 1],
+                [0, 1],
                 [0, 4],
                 [0, 4],
                 [0, 4],
@@ -118,6 +106,8 @@ class UtilsTest(unittest.TestCase):
                 [0, 7],
             ],
             [
+                [0, 1],
+                [0, 1],
                 [0, 4],
                 [0, 4],
                 [0, 4],
@@ -126,6 +116,8 @@ class UtilsTest(unittest.TestCase):
                 [0, 7],
             ],
             [
+                [0, 1],
+                [0, 4],
                 [0, 4],
                 [0, 4],
                 [0, 7],
@@ -135,6 +127,8 @@ class UtilsTest(unittest.TestCase):
             ],
             [
                 [0, 4],
+                [0, 4],
+                [0, 4],
                 [0, 7],
                 [0, 7],
                 [0, 7],
@@ -142,6 +136,8 @@ class UtilsTest(unittest.TestCase):
                 [0, 5],
             ],
             [
+                [0, 4],
+                [0, 4],
                 [0, 7],
                 [0, 7],
                 [0, 7],
@@ -150,12 +146,34 @@ class UtilsTest(unittest.TestCase):
                 [2, 5],
             ],
             [
+                [0, 4],
+                [0, 7],
+                [0, 7],
+                [0, 7],
+                [0, 5],
+                [0, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
+                [0, 7],
+                [0, 7],
+                [0, 7],
+                [0, 5],
+                [0, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+            ],
+            [
                 [0, 7],
                 [0, 7],
                 [0, 5],
                 [0, 5],
                 [2, 5],
                 [2, 5],
+                [2, 5],
+                [2, 5],
             ],
             [
                 [0, 7],
@@ -164,22 +182,28 @@ class UtilsTest(unittest.TestCase):
                 [2, 5],
                 [2, 5],
                 [2, 5],
-            ],
-            [
-                [0, 5],
-                [0, 5],
-                [2, 5],
-                [2, 5],
                 [2, 5],
                 [2, 5],
             ],
             [
+                [0, 5],
                 [0, 5],
                 [2, 5],
                 [2, 5],
                 [2, 5],
                 [2, 5],
                 [2, 5],
+                [3, 6],
+            ],
+            [
+                [0, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [2, 5],
+                [3, 6],
+                [3, 6],
             ],
             [
                 [2, 5],
@@ -188,24 +212,12 @@ class UtilsTest(unittest.TestCase):
                 [2, 5],
                 [2, 5],
                 [3, 6],
-            ],
-            [
-                [2, 5],
-                [2, 5],
-                [2, 5],
-                [2, 5],
                 [3, 6],
                 [3, 6],
             ],
             [
                 [2, 5],
                 [2, 5],
-                [2, 5],
-                [3, 6],
-                [3, 6],
-                [3, 6],
-            ],
-            [
                 [2, 5],
                 [2, 5],
                 [3, 6],
@@ -215,6 +227,8 @@ class UtilsTest(unittest.TestCase):
             ],
             [
                 [2, 5],
+                [2, 5],
+                [2, 5],
                 [3, 6],
                 [3, 6],
                 [3, 6],
@@ -222,6 +236,28 @@ class UtilsTest(unittest.TestCase):
                 [3, 6],
             ],
             [
+                [2, 5],
+                [2, 5],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [2, 5],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+                [3, 6],
+            ],
+            [
+                [3, 6],
+                [3, 6],
                 [3, 6],
                 [3, 6],
                 [3, 6],
@@ -231,7 +267,7 @@ class UtilsTest(unittest.TestCase):
             ],
         ])
 
-        transformed_array = reshape_data_to_lstm(before_array, 6)
+        transformed_array = reshape_data_to_lstm(before_array, 5, 2)
         self.assertListEqual(after_array.tolist(), transformed_array.tolist())
 
 if __name__ == '__main__':

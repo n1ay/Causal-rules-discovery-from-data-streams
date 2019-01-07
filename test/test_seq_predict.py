@@ -9,7 +9,7 @@ from dataset_predict.classifier import Classifier
 class SeqPredictTest(unittest.TestCase):
 
     def test_accuracy1(self):
-        df = pd.read_csv("../sequences/test_seq1.csv")
+        df = pd.read_csv("sequences/test_seq1.csv")
 
         # number of folds
         K = 10

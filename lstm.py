@@ -1,6 +1,8 @@
 # https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
 # https://machinelearningmastery.com/make-predictions-time-series-forecasting-python/
 # https://colab.research.google.com/drive/134oEzWiJ6s8v41MpUVLFD82XKCr1g9DZ#scrollTo=x1aY5EBRYAoD
+# http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+# http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
 import numpy as np
 import pandas as pd
