@@ -13,12 +13,16 @@ from keras.layers import LSTM, Dense
 from sklearn.model_selection import KFold
 import dataset_predict.metrics
 from utils.utils import transform_list_into_categorical_vector_list as tlc,\
-    transform_categorical_vector_list_into_list as tcv
+    transform_categorical_vector_list_into_list as tcv, reshape_data_to_lstm
 
 epochs = 10
 batch_size = 10
 K = 10
 
+LSTM_nodes = 64
+backward_time_step = 3
+forward_time_step = 3
+dropout = 0.2
 
 def encode_values(df):
     le = LabelEncoder()
@@ -26,7 +30,9 @@ def encode_values(df):
     le.fit(values)
     classes = len(values)
     encoded_values = le.transform(df.values.reshape(1, -1)[0])
-    return encoded_values.reshape(df.shape), classes
+    encoded_values = np.asarray(tlc(encoded_values, classes)).reshape(1, -1)[0]
+    encoded_values = np.asarray(encoded_values)
+    return encoded_values.reshape(df.shape[0], df.shape[1] * classes), classes
 
 
 def main():
@@ -53,12 +59,13 @@ def main():
         y_test.append((y_categorical[test_index]))
         y_raw_test.append((y[test_index]).flatten().tolist())
 
-    X_train = [x.reshape(x.shape[0], 1, x.shape[1]) for x in X_train]
-    X_test = [x.reshape(x.shape[0], 1, x.shape[1]) for x in X_test]
+    X_train = [reshape_data_to_lstm(x, backward_time_step, forward_time_step) for x in X_train]
+    X_test = [reshape_data_to_lstm(x, backward_time_step, forward_time_step) for x in X_test]
 
     #create LSTM NN
     model = Sequential()
-    model.add(LSTM(50, input_shape=(X_train[0].shape[1], X_train[0].shape[2])))
+    model.add(LSTM(LSTM_nodes, recurrent_dropout=dropout))
+    model.add(Dense(classes * classes, activation='relu'))
     model.add(Dense(classes, activation='softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='adam')
     weights = model.get_weights()
