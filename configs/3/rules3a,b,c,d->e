@@ -1,0 +1,5 @@
+attr='e';value=(a='A'->'C',b='C'->'F',c='G'->'I',d='L'->'J','M'->'K');domain=(['H','I','J','K','L','M']->['H','I','J','K','L','M']);probability=(1.0->1.0);parts=(1,2);after=4
+attr='e';value=(a='C'->'D',b='D'->'F',c='I'->'J',d='K'->'G','H'->'J');domain=(['H','I','J','K','L','M']->['H','I','J','K','L','M']);probability=(1.0->1.0);parts=(1,2);after=2
+attr='e';value=(a='F'->'C',b='F'->'G',c='K'->'G',d='J'->'L','L'->'M');domain=(['H','I','J','K','L','M']->['H','I','J','K','L','M']);probability=(1.0->1.0);parts=(1,2);after=5
+attr='e';value=(b='H'->'G','H'->'I');domain=(['H','I','J','K','L','M']->['H','I','J','K','L','M']);probability=(1.0->1.0);parts=(1,2);after=5
+attr='e';value=(c='H'->'K', 'J'->'H');domain=(['H','I','J','K','L','M']->['H','I','J','K','L','M']);probability=(1.0->1.0);parts=(1,2);after=5
