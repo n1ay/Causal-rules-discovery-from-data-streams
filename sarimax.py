@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import argparse
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import mean_squared_error
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 import dataset_predict.metrics
 import matplotlib.pyplot as plt
@@ -15,7 +16,8 @@ test_data_percent = 10
 
 #order = (p, d, q)
 SARIMAX_order = (7, 0, 16)
-
+SARIMAX_maxiter = 250
+SARIMAX_method = 'lbfgs'
 
 def encode_values(df):
     le = LabelEncoder()
@@ -56,14 +58,24 @@ def main():
     #print('ARMA(p,q) =', resDiff['aic_min_order'], 'is the best.')
 
     model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, enforce_stationarity=False, enforce_invertibility=False)
-    model_fitted = model.fit(disp=1)
+    model_fitted = model.fit(disp=1, maxiter=SARIMAX_maxiter, method=SARIMAX_method)
 
     pred = model_fitted.predict(start=len(series_train), end=len(series) - 1, exog=exog_test)
     pred = pred.round().astype(int)
-    print('pred.shape: ', pred.shape, '\n', pred, '\n\n\n\n', series_test.flatten())
+    print('pred.shape: ', pred.shape, ' predictions:\n', pred, '\n\n\n\ntest:\n', series_test.flatten())
+    mse = mean_squared_error(series_test, pred)
+    print('mse: ', mse)
+
+    plt.plot(series_test, label='test values')
+    plt.plot(pred, label='predicted values')
+    plt.xlabel('sample')
+    plt.ylabel('value')
+    plt.title('SARIMAX predictions of {0}'.format(args.input))
+    plt.legend()
+    plt.show()
 
     #dataset_predict.metrics.print_metrics(dataset_predict.metrics.get_metrics_full(test, predictions))
-    print('test')
+    print('END')
 
 if __name__ == '__main__':
     main()
