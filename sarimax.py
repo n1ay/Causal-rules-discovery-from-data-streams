@@ -7,12 +7,11 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 import dataset_predict.metrics
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+from config import test_data_percent
 
 # https://www.kaggle.com/poiupoiu/how-to-use-sarimax
 # https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html
 # https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/
-
-test_data_percent = 10
 
 #order = (p, d, q)
 SARIMAX_order = (7, 0, 16)
@@ -30,13 +29,12 @@ def encode_values(df):
 
 def main():
     # CLI parser
-    parser = argparse.ArgumentParser(description='Sequence Predict-Test Tool.')
+    parser = argparse.ArgumentParser(description='SARIMAX-Test Tool.')
     parser.add_argument('-i', '--input', help='Input file name with csv sequence', required=True)
     args = parser.parse_args()
 
     # load dataset
     df = pd.read_csv(args.input)
-    df = df[::10]
     encoded_df, classes = encode_values(df)
     series = encoded_df[:, (encoded_df.shape[1] - 1):]
     exog = encoded_df[:, 0:(encoded_df.shape[1] - 1)]
