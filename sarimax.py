@@ -4,8 +4,7 @@ import argparse
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error
 from statsmodels.tsa.statespace.sarimax import SARIMAX
-import dataset_predict.metrics
-import matplotlib.pyplot as plt
+from dataset_predict.metrics import present_results
 import statsmodels.api as sm
 from config import test_data_percent
 
@@ -52,28 +51,24 @@ def main():
     #fig = sm.graphics.tsa.plot_pacf(pd.DataFrame(series_train).diff(), lags=25, ax=ax[1])
     #plt.show()
 
-    #resDiff = sm.tsa.arma_order_select_ic(series_train, max_ar=20, max_ma=20, ic='aic', trend='nc')
-    #print('ARMA(p,q) =', resDiff['aic_min_order'], 'is the best.')
+    resDiff = sm.tsa.arma_order_select_ic(series_train, max_ar=20, max_ma=20, ic='aic', trend='nc')
+    print('ARMA(p,q) =', resDiff['aic_min_order'], 'is the best.')
 
-    model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, enforce_stationarity=False, enforce_invertibility=False)
-    model_fitted = model.fit(disp=1, maxiter=SARIMAX_maxiter, method=SARIMAX_method)
+    # model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, enforce_stationarity=False, enforce_invertibility=False)
+    # model_fitted = model.fit(disp=1, maxiter=SARIMAX_maxiter, method=SARIMAX_method)
+    #
+    # pred = model_fitted.predict(start=len(series_train), end=len(series) - 1, exog=exog_test)
+    # pred = pred.round().astype(int)
+    # print('pred.shape: ', pred.shape, ' predictions:\n', pred, '\n\n\n\ntest:\n', series_test.flatten())
+    # mse = mean_squared_error(series_test, pred)
+    # print('mse: ', mse)
+    #
+    # series_test = pd.DataFrame(series_test)
+    # pred = pd.DataFrame(pred)
+    #
+    # present_results(series_test, pred, 'SARIMAX')
 
-    pred = model_fitted.predict(start=len(series_train), end=len(series) - 1, exog=exog_test)
-    pred = pred.round().astype(int)
-    print('pred.shape: ', pred.shape, ' predictions:\n', pred, '\n\n\n\ntest:\n', series_test.flatten())
-    mse = mean_squared_error(series_test, pred)
-    print('mse: ', mse)
 
-    plt.plot(series_test, label='test values')
-    plt.plot(pred, label='predicted values')
-    plt.xlabel('sample')
-    plt.ylabel('value')
-    plt.title('SARIMAX predictions of {0}'.format(args.input))
-    plt.legend()
-    plt.show()
-
-    #dataset_predict.metrics.print_metrics(dataset_predict.metrics.get_metrics_full(test, predictions))
-    print('END')
 
 if __name__ == '__main__':
     main()

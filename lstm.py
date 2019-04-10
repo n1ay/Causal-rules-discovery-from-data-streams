@@ -4,17 +4,18 @@
 # http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 # http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
+import argparse
+
 import numpy as np
 import pandas as pd
-import argparse
-from sklearn.preprocessing import LabelEncoder
-from keras.models import Sequential
 from keras.layers import LSTM, Dense
-from sklearn.model_selection import KFold
-import dataset_predict.metrics
-from utils.utils import transform_list_into_categorical_vector_list as tlc, \
-    transform_categorical_vector_list_into_list as tcv, reshape_data_to_lstm
+from keras.models import Sequential
+from sklearn.preprocessing import LabelEncoder
+
 from config import test_data_percent
+from dataset_predict.metrics import present_results
+from utils.utils import transform_list_into_categorical_vector_list as tlc, \
+    reshape_data_to_lstm
 
 epochs = 15
 batch_size = 10
@@ -52,7 +53,7 @@ def main():
     y_train = (y[0:int(len(X) * (100 - test_data_percent) / 100)])
     X_test = (X[int(len(X) * (100 - test_data_percent) / 100):])
     y_test = (y[int(len(X) * (100 - test_data_percent) / 100):])
-    y_raw_test = df.iloc[int(len(X) * (100 - test_data_percent) / 100):, len(df.columns) - 1]
+    y_raw_test = pd.DataFrame(df.iloc[int(len(X) * (100 - test_data_percent) / 100):, len(df.columns) - 1])
 
     X_train = reshape_data_to_lstm(X_train, backward_time_step, forward_time_step)
     X_test = reshape_data_to_lstm(X_test, backward_time_step, forward_time_step)
@@ -70,8 +71,9 @@ def main():
     y_predict_categorical = model.predict(X_test)
     y_predict_encoded = [np.argmax(y_predict_categorical[i, :]) for i in range(y_predict_categorical.shape[0])]
     y_predict = le.inverse_transform(y_predict_encoded)
+    y_predict = pd.DataFrame(y_predict)
 
-    dataset_predict.metrics.print_metrics(dataset_predict.metrics.get_metrics(y_raw_test, y_predict))
+    present_results(y_raw_test, y_predict, 'LSTM')
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ import pandas as pd
 from pgmpy.models import BayesianModel
 import networkx as nx
 import matplotlib.pyplot as plt
-from dataset_predict.metrics import print_metrics, get_metrics
+from dataset_predict.metrics import present_results
 from config import test_data_percent
 
 draw_options = {
@@ -86,8 +86,7 @@ def main():
     predicted_data = model.predict(data_test_predict)
     nx.drawing.nx_pylab.draw_networkx(model, **draw_options)
     plt.show()
-    print_metrics(get_metrics(data_test, predicted_data))
-    print('END')
+    present_results(data_test, predicted_data, 'Bayesian Model')
 
 if __name__ == '__main__':
     main()
