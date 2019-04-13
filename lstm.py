@@ -16,6 +16,7 @@ from config import test_data_percent
 from dataset_predict.metrics import present_results
 from utils.utils import transform_list_into_categorical_vector_list as tlc, \
     reshape_data_to_lstm
+import time
 
 epochs = 15
 batch_size = 10
@@ -63,17 +64,20 @@ def main():
     model.add(LSTM(LSTM_nodes, recurrent_dropout=dropout))
     model.add(Dense(classes * classes, activation='relu'))
     model.add(Dense(classes, activation='softmax'))
+    start = time.time()
     model.compile(loss='categorical_crossentropy', optimizer='adam')
 
     history = model.fit(X_train, y_train, initial_epoch=0, epochs=epochs,
                         batch_size=batch_size, validation_data=(X_test, y_test),
                         verbose=1, shuffle=False)
     y_predict_categorical = model.predict(X_test)
+    stop = time.time()
     y_predict_encoded = [np.argmax(y_predict_categorical[i, :]) for i in range(y_predict_categorical.shape[0])]
     y_predict = le.inverse_transform(y_predict_encoded)
     y_predict = pd.DataFrame(y_predict)
 
     present_results(y_raw_test, y_predict, 'LSTM')
+    print('Time elapsed: {} s'.format(stop - start))
 
 
 if __name__ == '__main__':

@@ -5,6 +5,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from dataset_predict.metrics import present_results
 from config import test_data_percent
+import time
 
 draw_options = {
     'node_color': 'blue',
@@ -81,12 +82,15 @@ def main():
 
     print('Loaded data: ', args.input, '\ndata_train.shape: ', data_train.shape, '\ndata_test_predict.shape: ', data_test_predict.shape)
 
+    start = time.time()
     model = create_model()
     model.fit(data_train)
     predicted_data = model.predict(data_test_predict)
+    stop = time.time()
     nx.drawing.nx_pylab.draw_networkx(model, **draw_options)
     plt.show()
     present_results(data_test, predicted_data, 'Bayesian Model')
+    print('Time elapsed: {} s', stop - start)
 
 if __name__ == '__main__':
     main()
