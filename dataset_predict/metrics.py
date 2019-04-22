@@ -33,8 +33,8 @@ def get_metrics_full(true: pd.DataFrame, pred: pd.DataFrame, mean=True):
 def plot(true, pred, title):
     x = range(len(true))
     fig = plt.figure()
-    plt.plot(x, true, label='Ground truth values', color='green')
-    plt.plot(x, pred, label='Predicted values', color='purple')
+    plt.plot(x, true.values.flatten().tolist(), label='Ground truth values', color='green')
+    plt.plot(x, pred.values.flatten().tolist(), label='Predicted values', color='purple')
     plt.title(title)
     plt.xlabel('Index')
     plt.ylabel('Value')
