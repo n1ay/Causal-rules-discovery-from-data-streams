@@ -109,7 +109,7 @@ class Classifier:
 
     def predict(self, X_test):
         (self.X_tll_test[0], self.X_gll_test[0], self.X_gsld_test[0]) = self._fit(X_test, test_set=True)
-        return self._predict_value(0)
+        return self._predict_value(0, explain=True)
 
     # full prediction of stream for X = X_test
     def predict_kfolded(self):
@@ -126,15 +126,15 @@ class Classifier:
                 lst.append(processes[i].result())
         return lst
 
-    def _predict_value(self, test_idx):
+    def _predict_value(self, test_idx, explain=False):
         lst = []
         if len(self.X_gsld_test[test_idx].rules_stream) == 1:
-            return self.X_gsl_train[0].decompose(self.columns[-1], self._single_rule_lookup(test_idx, 0))
+            return self.X_gsl_train[0].decompose(self.columns[-1], self._single_rule_lookup(test_idx, 0), explain=explain)
 
         for i in range(self.lookup, len(self.X_gsld_test[test_idx].rules_stream)):
             lst += self._lookup_value(test_idx, i)
 
-        return self.X_gsl_train[0].decompose(self.columns[-1], lst)
+        return self.X_gsl_train[0].decompose(self.columns[-1], lst, explain=explain)
 
     def _lookup_value(self, test_idx, idx):
         X = []

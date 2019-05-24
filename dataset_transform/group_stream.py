@@ -122,11 +122,13 @@ class GroupStream:
             self.rules_stream = gs
         return gs
 
-    def decompose(self, attribute, lst=[]):
+    def decompose(self, attribute, lst=[], explain=False):
         if lst == []:
             lst = self.rules_stream
         ret = []
         for i in lst:
+            if explain:
+                print('Predicting sequence with rule: {0} for the next {1} time steps'.format(i, i.length))
             for j in range(i.length):
                 ret.append(i.values[attribute])
 

@@ -72,7 +72,7 @@ class RulesStream:
         for i in range(len(self.values[0])):
             for j in range(len(self.output_format)):
                 str += '{0},'.format(self.values[self.attributes[self.output_format[j]]][i])
-            str += '[{0}]'.format(self.values[0][i]._to - self.values[0][i]._from)
+            str += '[{0}, {1}]'.format(self.values[0][i].change_moment - self.values[0][i]._from, self.values[0][i]._to - self.values[0][i].change_moment)
             str += self.format_order(self.order[i])
         return str
 
