@@ -25,8 +25,13 @@ classifier = Classifier(lookup=1, merge_threshold=2, fade_threshold=2)
 # prediction of single stream
 start = time.time()
 classifier.fit(df_train)
+stop = time.time()
+fit_time = stop - start
+start = time.time()
 prediction = classifier.predict(df_test.iloc[:, :-1])
 stop = time.time()
+predict_time = stop - start
 
 present_results(y_test, prediction, 'QSP')
-print('Time elapsed: {0} s'.format(stop - start))
+print('Time elapsed: fit: {0} s, predict: {1} s'.format(fit_time, predict_time))
+

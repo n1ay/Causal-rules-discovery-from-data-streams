@@ -70,14 +70,18 @@ def main():
     history = model.fit(X_train, y_train, initial_epoch=0, epochs=epochs,
                         batch_size=batch_size, validation_data=(X_test, y_test),
                         verbose=1, shuffle=False)
+    stop = time.time()
+    fit_time = stop - start
+    start = time.time()
     y_predict_categorical = model.predict(X_test)
     stop = time.time()
+    predict_time = stop - start
     y_predict_encoded = [np.argmax(y_predict_categorical[i, :]) for i in range(y_predict_categorical.shape[0])]
     y_predict = le.inverse_transform(y_predict_encoded)
     y_predict = pd.DataFrame(y_predict)
 
     present_results(y_raw_test, y_predict, 'LSTM')
-    print('Time elapsed: {} s'.format(stop - start))
+    print('Time elapsed: fit: {0} s, predict: {1}'.format(fit_time, predict_time))
 
 
 if __name__ == '__main__':

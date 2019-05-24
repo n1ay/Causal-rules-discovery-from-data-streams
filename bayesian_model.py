@@ -85,12 +85,16 @@ def main():
     start = time.time()
     model = create_model()
     model.fit(data_train)
+    stop = time.time()
+    fit_time = stop - start
+    start = time.time()
     predicted_data = model.predict(data_test_predict)
     stop = time.time()
+    predict_time = stop - start
     nx.drawing.nx_pylab.draw_networkx(model, **draw_options)
     plt.show()
     present_results(data_test, predicted_data, 'Bayesian Model')
-    print('Time elapsed: {} s', stop - start)
+    print('Time elapsed: fit: {0} s, predict: {1} s'.format(fit_time, predict_time))
 
 if __name__ == '__main__':
     main()

@@ -59,9 +59,14 @@ def main():
     start = time.time()
     model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, enforce_stationarity=False, enforce_invertibility=False)
     model_fitted = model.fit(disp=1, maxiter=SARIMAX_maxiter, method=SARIMAX_method)
+    stop = time.time()
+    fit_time = stop - start
 
+    start = time.time()
     pred = model_fitted.predict(start=len(series_train), end=len(series) - 1, exog=exog_test)
     stop = time.time()
+    predict_time = stop - start
+
     print('pred.shape: ', pred.shape, ' predictions:\n', pred, '\n\n\n\ntest:\n', series_test.flatten())
     mse = mean_squared_error(series_test, pred)
     print('mse: ', mse)
@@ -71,7 +76,7 @@ def main():
     pred = pd.DataFrame(pred)
 
     present_results(series_test_raw, pred, 'SARIMAX')
-    print('Time elapsed: {0} s'.format(stop - start))
+    print('Time elapsed: fit: {0} s, predict: {1} s'.format(fit_time, predict_time))
 
 
 
