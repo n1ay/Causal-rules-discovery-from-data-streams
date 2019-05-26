@@ -82,6 +82,11 @@ class Classifier:
         self.X_gsl_train, self.X_gsl_test = [None], [None]
         self.X_gsld_train, self.X_gsld_test = [None], [None]
         self.columns = X_train.columns
+        values = X_train[self.columns[-1]]
+        self.y_values = Counter()
+        for val in values:
+            self.y_values[val] += 1
+
         (self.X_tll_train[0], self.X_gll_train[0], self.X_gsl_train[0], self.X_gsld_train[0]) = self._fit(X_train)
 
     def _fit(self, X, test_set=False):
