@@ -21,7 +21,7 @@ tl, gl, attr = [], [], []
 j = 0
 for i in df.columns:
     attr.append(i)
-    tl.append(ClusterList(i, np.array(df[i]), merge_at_once=True, merge_threshold=2))
+    tl.append(ClusterList(i, np.array(df[i]), merge_at_once=True, merge_threshold=0))
     gl.append(GroupClusterList(tl[j]))
     j += 1
 # print(tl)

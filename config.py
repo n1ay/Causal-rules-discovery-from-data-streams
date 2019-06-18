@@ -1,1 +1,1 @@
-test_data_percent = 30
+test_data_percent = 15

@@ -91,8 +91,8 @@ def main():
     predicted_data = model.predict(data_test_predict)
     stop = time.time()
     predict_time = stop - start
-    nx.drawing.nx_pylab.draw_networkx(model, **draw_options)
-    plt.show()
+    #nx.drawing.nx_pylab.draw_networkx(model, **draw_options)
+    #plt.show()
     present_results(data_test, predicted_data, 'Bayesian Model')
     print('Time elapsed: fit: {0} s, predict: {1} s'.format(fit_time, predict_time))
 

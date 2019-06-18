@@ -14,8 +14,9 @@ import time
 # https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/
 
 #order = (p, d, q)
-SARIMAX_order = (7, 0, 16)
-SARIMAX_maxiter = 250
+# seq 1 -> SARIMAX_order = (27, 1, 14)
+SARIMAX_order = (5, 0, 7)
+SARIMAX_maxiter = 500
 SARIMAX_method = 'lbfgs'
 
 def encode_values(df):
@@ -26,6 +27,11 @@ def encode_values(df):
     encoded_values = le.transform(df.values.reshape(1, -1)[0])
     return encoded_values.reshape(df.shape), le, classes
 
+def min_max_scale(df, classes):
+    return df / (classes - 1)
+
+def min_max_scale_inverse(df, classes):
+    return df * (classes - 1)
 
 def main():
     # CLI parser
@@ -36,6 +42,10 @@ def main():
     # load dataset
     df = pd.read_csv(args.input)
     encoded_df, le, classes = encode_values(df)
+
+    #normalized df
+    #encoded_df = min_max_scale(encoded_df, classes)
+
     series = encoded_df[:, (encoded_df.shape[1] - 1):]
     exog = encoded_df[:, 0:(encoded_df.shape[1] - 1)]
 
@@ -57,7 +67,7 @@ def main():
     #print('ARMA(p,q) =', resDiff['aic_min_order'], 'is the best.')
 
     start = time.time()
-    model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, enforce_stationarity=False, enforce_invertibility=False)
+    model = SARIMAX(endog=series_train, exog=exog_train, order=SARIMAX_order, trend = 'n', enforce_stationarity=False, enforce_invertibility=False)
     model_fitted = model.fit(disp=1, maxiter=SARIMAX_maxiter, method=SARIMAX_method)
     stop = time.time()
     fit_time = stop - start
@@ -71,6 +81,7 @@ def main():
     mse = mean_squared_error(series_test, pred)
     print('mse: ', mse)
 
+    #pred = min_max_scale_inverse(pred, classes)
     pred = le.inverse_transform(pred.round().astype(int))
     series_test_raw = pd.DataFrame(series_test_raw)
     pred = pd.DataFrame(pred)
