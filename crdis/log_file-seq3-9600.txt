@@ -1,0 +1,1320 @@
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 1e-05
+fit time:  2.156398057937622 s
+predict time:  49.65319085121155 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 3e-05
+fit time:  2.26159405708313 s
+predict time:  49.60698103904724 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.0001
+fit time:  2.297466993331909 s
+predict time:  52.703912019729614 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.0003
+fit time:  2.3163909912109375 s
+predict time:  51.847411155700684 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.001
+fit time:  2.340569257736206 s
+predict time:  51.511828899383545 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.003
+fit time:  2.479671001434326 s
+predict time:  54.553014278411865 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.01
+fit time:  2.4354381561279297 s
+predict time:  54.113276720047 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.03
+fit time:  2.4893128871917725 s
+predict time:  54.337318897247314 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.1
+fit time:  2.3939208984375 s
+predict time:  52.99939298629761 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 0.3
+fit time:  2.397097110748291 s
+predict time:  53.570168018341064 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 1e-05 1.0
+fit time:  2.292680025100708 s
+predict time:  54.03171968460083 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 1e-05
+fit time:  2.2880139350891113 s
+predict time:  54.31461715698242 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 3e-05
+fit time:  2.3404111862182617 s
+predict time:  53.98780369758606 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.0001
+fit time:  2.43786883354187 s
+predict time:  55.813278913497925 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.0003
+fit time:  2.4471852779388428 s
+predict time:  52.952213525772095 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.001
+fit time:  2.405290126800537 s
+predict time:  54.12178182601929 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.003
+fit time:  2.3760271072387695 s
+predict time:  51.736323833465576 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.01
+fit time:  2.4992241859436035 s
+predict time:  49.79353475570679 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.03
+fit time:  2.3275179862976074 s
+predict time:  52.71628999710083 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.1
+fit time:  2.342397928237915 s
+predict time:  53.08329892158508 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 0.3
+fit time:  2.3457911014556885 s
+predict time:  52.642534017562866 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 3e-05 1.0
+fit time:  2.3458821773529053 s
+predict time:  53.30908393859863 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 1e-05
+fit time:  2.2181990146636963 s
+predict time:  53.62951683998108 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 3e-05
+fit time:  2.258781909942627 s
+predict time:  52.996363162994385 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.0001
+fit time:  2.2435250282287598 s
+predict time:  52.54955720901489 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.0003
+fit time:  2.4266440868377686 s
+predict time:  54.712631940841675 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.001
+fit time:  2.5777347087860107 s
+predict time:  54.98648524284363 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.003
+fit time:  2.34430193901062 s
+predict time:  55.956520795822144 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.01
+fit time:  2.3535118103027344 s
+predict time:  52.65032649040222 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.03
+fit time:  2.4415700435638428 s
+predict time:  52.0323441028595 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.1
+fit time:  2.41280198097229 s
+predict time:  53.132469177246094 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 0.3
+fit time:  2.3270530700683594 s
+predict time:  52.34037899971008 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0001 1.0
+fit time:  2.3418149948120117 s
+predict time:  51.399144887924194 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 1e-05
+fit time:  2.2239859104156494 s
+predict time:  50.477766036987305 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 3e-05
+fit time:  2.3059561252593994 s
+predict time:  52.32122468948364 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.0001
+fit time:  2.2847368717193604 s
+predict time:  50.207818031311035 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.0003
+fit time:  2.2600951194763184 s
+predict time:  52.368550062179565 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.001
+fit time:  2.311486005783081 s
+predict time:  51.04944682121277 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.003
+fit time:  2.240433931350708 s
+predict time:  50.24436140060425 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.01
+fit time:  2.342871904373169 s
+predict time:  50.51434516906738 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.03
+fit time:  2.3216092586517334 s
+predict time:  50.85065460205078 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.1
+fit time:  2.250800848007202 s
+predict time:  51.500715494155884 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 0.3
+fit time:  2.2230467796325684 s
+predict time:  49.23638916015625 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.0003 1.0
+fit time:  2.232187271118164 s
+predict time:  50.515299558639526 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 1e-05
+fit time:  2.1461281776428223 s
+predict time:  48.001932859420776 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 3e-05
+fit time:  2.1821041107177734 s
+predict time:  46.98998713493347 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.0001
+fit time:  2.2047691345214844 s
+predict time:  50.08579182624817 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.0003
+fit time:  2.2171339988708496 s
+predict time:  51.20799708366394 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.001
+fit time:  2.347050666809082 s
+predict time:  51.87644410133362 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.003
+fit time:  2.198965072631836 s
+predict time:  48.710099935531616 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.01
+fit time:  2.173459053039551 s
+predict time:  51.10495090484619 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.03
+fit time:  2.2291481494903564 s
+predict time:  51.48567461967468 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.1
+fit time:  2.216094970703125 s
+predict time:  51.546875953674316 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 0.3
+fit time:  2.231995105743408 s
+predict time:  51.66097903251648 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.001 1.0
+fit time:  2.2701828479766846 s
+predict time:  49.955695390701294 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 1e-05
+fit time:  2.1553781032562256 s
+predict time:  46.80802512168884 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 3e-05
+fit time:  2.152986764907837 s
+predict time:  49.63196921348572 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.0001
+fit time:  2.1995439529418945 s
+predict time:  49.40007781982422 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.0003
+fit time:  2.212334156036377 s
+predict time:  50.4536988735199 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.001
+fit time:  2.1822941303253174 s
+predict time:  47.93059706687927 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.003
+fit time:  2.203881025314331 s
+predict time:  50.514442920684814 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.01
+fit time:  2.2326440811157227 s
+predict time:  47.186898946762085 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.03
+fit time:  2.3210220336914062 s
+predict time:  51.383861780166626 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.1
+fit time:  2.206461191177368 s
+predict time:  49.274237632751465 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 0.3
+fit time:  2.221421718597412 s
+predict time:  49.366331338882446 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.003 1.0
+fit time:  2.3128199577331543 s
+predict time:  47.918352365493774 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 1e-05
+fit time:  2.181118965148926 s
+predict time:  48.19145607948303 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 3e-05
+fit time:  2.160997152328491 s
+predict time:  48.25744962692261 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.0001
+fit time:  2.180816173553467 s
+predict time:  49.34490180015564 s
+Accuracy: 0.37209302325581395, Precision: 0.922093023255814, Recall: 0.37209302325581395, F1-Score: 0.5302242002549156
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.4035309 0.1261034 0.4703657]
+ [0.        0.        1.       ]
+ [      nan       nan       nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.0003
+fit time:  2.228714942932129 s
+predict time:  51.73112916946411 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.001
+fit time:  2.2129619121551514 s
+predict time:  48.664620876312256 s
+Accuracy: 0.37209302325581395, Precision: 0.9593023255813954, Recall: 0.37209302325581395, F1-Score: 0.5362039199756271
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.38787879 0.12121212 0.49090909]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.003
+fit time:  2.1829330921173096 s
+predict time:  48.77137303352356 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.01
+fit time:  2.232269048690796 s
+predict time:  49.90925097465515 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.03
+fit time:  2.2651290893554688 s
+predict time:  49.66914391517639 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.1
+fit time:  2.2075860500335693 s
+predict time:  49.91974687576294 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 0.3
+fit time:  2.1936941146850586 s
+predict time:  50.20294213294983 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.01 1.0
+fit time:  2.2182910442352295 s
+predict time:  48.2790105342865 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 1e-05
+fit time:  2.1829471588134766 s
+predict time:  48.293860912323 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 3e-05
+fit time:  2.1949667930603027 s
+predict time:  48.70337986946106 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.0001
+fit time:  2.1979570388793945 s
+predict time:  47.319700956344604 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.0003
+fit time:  2.2122788429260254 s
+predict time:  48.35044598579407 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.001
+fit time:  2.2134459018707275 s
+predict time:  48.88523006439209 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.003
+fit time:  2.2619502544403076 s
+predict time:  50.31736373901367 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.01
+fit time:  2.2176930904388428 s
+predict time:  50.10123610496521 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.03
+fit time:  2.231743812561035 s
+predict time:  49.992796897888184 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.1
+fit time:  2.2352511882781982 s
+predict time:  49.59939169883728 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 0.3
+fit time:  2.284179925918579 s
+predict time:  50.75327706336975 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.03 1.0
+fit time:  2.2485640048980713 s
+predict time:  49.301095962524414 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 1e-05
+fit time:  2.1710457801818848 s
+predict time:  48.71190404891968 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 3e-05
+fit time:  2.173804759979248 s
+predict time:  48.934035301208496 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.0001
+fit time:  2.1899678707122803 s
+predict time:  50.47122240066528 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.0003
+fit time:  2.205278158187866 s
+predict time:  51.53037405014038 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.001
+fit time:  2.2436511516571045 s
+predict time:  51.66635179519653 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.003
+fit time:  2.2097368240356445 s
+predict time:  48.74401617050171 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.01
+fit time:  2.2947871685028076 s
+predict time:  48.05788064002991 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.03
+fit time:  2.216763973236084 s
+predict time:  50.29200100898743 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.1
+fit time:  2.207787036895752 s
+predict time:  47.625603914260864 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 0.3
+fit time:  2.196320056915283 s
+predict time:  52.5984468460083 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.1 1.0
+fit time:  2.211768865585327 s
+predict time:  52.36720609664917 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 1e-05
+fit time:  2.2001967430114746 s
+predict time:  47.42178130149841 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 3e-05
+fit time:  2.229787826538086 s
+predict time:  47.35854506492615 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.0001
+fit time:  2.2141170501708984 s
+predict time:  49.80798816680908 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.0003
+fit time:  2.2046592235565186 s
+predict time:  49.1790885925293 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.001
+fit time:  2.2297959327697754 s
+predict time:  50.142765045166016 s
+Accuracy: 0.5217391304347826, Precision: 0.9130434782608695, Recall: 0.5217391304347826, F1-Score: 0.6640316205533596
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.57142857 0.         0.42857143]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.003
+fit time:  2.228922128677368 s
+predict time:  49.05375385284424 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.01
+fit time:  2.3158257007598877 s
+predict time:  49.821550369262695 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.03
+fit time:  2.2379307746887207 s
+predict time:  47.63105511665344 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.1
+fit time:  2.2247657775878906 s
+predict time:  54.77544021606445 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 0.3
+fit time:  2.226487159729004 s
+predict time:  47.073227643966675 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf
+change detection method:  adwin
+0.001 1e-05 1e-05 0.3 1.0
+fit time:  2.2167418003082275 s
+predict time:  48.72268486022949 s
+Accuracy: 0.5643564356435643, Precision: 0.9207920792079208, Recall: 0.5643564356435643, F1-Score: 0.6998019801980198
+
+Plot has been saved to CRDiS.pdf
+Normalized confusion matrix
+[[0.61290323 0.         0.38709677]
+ [0.         0.         1.        ]
+ [       nan        nan        nan]]
+Confusion matrix has been saved to CRDiS_cm.pdf

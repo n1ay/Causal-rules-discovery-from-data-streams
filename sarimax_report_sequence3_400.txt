@@ -1,0 +1,3158 @@
+
+(5, 0, 5)
+mse:  3.451562597269368
+Accuracy: 0.175, Precision: 0.080327868852459, Recall: 0.175, F1-Score: 0.11011235955056181
+
+Plot has been saved to SARIMAX-5-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.44444444 0.55555556]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-0-5_cm.pdf
+Time elapsed: 2.615910291671753 s
+--------------------------------------------------
+(6, 0, 5)
+mse:  4.113918169903445
+Accuracy: 0.21666666666666667, Precision: 0.10111111111111111, Recall: 0.21666666666666667, F1-Score: 0.13787878787878788
+
+Plot has been saved to SARIMAX-6-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.22222222 0.77777778]
+ [0.         0.         0.65384615 0.34615385]
+ [0.         0.         0.92857143 0.07142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-0-5_cm.pdf
+Time elapsed: 1.288945198059082 s
+--------------------------------------------------
+(7, 0, 5)
+mse:  4.017450619064899
+Accuracy: 0.13333333333333333, Precision: 0.10944444444444444, Recall: 0.13333333333333333, F1-Score: 0.11371894697812385
+
+Plot has been saved to SARIMAX-7-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-7-0-5_cm.pdf
+Time elapsed: 3.3117711544036865 s
+--------------------------------------------------
+(8, 0, 5)
+mse:  5.216741637840579
+Accuracy: 0.025, Precision: 0.0006250000000000001, Recall: 0.025, F1-Score: 0.0012195121951219514
+
+Plot has been saved to SARIMAX-8-0-5.pdf
+Normalized confusion matrix
+[[0. 0. 0. 1.]
+ [0. 0. 0. 1.]
+ [0. 0. 0. 1.]
+ [0. 0. 0. 1.]]
+Confusion matrix has been saved to SARIMAX-8-0-5_cm.pdf
+Time elapsed: 1.5933120250701904 s
+--------------------------------------------------
+(9, 0, 5)
+mse:  2.959442325421745
+Accuracy: 0.11666666666666667, Precision: 0.03512544802867383, Recall: 0.11666666666666667, F1-Score: 0.05399449035812672
+
+Plot has been saved to SARIMAX-9-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.84126984 0.15873016]
+ [0.         0.         0.88461538 0.11538462]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-5_cm.pdf
+Time elapsed: 3.027498960494995 s
+--------------------------------------------------
+(10, 0, 5)
+mse:  3.3534493061572457
+Accuracy: 0.05, Precision: 0.02456140350877193, Recall: 0.05, F1-Score: 0.03294117647058824
+
+Plot has been saved to SARIMAX-10-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.88461538 0.11538462]
+ [0.         0.         0.21428571 0.78571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-5_cm.pdf
+Time elapsed: 3.65693998336792 s
+--------------------------------------------------
+(11, 0, 5)
+mse:  4.879243143552675
+Accuracy: 0.03333333333333333, Precision: 0.0345679012345679, Recall: 0.03333333333333333, F1-Score: 0.033939393939393936
+
+Plot has been saved to SARIMAX-11-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.69230769 0.30769231]
+ [0.         0.         0.14285714 0.85714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-5_cm.pdf
+Time elapsed: 7.470077037811279 s
+--------------------------------------------------
+(12, 0, 5)
+mse:  10.725347377336398
+Accuracy: 0.008333333333333333, Precision: 0.0014705882352941174, Recall: 0.008333333333333333, F1-Score: 0.0025000000000000005
+
+Plot has been saved to SARIMAX-12-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.03174603 0.84126984 0.12698413]
+ [0.         0.         0.         0.38461538 0.57692308 0.03846154]
+ [0.         0.         0.         0.14285714 0.85714286 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-12-0-5_cm.pdf
+Time elapsed: 6.696693181991577 s
+--------------------------------------------------
+(13, 0, 5)
+mse:  6.520400067521477
+Accuracy: 0.25833333333333336, Precision: 0.25599417426545085, Recall: 0.25833333333333336, F1-Score: 0.2156904024767802
+
+Plot has been saved to SARIMAX-13-0-5.pdf
+Normalized confusion matrix
+[[0.         0.01587302 0.15873016 0.3968254  0.3968254  0.03174603]
+ [0.         0.19230769 0.46153846 0.23076923 0.11538462 0.        ]
+ [0.         0.07142857 0.85714286 0.07142857 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-5_cm.pdf
+Time elapsed: 3.7519729137420654 s
+--------------------------------------------------
+(14, 0, 5)
+mse:  6.338626929152381
+Accuracy: 0.016666666666666666, Precision: 0.00046728971962616814, Recall: 0.016666666666666666, F1-Score: 0.0009090909090909091
+
+Plot has been saved to SARIMAX-14-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.88888889 0.11111111]
+ [0.         0.         0.         0.80769231 0.19230769]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-14-0-5_cm.pdf
+Time elapsed: 8.837463855743408 s
+--------------------------------------------------
+(15, 0, 5)
+mse:  9.72987154691159
+Accuracy: 0.016666666666666666, Precision: 0.0025000000000000005, Recall: 0.016666666666666666, F1-Score: 0.004347826086956523
+
+Plot has been saved to SARIMAX-15-0-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.04761905 0.95238095]
+ [0.         0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.         0.17857143 0.82142857]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-5_cm.pdf
+Time elapsed: 11.44216012954712 s
+--------------------------------------------------
+(5, 0, 6)
+mse:  3.7324155711610607
+Accuracy: 0.15833333333333333, Precision: 0.08525641025641024, Recall: 0.15833333333333333, F1-Score: 0.11083333333333333
+
+Plot has been saved to SARIMAX-5-0-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.19230769 0.80769231]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-0-6_cm.pdf
+Time elapsed: 2.2701900005340576 s
+--------------------------------------------------
+(6, 0, 6)
+mse:  6.081109395167614
+Accuracy: 0.26666666666666666, Precision: 0.2542974792974793, Recall: 0.26666666666666666, F1-Score: 0.22644179894179897
+
+Plot has been saved to SARIMAX-6-0-6.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.17460317 0.36507937 0.42857143]
+ [0.         0.19230769 0.26923077 0.42307692 0.11538462]
+ [0.         0.07142857 0.89285714 0.03571429 0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-6_cm.pdf
+Time elapsed: 1.9777328968048096 s
+--------------------------------------------------
+(7, 0, 6)
+mse:  9.839794515474434
+Accuracy: 0.008333333333333333, Precision: 0.0007575757575757576, Recall: 0.008333333333333333, F1-Score: 0.0013888888888888887
+
+Plot has been saved to SARIMAX-7-0-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.19047619 0.79365079 0.01587302]
+ [0.         0.         0.         0.38461538 0.61538462 0.        ]
+ [0.         0.         0.         0.35714286 0.64285714 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-7-0-6_cm.pdf
+Time elapsed: 4.271414041519165 s
+--------------------------------------------------
+(8, 0, 6)
+mse:  5.717338345815876
+Accuracy: 0.225, Precision: 0.19343468468468467, Recall: 0.225, F1-Score: 0.19479691876750704
+
+Plot has been saved to SARIMAX-8-0-6.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.19047619 0.38095238 0.3968254 ]
+ [0.         0.23076923 0.30769231 0.38461538 0.07692308]
+ [0.         0.28571429 0.67857143 0.03571429 0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-8-0-6_cm.pdf
+Time elapsed: 2.4411027431488037 s
+--------------------------------------------------
+(9, 0, 6)
+mse:  3.6274231048661867
+Accuracy: 0.09166666666666666, Precision: 0.05032679738562092, Recall: 0.09166666666666666, F1-Score: 0.06497890295358649
+
+Plot has been saved to SARIMAX-9-0-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.41269841 0.58730159]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-6_cm.pdf
+Time elapsed: 4.176485061645508 s
+--------------------------------------------------
+(10, 0, 6)
+mse:  6.472513686913711
+Accuracy: 0.24166666666666667, Precision: 0.24589085763504365, Recall: 0.24166666666666667, F1-Score: 0.21439426029863393
+
+Plot has been saved to SARIMAX-10-0-6.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.36507937 0.44444444 0.01587302]
+ [0.         0.19230769 0.34615385 0.30769231 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-10-0-6_cm.pdf
+Time elapsed: 2.932513952255249 s
+--------------------------------------------------
+(11, 0, 6)
+mse:  3.719460699091347
+Accuracy: 0.175, Precision: 0.08166666666666665, Recall: 0.175, F1-Score: 0.11136363636363633
+
+Plot has been saved to SARIMAX-11-0-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.41269841 0.58730159]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-6_cm.pdf
+Time elapsed: 6.277202129364014 s
+--------------------------------------------------
+(12, 0, 6)
+(13, 0, 6)
+mse:  7.221617793469556e+230
+(14, 0, 6)
+mse:  22.928094958883044
+Accuracy: 0.08333333333333333, Precision: 0.24166666666666667, Recall: 0.08333333333333333, F1-Score: 0.12392857142857142
+
+Plot has been saved to SARIMAX-14-0-6.pdf
+Normalized confusion matrix
+[[       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan
+         nan        nan        nan        nan]
+ [0.03174603 0.34920635 0.55555556 0.06349206 0.         0.
+  0.         0.         0.         0.        ]
+ [0.         0.03846154 0.07692308 0.         0.23076923 0.11538462
+  0.07692308 0.34615385 0.11538462 0.        ]
+ [0.57142857 0.03571429 0.07142857 0.25       0.07142857 0.
+  0.         0.         0.         0.        ]
+ [0.         0.         0.         0.         0.         0.
+  0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-14-0-6_cm.pdf
+Time elapsed: 10.359462976455688 s
+--------------------------------------------------
+(15, 0, 6)
+mse:  5.055809865241329
+Accuracy: 0.03333333333333333, Precision: 0.03936507936507936, Recall: 0.03333333333333333, F1-Score: 0.02425925925925926
+
+Plot has been saved to SARIMAX-15-0-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.12698413 0.87301587 0.        ]
+ [0.         0.         0.03846154 0.84615385 0.11538462]
+ [0.         0.         0.07142857 0.92857143 0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-6_cm.pdf
+Time elapsed: 9.426811933517456 s
+--------------------------------------------------
+(5, 0, 7)
+mse:  6.139664921797438
+Accuracy: 0.24166666666666667, Precision: 0.23734234234234236, Recall: 0.24166666666666667, F1-Score: 0.22065144478844168
+
+Plot has been saved to SARIMAX-5-0-7.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.15873016 0.38095238 0.42857143]
+ [0.         0.23076923 0.23076923 0.38461538 0.15384615]
+ [0.         0.14285714 0.78571429 0.07142857 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-7_cm.pdf
+Time elapsed: 2.5767300128936768 s
+--------------------------------------------------
+(6, 0, 7)
+mse:  5.561289279002624
+Accuracy: 0.225, Precision: 0.19339912280701752, Recall: 0.225, F1-Score: 0.19473594315775095
+
+Plot has been saved to SARIMAX-6-0-7.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.19047619 0.3968254  0.38095238]
+ [0.         0.23076923 0.30769231 0.38461538 0.07692308]
+ [0.         0.28571429 0.67857143 0.03571429 0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-7_cm.pdf
+Time elapsed: 2.468465805053711 s
+--------------------------------------------------
+(7, 0, 7)
+mse:  3.8054012174429404
+Accuracy: 0.18333333333333332, Precision: 0.08850574712643677, Recall: 0.18333333333333332, F1-Score: 0.11937984496124028
+
+Plot has been saved to SARIMAX-7-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.28571429 0.71428571]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-0-7_cm.pdf
+Time elapsed: 2.744457960128784 s
+--------------------------------------------------
+(8, 0, 7)
+mse:  3.7557711014018156
+Accuracy: 0.08333333333333333, Precision: 0.05072463768115942, Recall: 0.08333333333333333, F1-Score: 0.06306306306306306
+
+Plot has been saved to SARIMAX-8-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-0-7_cm.pdf
+Time elapsed: 3.9518308639526367 s
+--------------------------------------------------
+(9, 0, 7)
+mse:  3.831709693180136
+Accuracy: 0.15833333333333333, Precision: 0.08364779874213836, Recall: 0.15833333333333333, F1-Score: 0.1094650205761317
+
+Plot has been saved to SARIMAX-9-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-7_cm.pdf
+Time elapsed: 3.5214357376098633 s
+--------------------------------------------------
+(10, 0, 7)
+mse:  6.229226045293496
+Accuracy: 0.26666666666666666, Precision: 0.2657777777777778, Recall: 0.26666666666666666, F1-Score: 0.22984126984126985
+
+Plot has been saved to SARIMAX-10-0-7.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.3968254  0.41269841 0.01587302]
+ [0.         0.23076923 0.46153846 0.15384615 0.15384615 0.        ]
+ [0.         0.03571429 0.92857143 0.03571429 0.         0.        ]
+ [0.         0.         1.         0.         0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-10-0-7_cm.pdf
+Time elapsed: 4.168346166610718 s
+--------------------------------------------------
+(11, 0, 7)
+mse:  8.705792217150183
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-11-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-11-0-7_cm.pdf
+Time elapsed: 7.230146169662476 s
+--------------------------------------------------
+(12, 0, 7)
+mse:  2.4608219010003114
+Accuracy: 0.18333333333333332, Precision: 0.07638146167557931, Recall: 0.18333333333333332, F1-Score: 0.10341085271317829
+
+Plot has been saved to SARIMAX-12-0-7.pdf
+Normalized confusion matrix
+[[0.         0.14285714 0.52380952 0.33333333]
+ [0.         0.03846154 0.76923077 0.19230769]
+ [0.         0.25       0.75       0.        ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-7_cm.pdf
+Time elapsed: 2.5805230140686035 s
+--------------------------------------------------
+(13, 0, 7)
+mse:  9.828479987402757
+Accuracy: 0.016666666666666666, Precision: 0.0018518518518518517, Recall: 0.016666666666666666, F1-Score: 0.0033333333333333335
+
+Plot has been saved to SARIMAX-13-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.0952381  0.9047619 ]
+ [0.         0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.         0.25       0.75      ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-7_cm.pdf
+Time elapsed: 9.372307300567627 s
+--------------------------------------------------
+(14, 0, 7)
+mse:  3.762318792332752
+Accuracy: 0.23333333333333334, Precision: 0.0945015488594762, Recall: 0.23333333333333334, F1-Score: 0.13352443609022557
+
+Plot has been saved to SARIMAX-14-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.28571429 0.71428571]
+ [0.         0.         0.76923077 0.23076923]
+ [0.         0.         0.96428571 0.03571429]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-14-0-7_cm.pdf
+Time elapsed: 2.480491876602173 s
+--------------------------------------------------
+(15, 0, 7)
+mse:  9.745602562305352
+Accuracy: 0.008333333333333333, Precision: 0.0012500000000000002, Recall: 0.008333333333333333, F1-Score: 0.0021739130434782613
+
+Plot has been saved to SARIMAX-15-0-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.         0.17857143 0.82142857]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-7_cm.pdf
+Time elapsed: 12.104013919830322 s
+--------------------------------------------------
+(5, 0, 8)
+mse:  6.575834340638875
+Accuracy: 0.24166666666666667, Precision: 0.24127305443094918, Recall: 0.24166666666666667, F1-Score: 0.2158580404212002
+
+Plot has been saved to SARIMAX-5-0-8.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.36507937 0.44444444 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.10714286 0.78571429 0.10714286 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-8_cm.pdf
+Time elapsed: 2.3852386474609375 s
+--------------------------------------------------
+(6, 0, 8)
+mse:  6.08699928224857
+Accuracy: 0.21666666666666667, Precision: 0.21370979532163745, Recall: 0.21666666666666667, F1-Score: 0.19959447597146493
+
+Plot has been saved to SARIMAX-6-0-8.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.41269841 0.41269841]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615]
+ [0.         0.17857143 0.71428571 0.10714286 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-8_cm.pdf
+Time elapsed: 3.189429759979248 s
+--------------------------------------------------
+(7, 0, 8)
+mse:  3.749941277408067
+Accuracy: 0.2, Precision: 0.08888888888888888, Recall: 0.2, F1-Score: 0.12307692307692306
+
+Plot has been saved to SARIMAX-7-0-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.85714286 0.14285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-0-8_cm.pdf
+Time elapsed: 5.436541795730591 s
+--------------------------------------------------
+(8, 0, 8)
+mse:  5.91184749606789
+Accuracy: 0.225, Precision: 0.20733617580536706, Recall: 0.225, F1-Score: 0.20148521267821373
+
+Plot has been saved to SARIMAX-8-0-8.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.15873016 0.41269841 0.3968254 ]
+ [0.         0.23076923 0.34615385 0.34615385 0.07692308]
+ [0.         0.21428571 0.71428571 0.07142857 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-8-0-8_cm.pdf
+Time elapsed: 4.985913991928101 s
+--------------------------------------------------
+(9, 0, 8)
+mse:  3.786007243841142
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-9-0-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-8_cm.pdf
+Time elapsed: 4.075658082962036 s
+--------------------------------------------------
+(10, 0, 8)
+mse:  1.3760805386971091
+Accuracy: 0.25, Precision: 0.3569683908045977, Recall: 0.25, F1-Score: 0.2921212121212121
+
+Plot has been saved to SARIMAX-10-0-8.pdf
+Normalized confusion matrix
+[[       nan        nan        nan        nan        nan]
+ [0.33333333 0.3968254  0.26984127 0.         0.        ]
+ [0.11538462 0.         0.15384615 0.46153846 0.26923077]
+ [0.07142857 0.60714286 0.28571429 0.03571429 0.        ]
+ [0.         0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-8_cm.pdf
+Time elapsed: 6.13057017326355 s
+--------------------------------------------------
+(11, 0, 8)
+mse:  3.7797992252955
+Accuracy: 0.175, Precision: 0.08305084745762711, Recall: 0.175, F1-Score: 0.11264367816091954
+
+Plot has been saved to SARIMAX-11-0-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.42857143 0.57142857]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-8_cm.pdf
+Time elapsed: 3.760889768600464 s
+--------------------------------------------------
+(12, 0, 8)
+mse:  4.13269447851978
+Accuracy: 0.18333333333333332, Precision: 0.09333333333333334, Recall: 0.18333333333333332, F1-Score: 0.12369477911646588
+
+Plot has been saved to SARIMAX-12-0-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.25396825 0.74603175]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-8_cm.pdf
+Time elapsed: 2.2508742809295654 s
+--------------------------------------------------
+(13, 0, 8)
+mse:  8.818660710270887
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-13-0-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.         0.5        0.5       ]
+ [0.         0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-8_cm.pdf
+Time elapsed: 9.206942796707153 s
+--------------------------------------------------
+(14, 0, 8)
+mse:  2.8997538726188004e+33
+(15, 0, 8)
+mse:  3.975021214052443e+34
+(5, 0, 9)
+mse:  6.390773958626819
+Accuracy: 0.25833333333333336, Precision: 0.2688888888888889, Recall: 0.25833333333333336, F1-Score: 0.23480217957829902
+
+Plot has been saved to SARIMAX-5-0-9.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.38095238 0.42857143 0.01587302]
+ [0.         0.23076923 0.23076923 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-9_cm.pdf
+Time elapsed: 2.2646660804748535 s
+--------------------------------------------------
+(6, 0, 9)
+mse:  6.415001314766295
+Accuracy: 0.25833333333333336, Precision: 0.2688888888888889, Recall: 0.25833333333333336, F1-Score: 0.23480217957829902
+
+Plot has been saved to SARIMAX-6-0-9.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.38095238 0.42857143 0.01587302]
+ [0.         0.23076923 0.23076923 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-9_cm.pdf
+Time elapsed: 3.758823871612549 s
+--------------------------------------------------
+(7, 0, 9)
+mse:  6.599442731264501
+Accuracy: 0.25, Precision: 0.2558883883883884, Recall: 0.25, F1-Score: 0.22224789915966386
+
+Plot has been saved to SARIMAX-7-0-9.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.34920635 0.46031746 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-7-0-9_cm.pdf
+Time elapsed: 3.099661111831665 s
+--------------------------------------------------
+(8, 0, 9)
+mse:  6.6104000349723755
+Accuracy: 0.24166666666666667, Precision: 0.25195912375790425, Recall: 0.24166666666666667, F1-Score: 0.21874236874236877
+
+Plot has been saved to SARIMAX-8-0-9.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.34920635 0.46031746 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-8-0-9_cm.pdf
+Time elapsed: 3.4984476566314697 s
+--------------------------------------------------
+(9, 0, 9)
+mse:  5.727090234377054
+Accuracy: 0.23333333333333334, Precision: 0.1997464569832991, Recall: 0.23333333333333334, F1-Score: 0.20182869975552903
+
+Plot has been saved to SARIMAX-9-0-9.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.19047619 0.38095238 0.3968254 ]
+ [0.         0.26923077 0.26923077 0.38461538 0.07692308]
+ [0.         0.32142857 0.64285714 0.03571429 0.        ]
+ [0.         0.         0.         1.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-9-0-9_cm.pdf
+Time elapsed: 3.2827701568603516 s
+--------------------------------------------------
+(10, 0, 9)
+mse:  4.081835747851615
+Accuracy: 0.08333333333333333, Precision: 0.057057961576033864, Recall: 0.08333333333333333, F1-Score: 0.06519677996422184
+
+Plot has been saved to SARIMAX-10-0-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.12698413 0.87301587]
+ [0.         0.         0.69230769 0.30769231]
+ [0.         0.         0.32142857 0.67857143]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-10-0-9_cm.pdf
+Time elapsed: 6.722989797592163 s
+--------------------------------------------------
+(11, 0, 9)
+mse:  4.098036872138171
+Accuracy: 0.15833333333333333, Precision: 0.08866666666666667, Recall: 0.15833333333333333, F1-Score: 0.11367521367521367
+
+Plot has been saved to SARIMAX-11-0-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.23809524 0.76190476]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-9_cm.pdf
+Time elapsed: 3.4266419410705566 s
+--------------------------------------------------
+(12, 0, 9)
+mse:  4.080703505564492
+Accuracy: 0.16666666666666666, Precision: 0.08805031446540881, Recall: 0.16666666666666666, F1-Score: 0.11522633744855967
+
+Plot has been saved to SARIMAX-12-0-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.26984127 0.73015873]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.71428571 0.28571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-9_cm.pdf
+Time elapsed: 3.673887014389038 s
+--------------------------------------------------
+(13, 0, 9)
+mse:  8.628721157218054
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-13-0-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.         0.53571429 0.46428571]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-9_cm.pdf
+Time elapsed: 9.957468032836914 s
+--------------------------------------------------
+(14, 0, 9)
+mse:  6.312948757363213e+17
+(15, 0, 9)
+mse:  2.2781073078537602e+36
+(5, 0, 10)
+mse:  6.295725942936288
+Accuracy: 0.20833333333333334, Precision: 0.18988577863577863, Recall: 0.20833333333333334, F1-Score: 0.18658762290341235
+
+Plot has been saved to SARIMAX-5-0-10.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.17460317 0.33333333 0.46031746]
+ [0.         0.23076923 0.30769231 0.34615385 0.11538462]
+ [0.         0.28571429 0.60714286 0.10714286 0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-10_cm.pdf
+Time elapsed: 2.3127870559692383 s
+--------------------------------------------------
+(6, 0, 10)
+mse:  4.169337518412983
+Accuracy: 0.08333333333333333, Precision: 0.053030303030303025, Recall: 0.08333333333333333, F1-Score: 0.06481481481481483
+
+Plot has been saved to SARIMAX-6-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-0-10_cm.pdf
+Time elapsed: 6.299988031387329 s
+--------------------------------------------------
+(7, 0, 10)
+mse:  4.7936193977891515
+Accuracy: 0.14166666666666666, Precision: 0.11333333333333333, Recall: 0.14166666666666666, F1-Score: 0.1259259259259259
+
+Plot has been saved to SARIMAX-7-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.0952381  0.9047619 ]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-0-10_cm.pdf
+Time elapsed: 1.6398839950561523 s
+--------------------------------------------------
+(8, 0, 10)
+mse:  4.7842188988971035
+Accuracy: 0.1, Precision: 0.1076923076923077, Recall: 0.1, F1-Score: 0.1037037037037037
+
+Plot has been saved to SARIMAX-8-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.04761905 0.95238095]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-0-10_cm.pdf
+Time elapsed: 1.8932487964630127 s
+--------------------------------------------------
+(9, 0, 10)
+mse:  4.319328619886778
+Accuracy: 0.10833333333333334, Precision: 0.08666666666666667, Recall: 0.10833333333333334, F1-Score: 0.09629629629629631
+
+Plot has been saved to SARIMAX-9-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-10_cm.pdf
+Time elapsed: 4.399335145950317 s
+--------------------------------------------------
+(10, 0, 10)
+mse:  4.660804638667705
+Accuracy: 0.15833333333333333, Precision: 0.11666666666666667, Recall: 0.15833333333333333, F1-Score: 0.13434343434343435
+
+Plot has been saved to SARIMAX-10-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.11111111 0.88888889]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-10_cm.pdf
+Time elapsed: 2.979292869567871 s
+--------------------------------------------------
+(11, 0, 10)
+mse:  4.524138154262738
+Accuracy: 0.08333333333333333, Precision: 0.10606060606060605, Recall: 0.08333333333333333, F1-Score: 0.09333333333333334
+
+Plot has been saved to SARIMAX-11-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.04761905 0.95238095]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-10_cm.pdf
+Time elapsed: 3.9592347145080566 s
+--------------------------------------------------
+(12, 0, 10)
+mse:  4.614663319492594
+Accuracy: 0.1, Precision: 0.10370370370370369, Recall: 0.1, F1-Score: 0.10181818181818181
+
+Plot has been saved to SARIMAX-12-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.06349206 0.93650794]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-10_cm.pdf
+Time elapsed: 1.9809367656707764 s
+--------------------------------------------------
+(13, 0, 10)
+mse:  3.875253893474356
+Accuracy: 0.13333333333333333, Precision: 0.06787878787878787, Recall: 0.13333333333333333, F1-Score: 0.08995983935742971
+
+Plot has been saved to SARIMAX-13-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.57142857 0.42857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-0-10_cm.pdf
+Time elapsed: 5.7503437995910645 s
+--------------------------------------------------
+(14, 0, 10)
+mse:  7.395657537723696
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-14-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.46031746 0.53968254]
+ [0.         0.         0.         0.80769231 0.19230769]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-14-0-10_cm.pdf
+Time elapsed: 10.969505071640015 s
+--------------------------------------------------
+(15, 0, 10)
+mse:  4.443781430059571
+Accuracy: 0.1, Precision: 0.09333333333333334, Recall: 0.1, F1-Score: 0.09655172413793105
+
+Plot has been saved to SARIMAX-15-0-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.06349206 0.93650794]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-0-10_cm.pdf
+Time elapsed: 14.884277105331421 s
+--------------------------------------------------
+(5, 0, 11)
+mse:  6.1283444291891005
+Accuracy: 0.23333333333333334, Precision: 0.22850342319212666, Recall: 0.23333333333333334, F1-Score: 0.21166955033394727
+
+Plot has been saved to SARIMAX-5-0-11.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.15873016 0.3968254  0.41269841]
+ [0.         0.23076923 0.30769231 0.34615385 0.11538462]
+ [0.         0.14285714 0.75       0.10714286 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-11_cm.pdf
+Time elapsed: 1.9308385848999023 s
+--------------------------------------------------
+(6, 0, 11)
+mse:  6.093594679475173
+Accuracy: 0.225, Precision: 0.21732456140350875, Recall: 0.225, F1-Score: 0.2051410808225729
+
+Plot has been saved to SARIMAX-6-0-11.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.15873016 0.3968254  0.41269841]
+ [0.         0.23076923 0.30769231 0.34615385 0.11538462]
+ [0.         0.17857143 0.71428571 0.10714286 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-11_cm.pdf
+Time elapsed: 3.6710150241851807 s
+--------------------------------------------------
+(7, 0, 11)
+mse:  4.359676288835681
+Accuracy: 0.15833333333333333, Precision: 0.11666666666666667, Recall: 0.15833333333333333, F1-Score: 0.13434343434343435
+
+Plot has been saved to SARIMAX-7-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.11111111 0.88888889]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-0-11_cm.pdf
+Time elapsed: 4.439929008483887 s
+--------------------------------------------------
+(8, 0, 11)
+mse:  4.074599638527165
+Accuracy: 0.125, Precision: 0.07777777777777777, Recall: 0.125, F1-Score: 0.09589041095890409
+
+Plot has been saved to SARIMAX-8-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.22222222 0.77777778]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.53571429 0.46428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-0-11_cm.pdf
+Time elapsed: 5.663561105728149 s
+--------------------------------------------------
+(9, 0, 11)
+mse:  4.27410381194007
+Accuracy: 0.15833333333333333, Precision: 0.11367521367521367, Recall: 0.15833333333333333, F1-Score: 0.13233830845771144
+
+Plot has been saved to SARIMAX-9-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-11_cm.pdf
+Time elapsed: 2.2063889503479004 s
+--------------------------------------------------
+(10, 0, 11)
+mse:  4.7828110338012815
+Accuracy: 0.14166666666666666, Precision: 0.10438596491228071, Recall: 0.14166666666666666, F1-Score: 0.1202020202020202
+
+Plot has been saved to SARIMAX-10-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-11_cm.pdf
+Time elapsed: 1.9152910709381104 s
+--------------------------------------------------
+(11, 0, 11)
+mse:  4.717923720828464
+Accuracy: 0.11666666666666667, Precision: 0.09898989898989899, Recall: 0.11666666666666667, F1-Score: 0.10710382513661201
+
+Plot has been saved to SARIMAX-11-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.12698413 0.87301587]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-11_cm.pdf
+Time elapsed: 4.019937038421631 s
+--------------------------------------------------
+(12, 0, 11)
+mse:  4.279467668925873
+Accuracy: 0.175, Precision: 0.10208333333333333, Recall: 0.175, F1-Score: 0.12894736842105264
+
+Plot has been saved to SARIMAX-12-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.17460317 0.82539683]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-11_cm.pdf
+Time elapsed: 4.08022403717041 s
+--------------------------------------------------
+(13, 0, 11)
+mse:  7.76363949299751
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-13-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.44444444 0.55555556]
+ [0.         0.         0.07692308 0.53846154 0.38461538]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-11_cm.pdf
+Time elapsed: 10.046016216278076 s
+--------------------------------------------------
+(14, 0, 11)
+mse:  8.961886693149392
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-14-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.03846154 0.5        0.46153846]
+ [0.         0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-14-0-11_cm.pdf
+Time elapsed: 11.824800968170166 s
+--------------------------------------------------
+(15, 0, 11)
+mse:  3.949830874550586
+Accuracy: 0.10833333333333334, Precision: 0.07583333333333334, Recall: 0.10833333333333334, F1-Score: 0.0892156862745098
+
+Plot has been saved to SARIMAX-15-0-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.28571429 0.71428571]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-0-11_cm.pdf
+Time elapsed: 10.445304870605469 s
+--------------------------------------------------
+(5, 0, 12)
+mse:  6.396844438996669
+Accuracy: 0.24166666666666667, Precision: 0.25190570495448544, Recall: 0.24166666666666667, F1-Score: 0.21865079365079368
+
+Plot has been saved to SARIMAX-5-0-12.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.3968254  0.41269841 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-12_cm.pdf
+Time elapsed: 2.948801040649414 s
+--------------------------------------------------
+(6, 0, 12)
+mse:  4.73810244370505
+Accuracy: 0.008333333333333333, Precision: 0.021212121212121213, Recall: 0.008333333333333333, F1-Score: 0.011965811965811963
+
+Plot has been saved to SARIMAX-6-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.03571429 0.96428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-0-12_cm.pdf
+Time elapsed: 8.508546829223633 s
+--------------------------------------------------
+(7, 0, 12)
+mse:  5.131209419860208
+Accuracy: 0.1, Precision: 0.1116161616161616, Recall: 0.1, F1-Score: 0.09621848739495799
+
+Plot has been saved to SARIMAX-7-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-7-0-12_cm.pdf
+Time elapsed: 9.174124002456665 s
+--------------------------------------------------
+(8, 0, 12)
+mse:  4.18183874423655
+Accuracy: 0.125, Precision: 0.08333333333333333, Recall: 0.125, F1-Score: 0.1
+
+Plot has been saved to SARIMAX-8-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.19047619 0.80952381]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.53571429 0.46428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-0-12_cm.pdf
+Time elapsed: 6.754611968994141 s
+--------------------------------------------------
+(9, 0, 12)
+mse:  4.184530938891156
+Accuracy: 0.16666666666666666, Precision: 0.10144927536231883, Recall: 0.16666666666666666, F1-Score: 0.12612612612612611
+
+Plot has been saved to SARIMAX-9-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.19047619 0.80952381]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.71428571 0.28571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-12_cm.pdf
+Time elapsed: 6.489501953125 s
+--------------------------------------------------
+(10, 0, 12)
+mse:  4.0978128767160715
+Accuracy: 0.14166666666666666, Precision: 0.07777777777777777, Recall: 0.14166666666666666, F1-Score: 0.10042194092827003
+
+Plot has been saved to SARIMAX-10-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-12_cm.pdf
+Time elapsed: 6.737306833267212 s
+--------------------------------------------------
+(11, 0, 12)
+mse:  4.106503665833215
+Accuracy: 0.16666666666666666, Precision: 0.09929078014184396, Recall: 0.16666666666666666, F1-Score: 0.12444444444444444
+
+Plot has been saved to SARIMAX-11-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.22222222 0.77777778]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.71428571 0.28571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-12_cm.pdf
+Time elapsed: 10.437320232391357 s
+--------------------------------------------------
+(12, 0, 12)
+mse:  4.525071485172153
+Accuracy: 0.2, Precision: 0.10980392156862745, Recall: 0.2, F1-Score: 0.14177215189873416
+
+Plot has been saved to SARIMAX-12-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.17460317 0.82539683]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.85714286 0.14285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-12_cm.pdf
+Time elapsed: 6.118880987167358 s
+--------------------------------------------------
+(13, 0, 12)
+mse:  9.970186355227527
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-13-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.17460317 0.80952381 0.01587302]
+ [0.         0.         0.03846154 0.38461538 0.57692308 0.        ]
+ [0.         0.         0.         0.35714286 0.64285714 0.        ]
+ [0.         0.         1.         0.         0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-0-12_cm.pdf
+Time elapsed: 10.762266159057617 s
+--------------------------------------------------
+(14, 0, 12)
+mse:  3.8395847141576556
+Accuracy: 0.058333333333333334, Precision: 0.040833333333333326, Recall: 0.058333333333333334, F1-Score: 0.04803921568627451
+
+Plot has been saved to SARIMAX-14-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.25       0.75      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-0-12_cm.pdf
+Time elapsed: 6.841672897338867 s
+--------------------------------------------------
+(15, 0, 12)
+mse:  8.67839141122412
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-15-0-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.25396825 0.74603175]
+ [0.         0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-12_cm.pdf
+Time elapsed: 14.574944019317627 s
+--------------------------------------------------
+(5, 0, 13)
+mse:  6.500952649838685
+Accuracy: 0.24166666666666667, Precision: 0.2519225740503019, Recall: 0.24166666666666667, F1-Score: 0.21867982965543942
+
+Plot has been saved to SARIMAX-5-0-13.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.38095238 0.42857143 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-13_cm.pdf
+Time elapsed: 2.533344030380249 s
+--------------------------------------------------
+(6, 0, 13)
+mse:  6.392780543599276
+Accuracy: 0.24166666666666667, Precision: 0.24880604288499025, Recall: 0.24166666666666667, F1-Score: 0.21645760743321718
+
+Plot has been saved to SARIMAX-6-0-13.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.3968254  0.41269841 0.01587302]
+ [0.         0.19230769 0.30769231 0.34615385 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-13_cm.pdf
+Time elapsed: 3.605039119720459 s
+--------------------------------------------------
+(7, 0, 13)
+mse:  6.3860290885485655
+Accuracy: 0.25, Precision: 0.2525146793134598, Recall: 0.25, F1-Score: 0.21978589885566632
+
+Plot has been saved to SARIMAX-7-0-13.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.3968254  0.41269841 0.01587302]
+ [0.         0.19230769 0.30769231 0.38461538 0.11538462 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-7-0-13_cm.pdf
+Time elapsed: 6.173847198486328 s
+--------------------------------------------------
+(8, 0, 13)
+mse:  4.833112572537919
+Accuracy: 0.058333333333333334, Precision: 0.12564102564102564, Recall: 0.058333333333333334, F1-Score: 0.07967479674796747
+
+Plot has been saved to SARIMAX-8-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.11538462 0.88461538]
+ [0.         0.         0.25       0.75      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-0-13_cm.pdf
+Time elapsed: 4.422571182250977 s
+--------------------------------------------------
+(9, 0, 13)
+mse:  4.5097194467106565
+Accuracy: 0.03333333333333333, Precision: 0.06222222222222222, Recall: 0.03333333333333333, F1-Score: 0.0434108527131783
+
+Plot has been saved to SARIMAX-9-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.06349206 0.93650794]
+ [0.         0.         0.15384615 0.84615385]
+ [0.         0.         0.14285714 0.85714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-13_cm.pdf
+Time elapsed: 5.130145072937012 s
+--------------------------------------------------
+(10, 0, 13)
+mse:  4.529066717071174
+Accuracy: 0.016666666666666666, Precision: 0.058333333333333334, Recall: 0.016666666666666666, F1-Score: 0.025925925925925925
+
+Plot has been saved to SARIMAX-10-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.11538462 0.88461538]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-13_cm.pdf
+Time elapsed: 9.658507108688354 s
+--------------------------------------------------
+(11, 0, 13)
+mse:  4.46795377645985
+Accuracy: 0.03333333333333333, Precision: 0.06666666666666667, Recall: 0.03333333333333333, F1-Score: 0.04444444444444444
+
+Plot has been saved to SARIMAX-11-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.06349206 0.93650794]
+ [0.         0.         0.11538462 0.88461538]
+ [0.         0.         0.14285714 0.85714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-13_cm.pdf
+Time elapsed: 9.974460124969482 s
+--------------------------------------------------
+(12, 0, 13)
+mse:  4.580739459059138
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-12-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.07692308 0.92307692]
+ [0.         0.         0.         1.        ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-13_cm.pdf
+Time elapsed: 6.762111186981201 s
+--------------------------------------------------
+(13, 0, 13)
+mse:  4.403364877386269
+Accuracy: 0.03333333333333333, Precision: 0.06666666666666667, Recall: 0.03333333333333333, F1-Score: 0.04444444444444444
+
+Plot has been saved to SARIMAX-13-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.04761905 0.95238095]
+ [0.         0.         0.15384615 0.84615385]
+ [0.         0.         0.14285714 0.85714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-0-13_cm.pdf
+Time elapsed: 9.038952112197876 s
+--------------------------------------------------
+(14, 0, 13)
+mse:  4.310387934409632
+Accuracy: 0.016666666666666666, Precision: 0.03888888888888888, Recall: 0.016666666666666666, F1-Score: 0.023333333333333334
+
+Plot has been saved to SARIMAX-14-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.19230769 0.80769231]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-0-13_cm.pdf
+Time elapsed: 11.739866733551025 s
+--------------------------------------------------
+(15, 0, 13)
+mse:  4.426036834009685
+Accuracy: 0.041666666666666664, Precision: 0.06481481481481483, Recall: 0.041666666666666664, F1-Score: 0.05072463768115942
+
+Plot has been saved to SARIMAX-15-0-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.17857143 0.82142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-0-13_cm.pdf
+Time elapsed: 14.969893217086792 s
+--------------------------------------------------
+(5, 0, 14)
+mse:  6.460765220439115
+Accuracy: 0.225, Precision: 0.21869148805124414, Recall: 0.225, F1-Score: 0.20186959534785623
+
+Plot has been saved to SARIMAX-5-0-14.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.38095238 0.42857143 0.01587302]
+ [0.         0.19230769 0.34615385 0.30769231 0.15384615 0.        ]
+ [0.         0.14285714 0.75       0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-14_cm.pdf
+Time elapsed: 3.8453431129455566 s
+--------------------------------------------------
+(6, 0, 14)
+mse:  6.527905405522895
+Accuracy: 0.24166666666666667, Precision: 0.2519403549891355, Recall: 0.24166666666666667, F1-Score: 0.21871031746031747
+
+Plot has been saved to SARIMAX-6-0-14.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.36507937 0.44444444 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-6-0-14_cm.pdf
+Time elapsed: 4.756840944290161 s
+--------------------------------------------------
+(7, 0, 14)
+mse:  6.479684983858456
+Accuracy: 0.24166666666666667, Precision: 0.24589085763504365, Recall: 0.24166666666666667, F1-Score: 0.21439426029863393
+
+Plot has been saved to SARIMAX-7-0-14.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.14285714 0.36507937 0.44444444 0.01587302]
+ [0.         0.19230769 0.34615385 0.30769231 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-7-0-14_cm.pdf
+Time elapsed: 6.245161056518555 s
+--------------------------------------------------
+(8, 0, 14)
+mse:  4.510053854565888
+Accuracy: 0.03333333333333333, Precision: 0.05407979870596693, Recall: 0.03333333333333333, F1-Score: 0.03460088691796009
+
+Plot has been saved to SARIMAX-8-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.10714286 0.89285714]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-8-0-14_cm.pdf
+Time elapsed: 12.514003992080688 s
+--------------------------------------------------
+(9, 0, 14)
+mse:  4.1798961440470945
+Accuracy: 0.05, Precision: 0.04666666666666667, Recall: 0.05, F1-Score: 0.048275862068965524
+
+Plot has been saved to SARIMAX-9-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.3015873  0.6984127 ]
+ [0.         0.         0.07692308 0.92307692]
+ [0.         0.         0.21428571 0.78571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-14_cm.pdf
+Time elapsed: 8.419380903244019 s
+--------------------------------------------------
+(10, 0, 14)
+mse:  4.281796971160357
+Accuracy: 0.05, Precision: 0.04, Recall: 0.05, F1-Score: 0.04444444444444444
+
+Plot has been saved to SARIMAX-10-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.28571429 0.71428571]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.21428571 0.78571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-14_cm.pdf
+Time elapsed: 9.038129091262817 s
+--------------------------------------------------
+(11, 0, 14)
+mse:  4.213384999604172
+Accuracy: 0.058333333333333334, Precision: 0.044144144144144144, Recall: 0.058333333333333334, F1-Score: 0.050256410256410255
+
+Plot has been saved to SARIMAX-11-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.25       0.75      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-14_cm.pdf
+Time elapsed: 11.50282096862793 s
+--------------------------------------------------
+(12, 0, 14)
+mse:  4.481559085727158
+Accuracy: 0.016666666666666666, Precision: 0.04242424242424243, Recall: 0.016666666666666666, F1-Score: 0.023931623931623926
+
+Plot has been saved to SARIMAX-12-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-14_cm.pdf
+Time elapsed: 14.427080869674683 s
+--------------------------------------------------
+(13, 0, 14)
+mse:  4.402774584743631
+Accuracy: 0.016666666666666666, Precision: 0.05185185185185184, Recall: 0.016666666666666666, F1-Score: 0.025225225225225228
+
+Plot has been saved to SARIMAX-13-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.01587302 0.98412698]
+ [0.         0.         0.11538462 0.88461538]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-0-14_cm.pdf
+Time elapsed: 9.650808095932007 s
+--------------------------------------------------
+(14, 0, 14)
+mse:  4.505897068601884
+Accuracy: 0.03333333333333333, Precision: 0.08484848484848485, Recall: 0.03333333333333333, F1-Score: 0.04786324786324785
+
+Plot has been saved to SARIMAX-14-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.07692308 0.92307692]
+ [0.         0.         0.14285714 0.85714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-0-14_cm.pdf
+Time elapsed: 15.111761093139648 s
+--------------------------------------------------
+(15, 0, 14)
+mse:  10.283358194878593
+Accuracy: 0.008333333333333333, Precision: 0.0008620689655172414, Recall: 0.008333333333333333, F1-Score: 0.0015625
+
+Plot has been saved to SARIMAX-15-0-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.11111111 0.79365079 0.0952381 ]
+ [0.         0.         0.         0.46153846 0.53846154 0.        ]
+ [0.         0.         0.         0.32142857 0.67857143 0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-14_cm.pdf
+Time elapsed: 14.82581901550293 s
+--------------------------------------------------
+(5, 0, 15)
+mse:  6.550111176561012
+Accuracy: 0.24166666666666667, Precision: 0.25519493177387914, Recall: 0.24166666666666667, F1-Score: 0.2209674113547858
+
+Plot has been saved to SARIMAX-5-0-15.pdf
+Normalized confusion matrix
+[[0.         0.03174603 0.12698413 0.38095238 0.44444444 0.01587302]
+ [0.         0.19230769 0.26923077 0.38461538 0.15384615 0.        ]
+ [0.         0.07142857 0.82142857 0.10714286 0.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.         0.        ]
+ [       nan        nan        nan        nan        nan        nan]
+ [       nan        nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-5-0-15_cm.pdf
+Time elapsed: 3.6970391273498535 s
+--------------------------------------------------
+(6, 0, 15)
+mse:  3.921413968986242
+Accuracy: 0.20833333333333334, Precision: 0.09887005649717515, Recall: 0.20833333333333334, F1-Score: 0.1340996168582375
+
+Plot has been saved to SARIMAX-6-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.23809524 0.76190476]
+ [0.         0.         0.61538462 0.38461538]
+ [0.         0.         0.89285714 0.10714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-0-15_cm.pdf
+Time elapsed: 11.691603899002075 s
+--------------------------------------------------
+(7, 0, 15)
+mse:  4.4949015468853055
+Accuracy: 0.21666666666666667, Precision: 0.13290470494417864, Recall: 0.21666666666666667, F1-Score: 0.16266994842944213
+
+Plot has been saved to SARIMAX-7-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.0952381  0.9047619 ]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.89285714 0.10714286]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-7-0-15_cm.pdf
+Time elapsed: 11.052452087402344 s
+--------------------------------------------------
+(8, 0, 15)
+mse:  4.487106993588632
+Accuracy: 0.03333333333333333, Precision: 0.05023584905660377, Recall: 0.03333333333333333, F1-Score: 0.03379204892966361
+
+Plot has been saved to SARIMAX-8-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.10714286 0.89285714]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-8-0-15_cm.pdf
+Time elapsed: 10.166927099227905 s
+--------------------------------------------------
+(9, 0, 15)
+mse:  4.265363386154545
+Accuracy: 0.016666666666666666, Precision: 0.029166666666666667, Recall: 0.016666666666666666, F1-Score: 0.021212121212121213
+
+Plot has been saved to SARIMAX-9-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.07692308 0.92307692]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-0-15_cm.pdf
+Time elapsed: 10.941976070404053 s
+--------------------------------------------------
+(10, 0, 15)
+mse:  4.358429994787762
+Accuracy: 0.058333333333333334, Precision: 0.04666666666666667, Recall: 0.058333333333333334, F1-Score: 0.05185185185185185
+
+Plot has been saved to SARIMAX-10-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.26984127 0.73015873]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.25       0.75      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-0-15_cm.pdf
+Time elapsed: 11.559072017669678 s
+--------------------------------------------------
+(11, 0, 15)
+mse:  3.9983299480490757
+Accuracy: 0.058333333333333334, Precision: 0.040833333333333326, Recall: 0.058333333333333334, F1-Score: 0.04803921568627451
+
+Plot has been saved to SARIMAX-11-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.25       0.75      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-0-15_cm.pdf
+Time elapsed: 8.970837116241455 s
+--------------------------------------------------
+(12, 0, 15)
+mse:  4.681856588718866
+Accuracy: 0.016666666666666666, Precision: 0.03111111111111111, Recall: 0.016666666666666666, F1-Score: 0.02170542635658915
+
+Plot has been saved to SARIMAX-12-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.03174603 0.96825397]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.07142857 0.92857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-0-15_cm.pdf
+Time elapsed: 12.608191013336182 s
+--------------------------------------------------
+(13, 0, 15)
+mse:  4.183713952677357
+Accuracy: 0.10833333333333334, Precision: 0.08198198198198199, Recall: 0.10833333333333334, F1-Score: 0.09333333333333332
+
+Plot has been saved to SARIMAX-13-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.25396825 0.74603175]
+ [0.         0.         0.19230769 0.80769231]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-0-15_cm.pdf
+Time elapsed: 13.050778865814209 s
+--------------------------------------------------
+(14, 0, 15)
+mse:  4.605682053126232
+Accuracy: 0.06666666666666667, Precision: 0.05656565656565657, Recall: 0.06666666666666667, F1-Score: 0.06120218579234973
+
+Plot has been saved to SARIMAX-14-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.25396825 0.74603175]
+ [0.         0.         0.23076923 0.76923077]
+ [0.         0.         0.28571429 0.71428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-0-15_cm.pdf
+Time elapsed: 12.989404916763306 s
+--------------------------------------------------
+(15, 0, 15)
+mse:  8.345525926142475
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-15-0-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.03846154 0.53846154 0.42307692]
+ [0.         0.         0.         0.85714286 0.14285714]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-0-15_cm.pdf
+Time elapsed: 12.6730637550354 s
+--------------------------------------------------
+
+(5, 1, 5)
+mse:  3.9438173596339956
+Accuracy: 0.1, Precision: 0.052830188679245285, Recall: 0.1, F1-Score: 0.0691358024691358
+
+Plot has been saved to SARIMAX-5-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-5_cm.pdf
+Time elapsed: 1.1320619583129883 s
+--------------------------------------------------
+(6, 1, 5)
+mse:  3.854691703269404
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-6-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-5_cm.pdf
+Time elapsed: 0.9440758228302002 s
+--------------------------------------------------
+(7, 1, 5)
+mse:  3.8545670422878837
+Accuracy: 0.1, Precision: 0.05384615384615385, Recall: 0.1, F1-Score: 0.07
+
+Plot has been saved to SARIMAX-7-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-5_cm.pdf
+Time elapsed: 2.027653932571411 s
+--------------------------------------------------
+(8, 1, 5)
+mse:  3.9545592239909815
+Accuracy: 0.10833333333333334, Precision: 0.058333333333333334, Recall: 0.10833333333333334, F1-Score: 0.07583333333333334
+
+Plot has been saved to SARIMAX-8-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-5_cm.pdf
+Time elapsed: 1.8135850429534912 s
+--------------------------------------------------
+(9, 1, 5)
+mse:  3.904675364629349
+Accuracy: 0.11666666666666667, Precision: 0.06049382716049382, Recall: 0.11666666666666667, F1-Score: 0.07967479674796747
+
+Plot has been saved to SARIMAX-9-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-5_cm.pdf
+Time elapsed: 2.0675923824310303 s
+--------------------------------------------------
+(10, 1, 5)
+mse:  3.8266192537771433
+Accuracy: 0.18333333333333332, Precision: 0.08279569892473118, Recall: 0.18333333333333332, F1-Score: 0.11407407407407408
+
+Plot has been saved to SARIMAX-10-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-5_cm.pdf
+Time elapsed: 1.5644440650939941 s
+--------------------------------------------------
+(11, 1, 5)
+mse:  3.814236017027164
+Accuracy: 0.18333333333333332, Precision: 0.08555555555555555, Recall: 0.18333333333333332, F1-Score: 0.11666666666666667
+
+Plot has been saved to SARIMAX-11-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-5_cm.pdf
+Time elapsed: 5.831444263458252 s
+--------------------------------------------------
+(12, 1, 5)
+mse:  3.751439655256211
+Accuracy: 0.15, Precision: 0.07636363636363637, Recall: 0.15, F1-Score: 0.10120481927710843
+
+Plot has been saved to SARIMAX-12-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-5_cm.pdf
+Time elapsed: 8.41955304145813 s
+--------------------------------------------------
+(13, 1, 5)
+mse:  7.76153416500268
+Accuracy: 0.008333333333333333, Precision: 0.00034246575342465754, Recall: 0.008333333333333333, F1-Score: 0.0006578947368421052
+
+Plot has been saved to SARIMAX-13-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.49206349 0.50793651]
+ [0.         0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.         0.96428571 0.03571429]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-1-5_cm.pdf
+Time elapsed: 1.5042059421539307 s
+--------------------------------------------------
+(14, 1, 5)
+mse:  7.852428780326818
+Accuracy: 0.016666666666666666, Precision: 0.0006756756756756757, Recall: 0.016666666666666666, F1-Score: 0.0012987012987012987
+
+Plot has been saved to SARIMAX-14-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.49206349 0.50793651]
+ [0.         0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.         0.96428571 0.03571429]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-14-1-5_cm.pdf
+Time elapsed: 2.190052032470703 s
+--------------------------------------------------
+(15, 1, 5)
+mse:  4.005206999364153
+Accuracy: 0.09166666666666666, Precision: 0.06260162601626017, Recall: 0.09166666666666666, F1-Score: 0.07439613526570049
+
+Plot has been saved to SARIMAX-15-1-5.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-5_cm.pdf
+Time elapsed: 3.924475908279419 s
+--------------------------------------------------
+(5, 1, 6)
+mse:  3.973799513303533
+Accuracy: 0.1, Precision: 0.052830188679245285, Recall: 0.1, F1-Score: 0.0691358024691358
+
+Plot has been saved to SARIMAX-5-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-6_cm.pdf
+Time elapsed: 1.3102631568908691 s
+--------------------------------------------------
+(6, 1, 6)
+mse:  3.8699218907461566
+Accuracy: 0.15, Precision: 0.07241379310344828, Recall: 0.15, F1-Score: 0.09767441860465118
+
+Plot has been saved to SARIMAX-6-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-6_cm.pdf
+Time elapsed: 1.2268822193145752 s
+--------------------------------------------------
+(7, 1, 6)
+mse:  3.86926992238203
+Accuracy: 0.15, Precision: 0.07241379310344828, Recall: 0.15, F1-Score: 0.09767441860465118
+
+Plot has been saved to SARIMAX-7-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-6_cm.pdf
+Time elapsed: 1.8771142959594727 s
+--------------------------------------------------
+(8, 1, 6)
+mse:  3.9691883687584104
+Accuracy: 0.10833333333333334, Precision: 0.05947712418300653, Recall: 0.10833333333333334, F1-Score: 0.07679324894514768
+
+Plot has been saved to SARIMAX-8-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-6_cm.pdf
+Time elapsed: 2.279374122619629 s
+--------------------------------------------------
+(9, 1, 6)
+mse:  3.931245938495394
+Accuracy: 0.11666666666666667, Precision: 0.06049382716049382, Recall: 0.11666666666666667, F1-Score: 0.07967479674796747
+
+Plot has been saved to SARIMAX-9-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-6_cm.pdf
+Time elapsed: 2.7337729930877686 s
+--------------------------------------------------
+(10, 1, 6)
+mse:  4.081221147381751
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-10-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-6_cm.pdf
+Time elapsed: 3.0169179439544678 s
+--------------------------------------------------
+(11, 1, 6)
+mse:  3.715045663007345
+Accuracy: 0.15833333333333333, Precision: 0.07916666666666666, Recall: 0.15833333333333333, F1-Score: 0.10555555555555557
+
+Plot has been saved to SARIMAX-11-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-6_cm.pdf
+Time elapsed: 6.853042125701904 s
+--------------------------------------------------
+(12, 1, 6)
+mse:  5.924255327114754
+Accuracy: 0.016666666666666666, Precision: 0.0004201680672268908, Recall: 0.016666666666666666, F1-Score: 0.0008196721311475409
+
+Plot has been saved to SARIMAX-12-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.         1.        ]
+ [0.         0.         0.         1.        ]
+ [0.         0.         0.         1.        ]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-12-1-6_cm.pdf
+Time elapsed: 9.062975883483887 s
+--------------------------------------------------
+(13, 1, 6)
+mse:  7.0721097993478566
+Accuracy: 0.016666666666666666, Precision: 0.0005813953488372093, Recall: 0.016666666666666666, F1-Score: 0.0011235955056179774
+
+Plot has been saved to SARIMAX-13-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.6031746  0.3968254 ]
+ [0.         0.         0.         0.69230769 0.30769231]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-1-6_cm.pdf
+Time elapsed: 6.842720985412598 s
+--------------------------------------------------
+(14, 1, 6)
+mse:  1403819356337.1458
+(15, 1, 6)
+mse:  7.43372350457894
+Accuracy: 0.008333333333333333, Precision: 0.0003205128205128205, Recall: 0.008333333333333333, F1-Score: 0.0006172839506172839
+
+Plot has been saved to SARIMAX-15-1-6.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.53968254 0.46031746]
+ [0.         0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-1-6_cm.pdf
+Time elapsed: 10.407585859298706 s
+--------------------------------------------------
+(5, 1, 7)
+mse:  3.842332066712568
+Accuracy: 0.11666666666666667, Precision: 0.061635220125786164, Recall: 0.11666666666666667, F1-Score: 0.08065843621399177
+
+Plot has been saved to SARIMAX-5-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-7_cm.pdf
+Time elapsed: 1.799896001815796 s
+--------------------------------------------------
+(6, 1, 7)
+mse:  3.8497585202580398
+Accuracy: 0.15, Precision: 0.0711864406779661, Recall: 0.15, F1-Score: 0.09655172413793105
+
+Plot has been saved to SARIMAX-6-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-7_cm.pdf
+Time elapsed: 2.262247085571289 s
+--------------------------------------------------
+(7, 1, 7)
+mse:  3.747331230438193
+Accuracy: 0.10833333333333334, Precision: 0.05141242937853107, Recall: 0.10833333333333334, F1-Score: 0.06973180076628353
+
+Plot has been saved to SARIMAX-7-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.80769231 0.19230769]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-7_cm.pdf
+Time elapsed: 3.3073570728302 s
+--------------------------------------------------
+(8, 1, 7)
+mse:  3.8639649914781784
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-8-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-7_cm.pdf
+Time elapsed: 3.2271170616149902 s
+--------------------------------------------------
+(9, 1, 7)
+mse:  3.804012721671982
+Accuracy: 0.16666666666666666, Precision: 0.07650273224043716, Recall: 0.16666666666666666, F1-Score: 0.1048689138576779
+
+Plot has been saved to SARIMAX-9-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.71428571 0.28571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-7_cm.pdf
+Time elapsed: 2.5736162662506104 s
+--------------------------------------------------
+(10, 1, 7)
+mse:  4.081468976572948
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-10-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-7_cm.pdf
+Time elapsed: 3.322026014328003 s
+--------------------------------------------------
+(11, 1, 7)
+mse:  4.04286137711518
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-11-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-7_cm.pdf
+Time elapsed: 3.3868961334228516 s
+--------------------------------------------------
+(12, 1, 7)
+mse:  3.916221178240273
+Accuracy: 0.19166666666666668, Precision: 0.09415204678362572, Recall: 0.19166666666666668, F1-Score: 0.12627450980392158
+
+Plot has been saved to SARIMAX-12-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.26984127 0.73015873]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-7_cm.pdf
+Time elapsed: 7.618788719177246 s
+--------------------------------------------------
+(13, 1, 7)
+mse:  6.979843054589753
+Accuracy: 0.008333333333333333, Precision: 0.0002976190476190476, Recall: 0.008333333333333333, F1-Score: 0.0005747126436781609
+
+Plot has been saved to SARIMAX-13-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.6031746  0.3968254 ]
+ [0.         0.         0.         0.65384615 0.34615385]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-13-1-7_cm.pdf
+Time elapsed: 2.6007308959960938 s
+--------------------------------------------------
+(14, 1, 7)
+mse:  3.8678722889943087
+Accuracy: 0.19166666666666668, Precision: 0.08655913978494624, Recall: 0.19166666666666668, F1-Score: 0.11925925925925927
+
+Plot has been saved to SARIMAX-14-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-1-7_cm.pdf
+Time elapsed: 11.370583772659302 s
+--------------------------------------------------
+(15, 1, 7)
+mse:  3.7654924906487444
+Accuracy: 0.175, Precision: 0.0875, Recall: 0.175, F1-Score: 0.11666666666666667
+
+Plot has been saved to SARIMAX-15-1-7.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-7_cm.pdf
+Time elapsed: 10.657750844955444 s
+--------------------------------------------------
+(5, 1, 8)
+mse:  3.8453959492331466
+Accuracy: 0.14166666666666666, Precision: 0.07212121212121211, Recall: 0.14166666666666666, F1-Score: 0.09558232931726908
+
+Plot has been saved to SARIMAX-5-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-8_cm.pdf
+Time elapsed: 2.5077781677246094 s
+--------------------------------------------------
+(6, 1, 8)
+mse:  3.8948483177062405
+Accuracy: 0.14166666666666666, Precision: 0.0695906432748538, Recall: 0.14166666666666666, F1-Score: 0.09333333333333334
+
+Plot has been saved to SARIMAX-6-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-8_cm.pdf
+Time elapsed: 1.823857307434082 s
+--------------------------------------------------
+(7, 1, 8)
+mse:  3.7994397799886714
+Accuracy: 0.10833333333333334, Precision: 0.05947712418300653, Recall: 0.10833333333333334, F1-Score: 0.07679324894514768
+
+Plot has been saved to SARIMAX-7-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-8_cm.pdf
+Time elapsed: 3.7441091537475586 s
+--------------------------------------------------
+(8, 1, 8)
+mse:  3.7961203068705798
+Accuracy: 0.10833333333333334, Precision: 0.05947712418300653, Recall: 0.10833333333333334, F1-Score: 0.07679324894514768
+
+Plot has been saved to SARIMAX-8-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-8_cm.pdf
+Time elapsed: 4.878366947174072 s
+--------------------------------------------------
+(9, 1, 8)
+mse:  3.8182433304335444
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-9-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-8_cm.pdf
+Time elapsed: 2.225799083709717 s
+--------------------------------------------------
+(10, 1, 8)
+mse:  4.055903119968077
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-10-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-8_cm.pdf
+Time elapsed: 3.691999912261963 s
+--------------------------------------------------
+(11, 1, 8)
+mse:  4.062999343765998
+Accuracy: 0.09166666666666666, Precision: 0.05238095238095238, Recall: 0.09166666666666666, F1-Score: 0.06666666666666667
+
+Plot has been saved to SARIMAX-11-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-8_cm.pdf
+Time elapsed: 6.290510892868042 s
+--------------------------------------------------
+(12, 1, 8)
+mse:  4.080713819856438
+Accuracy: 0.125, Precision: 0.06862745098039216, Recall: 0.125, F1-Score: 0.08860759493670886
+
+Plot has been saved to SARIMAX-12-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.53571429 0.46428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-8_cm.pdf
+Time elapsed: 5.699940204620361 s
+--------------------------------------------------
+(13, 1, 8)
+mse:  3.7609875000718755
+Accuracy: 0.19166666666666668, Precision: 0.08009950248756219, Recall: 0.19166666666666668, F1-Score: 0.11298245614035088
+
+Plot has been saved to SARIMAX-13-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.41269841 0.58730159]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-8_cm.pdf
+Time elapsed: 3.674751043319702 s
+--------------------------------------------------
+(14, 1, 8)
+mse:  3.9187999594402485
+Accuracy: 0.19166666666666668, Precision: 0.09583333333333334, Recall: 0.19166666666666668, F1-Score: 0.12777777777777777
+
+Plot has been saved to SARIMAX-14-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.23809524 0.76190476]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-1-8_cm.pdf
+Time elapsed: 4.458927154541016 s
+--------------------------------------------------
+(15, 1, 8)
+mse:  6.640370223559111
+Accuracy: 0.0, Precision: 0.0, Recall: 0.0, F1-Score: 0.0
+
+Plot has been saved to SARIMAX-15-1-8.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.92063492 0.07936508]
+ [0.         0.         0.03846154 0.88461538 0.07692308]
+ [0.         0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.         0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-15-1-8_cm.pdf
+Time elapsed: 12.415357828140259 s
+--------------------------------------------------
+(5, 1, 9)
+mse:  3.7986262879890935
+Accuracy: 0.10833333333333334, Precision: 0.058333333333333334, Recall: 0.10833333333333334, F1-Score: 0.07583333333333334
+
+Plot has been saved to SARIMAX-5-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-9_cm.pdf
+Time elapsed: 2.804671049118042 s
+--------------------------------------------------
+(6, 1, 9)
+mse:  3.7881527300371087
+Accuracy: 0.15833333333333333, Precision: 0.0726775956284153, Recall: 0.15833333333333333, F1-Score: 0.09962546816479399
+
+Plot has been saved to SARIMAX-6-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-9_cm.pdf
+Time elapsed: 2.558673858642578 s
+--------------------------------------------------
+(7, 1, 9)
+mse:  3.690385427037374
+Accuracy: 0.15833333333333333, Precision: 0.07777777777777777, Recall: 0.15833333333333333, F1-Score: 0.10431372549019607
+
+Plot has been saved to SARIMAX-7-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-9_cm.pdf
+Time elapsed: 2.228084087371826 s
+--------------------------------------------------
+(8, 1, 9)
+mse:  3.8009209253729708
+Accuracy: 0.1, Precision: 0.05384615384615385, Recall: 0.1, F1-Score: 0.07
+
+Plot has been saved to SARIMAX-8-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-9_cm.pdf
+Time elapsed: 2.6406466960906982 s
+--------------------------------------------------
+(9, 1, 9)
+mse:  3.892244058618321
+Accuracy: 0.1, Precision: 0.056, Recall: 0.1, F1-Score: 0.07179487179487179
+
+Plot has been saved to SARIMAX-9-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-9_cm.pdf
+Time elapsed: 4.010572195053101 s
+--------------------------------------------------
+(10, 1, 9)
+mse:  3.9164528613358063
+Accuracy: 0.175, Precision: 0.08596491228070176, Recall: 0.175, F1-Score: 0.1152941176470588
+
+Plot has been saved to SARIMAX-10-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-9_cm.pdf
+Time elapsed: 4.479827880859375 s
+--------------------------------------------------
+(11, 1, 9)
+mse:  3.9467602401480395
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-11-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-9_cm.pdf
+Time elapsed: 6.16311502456665 s
+--------------------------------------------------
+(12, 1, 9)
+mse:  3.9275095591991613
+Accuracy: 0.1, Precision: 0.052830188679245285, Recall: 0.1, F1-Score: 0.0691358024691358
+
+Plot has been saved to SARIMAX-12-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-9_cm.pdf
+Time elapsed: 4.971205949783325 s
+--------------------------------------------------
+(13, 1, 9)
+mse:  3.9105030660542335
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-13-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-9_cm.pdf
+Time elapsed: 6.4181928634643555 s
+--------------------------------------------------
+(14, 1, 9)
+mse:  3.931602385866211
+Accuracy: 0.2, Precision: 0.10566037735849057, Recall: 0.2, F1-Score: 0.1382716049382716
+
+Plot has been saved to SARIMAX-14-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.19047619 0.80952381]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.85714286 0.14285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-1-9_cm.pdf
+Time elapsed: 8.148107051849365 s
+--------------------------------------------------
+(15, 1, 9)
+mse:  3.9172331458795897
+Accuracy: 0.13333333333333333, Precision: 0.0691358024691358, Recall: 0.13333333333333333, F1-Score: 0.0910569105691057
+
+Plot has been saved to SARIMAX-15-1-9.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.57142857 0.42857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-9_cm.pdf
+Time elapsed: 11.887481212615967 s
+--------------------------------------------------
+(5, 1, 10)
+mse:  3.91075908260138
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-5-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-10_cm.pdf
+Time elapsed: 1.7821271419525146 s
+--------------------------------------------------
+(6, 1, 10)
+mse:  3.925710996186599
+Accuracy: 0.18333333333333332, Precision: 0.09333333333333334, Recall: 0.18333333333333332, F1-Score: 0.12369477911646588
+
+Plot has been saved to SARIMAX-6-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.3015873  0.6984127 ]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-10_cm.pdf
+Time elapsed: 1.356597900390625 s
+--------------------------------------------------
+(7, 1, 10)
+mse:  4.0180556204668205
+Accuracy: 0.11666666666666667, Precision: 0.06282051282051282, Recall: 0.11666666666666667, F1-Score: 0.08166666666666668
+
+Plot has been saved to SARIMAX-7-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-10_cm.pdf
+Time elapsed: 2.5276968479156494 s
+--------------------------------------------------
+(8, 1, 10)
+mse:  4.049132903822573
+Accuracy: 0.10833333333333334, Precision: 0.058333333333333334, Recall: 0.10833333333333334, F1-Score: 0.07583333333333334
+
+Plot has been saved to SARIMAX-8-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-10_cm.pdf
+Time elapsed: 2.5944669246673584 s
+--------------------------------------------------
+(9, 1, 10)
+mse:  4.0214643986683285
+Accuracy: 0.09166666666666666, Precision: 0.05347222222222222, Recall: 0.09166666666666666, F1-Score: 0.06754385964912281
+
+Plot has been saved to SARIMAX-9-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-10_cm.pdf
+Time elapsed: 3.284187078475952 s
+--------------------------------------------------
+(10, 1, 10)
+mse:  4.028351226115897
+Accuracy: 0.09166666666666666, Precision: 0.05347222222222222, Recall: 0.09166666666666666, F1-Score: 0.06754385964912281
+
+Plot has been saved to SARIMAX-10-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-10_cm.pdf
+Time elapsed: 3.921151876449585 s
+--------------------------------------------------
+(11, 1, 10)
+mse:  4.029125698738704
+Accuracy: 0.09166666666666666, Precision: 0.05347222222222222, Recall: 0.09166666666666666, F1-Score: 0.06754385964912281
+
+Plot has been saved to SARIMAX-11-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-10_cm.pdf
+Time elapsed: 8.263986110687256 s
+--------------------------------------------------
+(12, 1, 10)
+mse:  3.8823316067973153
+Accuracy: 0.11666666666666667, Precision: 0.06049382716049382, Recall: 0.11666666666666667, F1-Score: 0.07967479674796747
+
+Plot has been saved to SARIMAX-12-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-10_cm.pdf
+Time elapsed: 9.370891094207764 s
+--------------------------------------------------
+(13, 1, 10)
+mse:  3.903072713303948
+Accuracy: 0.15833333333333333, Precision: 0.0764367816091954, Recall: 0.15833333333333333, F1-Score: 0.10310077519379844
+
+Plot has been saved to SARIMAX-13-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-10_cm.pdf
+Time elapsed: 11.11595106124878 s
+--------------------------------------------------
+(14, 1, 10)
+mse:  4.5885655081650345
+Accuracy: 0.09166666666666666, Precision: 0.07831541218637991, Recall: 0.09166666666666666, F1-Score: 0.07740530303030303
+
+Plot has been saved to SARIMAX-14-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.04761905 0.95238095]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.32142857 0.67857143]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-14-1-10_cm.pdf
+Time elapsed: 12.483460903167725 s
+--------------------------------------------------
+(15, 1, 10)
+mse:  3.9807083511239876
+Accuracy: 0.15, Precision: 0.10243902439024391, Recall: 0.15, F1-Score: 0.1217391304347826
+
+Plot has been saved to SARIMAX-15-1-10.pdf
+Normalized confusion matrix
+[[0.         0.         0.12698413 0.87301587]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.64285714 0.35714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-10_cm.pdf
+Time elapsed: 12.32473087310791 s
+--------------------------------------------------
+(5, 1, 11)
+mse:  3.89471429221708
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-5-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-11_cm.pdf
+Time elapsed: 5.2437708377838135 s
+--------------------------------------------------
+(6, 1, 11)
+mse:  3.9267108710748433
+Accuracy: 0.15833333333333333, Precision: 0.0869281045751634, Recall: 0.15833333333333333, F1-Score: 0.11223628691983122
+
+Plot has been saved to SARIMAX-6-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.26984127 0.73015873]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-11_cm.pdf
+Time elapsed: 5.155628204345703 s
+--------------------------------------------------
+(7, 1, 11)
+mse:  3.964366155009194
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-7-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-11_cm.pdf
+Time elapsed: 5.056161165237427 s
+--------------------------------------------------
+(8, 1, 11)
+mse:  4.010974260330462
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-8-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-11_cm.pdf
+Time elapsed: 6.650925159454346 s
+--------------------------------------------------
+(9, 1, 11)
+mse:  3.9770152875167932
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-9-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-11_cm.pdf
+Time elapsed: 6.177445888519287 s
+--------------------------------------------------
+(10, 1, 11)
+mse:  3.9957616761326107
+Accuracy: 0.09166666666666666, Precision: 0.05460992907801419, Recall: 0.09166666666666666, F1-Score: 0.06844444444444446
+
+Plot has been saved to SARIMAX-10-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-11_cm.pdf
+Time elapsed: 9.165449857711792 s
+--------------------------------------------------
+(11, 1, 11)
+mse:  3.985586637279133
+Accuracy: 0.11666666666666667, Precision: 0.06225687458081825, Recall: 0.11666666666666667, F1-Score: 0.07946355446355448
+
+Plot has been saved to SARIMAX-11-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-11-1-11_cm.pdf
+Time elapsed: 4.285599946975708 s
+--------------------------------------------------
+(12, 1, 11)
+mse:  4.043354307879025
+Accuracy: 0.1, Precision: 0.058333333333333334, Recall: 0.1, F1-Score: 0.07368421052631578
+
+Plot has been saved to SARIMAX-12-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.26984127 0.73015873]
+ [0.         0.         0.61538462 0.38461538]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-11_cm.pdf
+Time elapsed: 9.693448066711426 s
+--------------------------------------------------
+(13, 1, 11)
+mse:  3.9500161127435365
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-13-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-11_cm.pdf
+Time elapsed: 11.654216051101685 s
+--------------------------------------------------
+(14, 1, 11)
+mse:  3.9599967441210198
+Accuracy: 0.18333333333333332, Precision: 0.11159420289855074, Recall: 0.18333333333333332, F1-Score: 0.13873873873873874
+
+Plot has been saved to SARIMAX-14-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.11111111 0.88888889]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-1-11_cm.pdf
+Time elapsed: 9.167513847351074 s
+--------------------------------------------------
+(15, 1, 11)
+mse:  3.9294682587768377
+Accuracy: 0.14166666666666666, Precision: 0.07628205128205127, Recall: 0.14166666666666666, F1-Score: 0.09916666666666667
+
+Plot has been saved to SARIMAX-15-1-11.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-11_cm.pdf
+Time elapsed: 8.57709789276123 s
+--------------------------------------------------
+(5, 1, 12)
+mse:  3.8649216894409455
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-5-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-12_cm.pdf
+Time elapsed: 2.9140212535858154 s
+--------------------------------------------------
+(6, 1, 12)
+mse:  3.8886425879862356
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-6-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-12_cm.pdf
+Time elapsed: 3.363931894302368 s
+--------------------------------------------------
+(7, 1, 12)
+mse:  3.854668004537251
+Accuracy: 0.11666666666666667, Precision: 0.06282051282051282, Recall: 0.11666666666666667, F1-Score: 0.08166666666666668
+
+Plot has been saved to SARIMAX-7-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-12_cm.pdf
+Time elapsed: 4.0178351402282715 s
+--------------------------------------------------
+(8, 1, 12)
+mse:  3.93739393640288
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-8-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-12_cm.pdf
+Time elapsed: 4.201310873031616 s
+--------------------------------------------------
+(9, 1, 12)
+mse:  3.9041289670026904
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-9-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-12_cm.pdf
+Time elapsed: 4.245690107345581 s
+--------------------------------------------------
+(10, 1, 12)
+mse:  3.9102285005842408
+Accuracy: 0.1, Precision: 0.054901960784313725, Recall: 0.1, F1-Score: 0.07088607594936708
+
+Plot has been saved to SARIMAX-10-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-12_cm.pdf
+Time elapsed: 5.832053184509277 s
+--------------------------------------------------
+(11, 1, 12)
+mse:  3.886270343359239
+Accuracy: 0.1, Precision: 0.05384615384615385, Recall: 0.1, F1-Score: 0.07
+
+Plot has been saved to SARIMAX-11-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-12_cm.pdf
+Time elapsed: 8.182936906814575 s
+--------------------------------------------------
+(12, 1, 12)
+mse:  3.931945203889493
+Accuracy: 0.10833333333333334, Precision: 0.057232704402515724, Recall: 0.10833333333333334, F1-Score: 0.07489711934156378
+
+Plot has been saved to SARIMAX-12-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-12_cm.pdf
+Time elapsed: 4.021453142166138 s
+--------------------------------------------------
+(13, 1, 12)
+mse:  3.8542178564574954
+Accuracy: 0.10833333333333334, Precision: 0.056172839506172835, Recall: 0.10833333333333334, F1-Score: 0.07398373983739838
+
+Plot has been saved to SARIMAX-13-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-12_cm.pdf
+Time elapsed: 11.956820011138916 s
+--------------------------------------------------
+(14, 1, 12)
+mse:  8.533043062163877
+Accuracy: 0.016666666666666666, Precision: 0.0009259259259259259, Recall: 0.016666666666666666, F1-Score: 0.0017543859649122805
+
+Plot has been saved to SARIMAX-14-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.41269841 0.58730159]
+ [0.         0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.         0.53571429 0.46428571]
+ [0.         0.         0.33333333 0.66666667 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-14-1-12_cm.pdf
+Time elapsed: 9.960074186325073 s
+--------------------------------------------------
+(15, 1, 12)
+mse:  3.6814871855624394
+Accuracy: 0.09166666666666666, Precision: 0.05032679738562092, Recall: 0.09166666666666666, F1-Score: 0.06497890295358649
+
+Plot has been saved to SARIMAX-15-1-12.pdf
+Normalized confusion matrix
+[[0.         0.         0.42857143 0.57142857]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-12_cm.pdf
+Time elapsed: 13.24959397315979 s
+--------------------------------------------------
+(5, 1, 13)
+mse:  3.9915961400351914
+Accuracy: 0.10833333333333334, Precision: 0.06453900709219858, Recall: 0.10833333333333334, F1-Score: 0.08088888888888891
+
+Plot has been saved to SARIMAX-5-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-13_cm.pdf
+Time elapsed: 6.119842767715454 s
+--------------------------------------------------
+(6, 1, 13)
+mse:  3.967476835715045
+Accuracy: 0.11666666666666667, Precision: 0.06405228758169935, Recall: 0.11666666666666667, F1-Score: 0.08270042194092826
+
+Plot has been saved to SARIMAX-6-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-13_cm.pdf
+Time elapsed: 5.222730875015259 s
+--------------------------------------------------
+(7, 1, 13)
+mse:  3.9633007684076316
+Accuracy: 0.11666666666666667, Precision: 0.06405228758169935, Recall: 0.11666666666666667, F1-Score: 0.08270042194092826
+
+Plot has been saved to SARIMAX-7-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-13_cm.pdf
+Time elapsed: 8.958722829818726 s
+--------------------------------------------------
+(8, 1, 13)
+mse:  4.036230895039844
+Accuracy: 0.08333333333333333, Precision: 0.05426356589147287, Recall: 0.08333333333333333, F1-Score: 0.06572769953051644
+
+Plot has been saved to SARIMAX-8-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-13_cm.pdf
+Time elapsed: 10.822751998901367 s
+--------------------------------------------------
+(9, 1, 13)
+mse:  4.038137244728801
+Accuracy: 0.075, Precision: 0.05, Recall: 0.075, F1-Score: 0.06000000000000001
+
+Plot has been saved to SARIMAX-9-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.32142857 0.67857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-13_cm.pdf
+Time elapsed: 11.873012065887451 s
+--------------------------------------------------
+(10, 1, 13)
+mse:  3.9656234393148355
+Accuracy: 0.11666666666666667, Precision: 0.059393939393939395, Recall: 0.11666666666666667, F1-Score: 0.078714859437751
+
+Plot has been saved to SARIMAX-10-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-13_cm.pdf
+Time elapsed: 9.111106872558594 s
+--------------------------------------------------
+(11, 1, 13)
+mse:  4.0367243651203735
+Accuracy: 0.2, Precision: 0.10338095238095238, Recall: 0.2, F1-Score: 0.13299379463763025
+
+Plot has been saved to SARIMAX-11-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.28571429 0.71428571]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-11-1-13_cm.pdf
+Time elapsed: 12.212678909301758 s
+--------------------------------------------------
+(12, 1, 13)
+mse:  4.009542795764106
+Accuracy: 0.15833333333333333, Precision: 0.08333333333333334, Recall: 0.15833333333333333, F1-Score: 0.10571929824561405
+
+Plot has been saved to SARIMAX-12-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.60714286 0.39285714]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-12-1-13_cm.pdf
+Time elapsed: 12.502692699432373 s
+--------------------------------------------------
+(13, 1, 13)
+mse:  3.9922868416888653
+Accuracy: 0.11666666666666667, Precision: 0.06354166666666666, Recall: 0.11666666666666667, F1-Score: 0.08049122807017543
+
+Plot has been saved to SARIMAX-13-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-13-1-13_cm.pdf
+Time elapsed: 13.028784990310669 s
+--------------------------------------------------
+(14, 1, 13)
+mse:  3.8193663551688264
+Accuracy: 0.15833333333333333, Precision: 0.0764367816091954, Recall: 0.15833333333333333, F1-Score: 0.10310077519379844
+
+Plot has been saved to SARIMAX-14-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.5        0.5       ]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-14-1-13_cm.pdf
+Time elapsed: 7.4567060470581055 s
+--------------------------------------------------
+(15, 1, 13)
+mse:  4.04534179715482
+Accuracy: 0.175, Precision: 0.10888888888888888, Recall: 0.175, F1-Score: 0.13424657534246573
+
+Plot has been saved to SARIMAX-15-1-13.pdf
+Normalized confusion matrix
+[[0.         0.         0.20634921 0.79365079]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-13_cm.pdf
+Time elapsed: 12.988444089889526 s
+--------------------------------------------------
+(5, 1, 14)
+mse:  4.027910358713955
+Accuracy: 0.18333333333333332, Precision: 0.12833333333333335, Recall: 0.18333333333333332, F1-Score: 0.15098039215686274
+
+Plot has been saved to SARIMAX-5-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.0952381  0.9047619 ]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-14_cm.pdf
+Time elapsed: 2.9696788787841797 s
+--------------------------------------------------
+(6, 1, 14)
+mse:  3.9573017331022724
+Accuracy: 0.19166666666666668, Precision: 0.11925925925925925, Recall: 0.19166666666666668, F1-Score: 0.14703196347031963
+
+Plot has been saved to SARIMAX-6-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.14285714 0.85714286]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-6-1-14_cm.pdf
+Time elapsed: 7.72961688041687 s
+--------------------------------------------------
+(7, 1, 14)
+mse:  3.9973622723827757
+Accuracy: 0.10833333333333334, Precision: 0.05947712418300653, Recall: 0.10833333333333334, F1-Score: 0.07679324894514768
+
+Plot has been saved to SARIMAX-7-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-14_cm.pdf
+Time elapsed: 4.695035219192505 s
+--------------------------------------------------
+(8, 1, 14)
+mse:  4.015409689345682
+Accuracy: 0.10833333333333334, Precision: 0.06190476190476191, Recall: 0.10833333333333334, F1-Score: 0.07878787878787881
+
+Plot has been saved to SARIMAX-8-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.46428571 0.53571429]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-14_cm.pdf
+Time elapsed: 5.39859676361084 s
+--------------------------------------------------
+(9, 1, 14)
+mse:  3.841462143529762
+Accuracy: 0.11666666666666667, Precision: 0.0602593995919557, Recall: 0.11666666666666667, F1-Score: 0.07598245614035087
+
+Plot has been saved to SARIMAX-9-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.42857143 0.57142857]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-9-1-14_cm.pdf
+Time elapsed: 4.339481830596924 s
+--------------------------------------------------
+(10, 1, 14)
+mse:  3.8779934236734865
+Accuracy: 0.09166666666666666, Precision: 0.05579710144927537, Recall: 0.09166666666666666, F1-Score: 0.06936936936936937
+
+Plot has been saved to SARIMAX-10-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.31746032 0.68253968]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-14_cm.pdf
+Time elapsed: 8.030007123947144 s
+--------------------------------------------------
+(11, 1, 14)
+mse:  3.988751154519138
+Accuracy: 0.08333333333333333, Precision: 0.05426356589147287, Recall: 0.08333333333333333, F1-Score: 0.06572769953051644
+
+Plot has been saved to SARIMAX-11-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.23809524 0.76190476]
+ [0.         0.         0.57692308 0.42307692]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-14_cm.pdf
+Time elapsed: 7.223643779754639 s
+--------------------------------------------------
+(12, 1, 14)
+mse:  7.323868348834539
+Accuracy: 0.008333333333333333, Precision: 0.00035714285714285714, Recall: 0.008333333333333333, F1-Score: 0.0006849315068493151
+
+Plot has been saved to SARIMAX-12-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.         0.50793651 0.49206349]
+ [0.         0.         0.03846154 0.61538462 0.34615385]
+ [0.         0.         0.         0.75       0.25      ]
+ [0.         0.         0.66666667 0.33333333 0.        ]
+ [       nan        nan        nan        nan        nan]]
+Confusion matrix has been saved to SARIMAX-12-1-14_cm.pdf
+Time elapsed: 11.573097944259644 s
+--------------------------------------------------
+(13, 1, 14)
+mse:  3.844934892615387
+Accuracy: 0.09166666666666666, Precision: 0.05347222222222222, Recall: 0.09166666666666666, F1-Score: 0.06754385964912281
+
+Plot has been saved to SARIMAX-13-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-13-1-14_cm.pdf
+Time elapsed: 9.175145864486694 s
+--------------------------------------------------
+(14, 1, 14)
+mse:  3.970798118195782
+Accuracy: 0.14166666666666666, Precision: 0.0767626321974148, Recall: 0.14166666666666666, F1-Score: 0.0958932958932959
+
+Plot has been saved to SARIMAX-14-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.53571429 0.46428571]
+ [0.         0.         0.33333333 0.66666667]]
+Confusion matrix has been saved to SARIMAX-14-1-14_cm.pdf
+Time elapsed: 8.478088855743408 s
+--------------------------------------------------
+(15, 1, 14)
+mse:  3.9352555486400154
+Accuracy: 0.15833333333333333, Precision: 0.08866666666666667, Recall: 0.15833333333333333, F1-Score: 0.11367521367521367
+
+Plot has been saved to SARIMAX-15-1-14.pdf
+Normalized confusion matrix
+[[0.         0.         0.33333333 0.66666667]
+ [0.         0.         0.26923077 0.73076923]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-15-1-14_cm.pdf
+Time elapsed: 11.597652912139893 s
+--------------------------------------------------
+(5, 1, 15)
+mse:  4.019691618669542
+Accuracy: 0.175, Precision: 0.12894736842105264, Recall: 0.175, F1-Score: 0.14848484848484847
+
+Plot has been saved to SARIMAX-5-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.0952381  0.9047619 ]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-5-1-15_cm.pdf
+Time elapsed: 4.94002890586853 s
+--------------------------------------------------
+(6, 1, 15)
+mse:  3.9101620581872565
+Accuracy: 0.14166666666666666, Precision: 0.11695075757575757, Recall: 0.14166666666666666, F1-Score: 0.12499389499389499
+
+Plot has been saved to SARIMAX-6-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.07936508 0.92063492]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.57142857 0.42857143]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-6-1-15_cm.pdf
+Time elapsed: 5.45600700378418 s
+--------------------------------------------------
+(7, 1, 15)
+mse:  3.9800065731155514
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-7-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-7-1-15_cm.pdf
+Time elapsed: 5.469609975814819 s
+--------------------------------------------------
+(8, 1, 15)
+mse:  3.9545164243987605
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-8-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-8-1-15_cm.pdf
+Time elapsed: 6.478137016296387 s
+--------------------------------------------------
+(9, 1, 15)
+mse:  3.95641170451882
+Accuracy: 0.09166666666666666, Precision: 0.051333333333333335, Recall: 0.09166666666666666, F1-Score: 0.06581196581196581
+
+Plot has been saved to SARIMAX-9-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.38095238 0.61904762]
+ [0.         0.         0.46153846 0.53846154]
+ [0.         0.         0.39285714 0.60714286]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-9-1-15_cm.pdf
+Time elapsed: 10.439664125442505 s
+--------------------------------------------------
+(10, 1, 15)
+mse:  3.9835409014839067
+Accuracy: 0.08333333333333333, Precision: 0.04861111111111112, Recall: 0.08333333333333333, F1-Score: 0.06140350877192982
+
+Plot has been saved to SARIMAX-10-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.3968254  0.6031746 ]
+ [0.         0.         0.38461538 0.61538462]
+ [0.         0.         0.35714286 0.64285714]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-10-1-15_cm.pdf
+Time elapsed: 12.741701126098633 s
+--------------------------------------------------
+(11, 1, 15)
+mse:  4.118182617087653
+Accuracy: 0.19166666666666668, Precision: 0.13089430894308945, Recall: 0.19166666666666668, F1-Score: 0.15555555555555556
+
+Plot has been saved to SARIMAX-11-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.11111111 0.88888889]
+ [0.         0.         0.30769231 0.69230769]
+ [0.         0.         0.82142857 0.17857143]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-11-1-15_cm.pdf
+Time elapsed: 11.277819871902466 s
+--------------------------------------------------
+(12, 1, 15)
+mse:  3.9701474311324736
+Accuracy: 0.15833333333333333, Precision: 0.0764367816091954, Recall: 0.15833333333333333, F1-Score: 0.10310077519379844
+
+Plot has been saved to SARIMAX-12-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.53846154 0.46153846]
+ [0.         0.         0.67857143 0.32142857]
+ [0.         0.         1.         0.        ]]
+Confusion matrix has been saved to SARIMAX-12-1-15_cm.pdf
+Time elapsed: 15.142224073410034 s
+--------------------------------------------------
+(13, 1, 15)
+mse:  3.953993970932713
+Accuracy: 0.19166666666666668, Precision: 0.09045530492898914, Recall: 0.19166666666666668, F1-Score: 0.12154188948306595
+
+Plot has been saved to SARIMAX-13-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.42307692 0.57692308]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-13-1-15_cm.pdf
+Time elapsed: 14.719402074813843 s
+--------------------------------------------------
+(14, 1, 15)
+mse:  3.9560495329802525
+Accuracy: 0.18333333333333332, Precision: 0.09111952861952861, Recall: 0.18333333333333332, F1-Score: 0.12023683280311065
+
+Plot has been saved to SARIMAX-14-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.34920635 0.65079365]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.75       0.25      ]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-14-1-15_cm.pdf
+Time elapsed: 13.270393133163452 s
+--------------------------------------------------
+(15, 1, 15)
+mse:  3.939777708826468
+Accuracy: 0.19166666666666668, Precision: 0.09205729166666667, Recall: 0.19166666666666668, F1-Score: 0.12296849087893862
+
+Plot has been saved to SARIMAX-15-1-15.pdf
+Normalized confusion matrix
+[[0.         0.         0.36507937 0.63492063]
+ [0.         0.         0.34615385 0.65384615]
+ [0.         0.         0.78571429 0.21428571]
+ [0.         0.         0.66666667 0.33333333]]
+Confusion matrix has been saved to SARIMAX-15-1-15_cm.pdf
+Time elapsed: 15.407609224319458 s
+--------------------------------------------------
